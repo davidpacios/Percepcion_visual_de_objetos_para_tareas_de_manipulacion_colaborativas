@@ -1,0 +1,1 @@
+/home/frankaros/ws_davidpacios/devel/.private/movement_config/share/movement_config/cmake/movement_configConfig-version.cmake

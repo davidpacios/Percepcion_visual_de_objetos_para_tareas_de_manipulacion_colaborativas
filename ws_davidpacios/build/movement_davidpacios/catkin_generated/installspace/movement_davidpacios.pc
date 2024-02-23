@@ -1,0 +1,8 @@
+prefix=/home/frankaros/ws_davidpacios/install
+
+Name: movement_davidpacios
+Description: Description of movement_davidpacios
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

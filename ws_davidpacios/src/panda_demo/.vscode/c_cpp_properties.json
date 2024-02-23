@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/robotica/ws_moveit/devel/include/**",
+        "/home/robotica/ws_moveit/src/ros_astra_camera/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_planners/chomp/chomp_motion_planner/include/**",
+        "/home/robotica/ws_moveit/src/geometric_shapes/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_planners/chomp/chomp_interface/include/**",
+        "/home/robotica/ws_moveit/src/moveit_resources/prbt_ikfast_manipulator_plugin/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_ros/benchmarks/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_plugins/moveit_ros_control_interface/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_ros/move_group/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_ros/occupancy_map_monitor/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_ros/robot_interaction/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_ros/moveit_servo/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_setup_assistant/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_plugins/moveit_simple_controller_manager/include/**",
+        "/home/robotica/ws_moveit/src/moveit_visual_tools/include/**",
+        "/home/robotica/ws_moveit/src/panda_panda_arm_ikfast_plugin/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner/include/**",
+        "/home/robotica/ws_moveit/src/moveit/moveit_planners/pilz_industrial_motion_planner_testutils/include/**",
+        "/home/robotica/ws_moveit/src/rviz_visual_tools/include/**",
+        "/home/robotica/ws_moveit/src/srdfdom/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

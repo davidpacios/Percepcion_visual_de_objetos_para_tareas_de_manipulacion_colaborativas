@@ -1,0 +1,6 @@
+devel_space: /home/frankaros/ws_davidpacios/devel
+install: false
+install_space: /home/frankaros/ws_davidpacios/install
+profile: default
+source_space: /home/frankaros/ws_davidpacios/src
+workspace: /home/frankaros/ws_davidpacios

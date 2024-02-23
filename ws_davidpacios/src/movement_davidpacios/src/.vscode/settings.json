@@ -1,0 +1,23 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/frankaros/ws_davidpacios/devel/lib/python3/dist-packages",
+        "/home/frankaros/ros_own_gripper/devel/lib/python3/dist-packages",
+        "/home/frankaros/ws_moveit/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/frankaros/other_software/root/build/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/frankaros/ws_davidpacios/devel/lib/python3/dist-packages",
+        "/home/frankaros/ros_own_gripper/devel/lib/python3/dist-packages",
+        "/home/frankaros/ws_moveit/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/frankaros/other_software/root/build/lib"
+    ],
+    "files.associations": {
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "condition_variable": "cpp"
+    }
+}

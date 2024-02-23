@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="panda_demo" type="auto_picker.py" name="auto_picker" output="screen"/>
+  <node pkg="panda_demo" type="gs_action_server.py" name="gs_action_server"/>
+  <node pkg="panda_demo" type="euclidean_cluster" name="euclidean_cluster"/>
+  
+
+</launch>

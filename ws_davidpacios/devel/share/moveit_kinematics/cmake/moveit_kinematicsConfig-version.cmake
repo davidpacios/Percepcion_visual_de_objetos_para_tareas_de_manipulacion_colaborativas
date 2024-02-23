@@ -1,0 +1,1 @@
+/home/frankaros/ws_davidpacios/devel/.private/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig-version.cmake

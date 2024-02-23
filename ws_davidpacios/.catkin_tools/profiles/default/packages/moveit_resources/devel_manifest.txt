@@ -1,0 +1,2 @@
+moveit_resources/moveit_resources
+/home/frankaros/ws_davidpacios/devel/.private/moveit_resources/cmake.lock /home/frankaros/ws_davidpacios/devel/./cmake.lock

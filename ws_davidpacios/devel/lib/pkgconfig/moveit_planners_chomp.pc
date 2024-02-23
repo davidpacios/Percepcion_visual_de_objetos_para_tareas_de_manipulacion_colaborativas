@@ -1,0 +1,1 @@
+/home/frankaros/ws_davidpacios/devel/.private/moveit_planners_chomp/lib/pkgconfig/moveit_planners_chomp.pc

@@ -1,0 +1,1 @@
+/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/python3/dist-packages/moveit/__init__.py
