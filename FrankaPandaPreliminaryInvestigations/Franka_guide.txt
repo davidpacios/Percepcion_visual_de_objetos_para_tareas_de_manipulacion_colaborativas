@@ -1,0 +1,167 @@
+Made for an Internship supervised by Juan Antonio Corrales Ramón ( juanantonio.corrales@usc.es )
+by : Antoine Lucazeau ( antoine.lucazeau@sigma-clermont.fr )
+
+-------------------------------------------------------------------------
+Franka Panda setup :
+	This is a small guide/walkthrough about how I've installed and used moveit for the Panda robot.
+-------------------------------------------------------------------------
+
+First, be sure to use matching versions. My work was on Ubuntu 20.04 on noetic.
+	If you are using a different version, you'll have to use different versions for the rest of the tutorial and you might have to do different things some places.
+
+The first tutorial you'll have to follow is this one : https://ros-planning.github.io/moveit_tutorials/doc/getting_started/getting_started.html
+	Not much to say here, just be sure that you're using the right version of ros ( you can change it on the left banner at the top )
+	Follow the tutorial and this will install moveit and ros
+
+Then you'll have to follow is this one : https://frankaemika.github.io/docs/installation_linux.html
+	It goes through how to install the necessary libs and components to use the panda in general.
+	I've installed libfranka from the ROS repository and did not build it from source.
+	For the realtime kernel, I've not used the version given by the tutorial but the recommanded one ( https://www.kernel.org/pub/linux/kernel/projects/rt/ to see wich version is the right one )
+	My kernel version is : Linux franka 5.15.119-rt65. This has fixed some issues I had with the rt kernel
+
+Lastly, you'll have to follow this tutorial : https://frankaemika.github.io/docs/getting_started.html
+	It's the final step that allows the panda to communicate with the pc.
+	I personaly did not follow it as the robot was already configured with the pc.
+
+After you've finished all these tutorials you should be able to start using the robot
+
+-------------------------------------------------------------------------
+How to use the robot :
+	This is a quickstart on how to use the panda robot arm, if you want to know more, follow the moveit tutorials.
+-------------------------------------------------------------------------
+
+First, you want to connect through the FCI directly.
+	To do so you'll only have to put your robot ip on your search bar ( by default 172.16.0.2 ).
+	This will open a simple interface where you can simply control your robot.
+	This is where you can lock and unlock its joints and turn it off ( be sure to lock its joints before turning it off )
+	You can also "activate FCI" : This is necessary if you want ROS to connect to the real robot
+
+Then you might want to check if your moveit is working correctly.
+	To do so run:
+		roslaunch panda_moveit_config demo.launch
+	You should see the basic rviz window open, to learn how to use it follow the moveit tutorial
+
+If you want to connect the panda to the moveit interface:
+	Be sure that you are booted in the realtime kernel and that the FCI is activated.
+	run :
+		roslaunch panda_moveit_config franka_control.launch robot_ip:=172.16.0.2
+	This should be the same as the demo.launch but it will actually control the real robot
+
+Finaly, I've made a pick and place example node to run:
+	First, Be careful and keep the emergency button close in case the robot wants to slam into an object ( The button that turns the control into manual mode )
+	You should know that each positions are hard coded so they may not still be relevant for your case
+	Taking that into account, if you want to run the code, run:
+		rosrun panda_demo pick_and_place_python.py
+	quick note : the planning will fail if the robot does not hold an object of the right dimension
+
+-------------------------------------------------------------------------
+How to use the openni camera :
+	This is a quick guide for use and installation
+-------------------------------------------------------------------------
+
+To install it, I only ran:
+	sudo apt-get install ros-<version>-openni-launch
+
+To make it run, you've only got to run:
+		roslaunch openni_launch openni.launch
+	The topics can be seen in the terminal.
+	You might have to calibrate it.
+
+-------------------------------------------------------------------------
+How to use the orbbec camera :
+	This is a quick guide for use and installation
+-------------------------------------------------------------------------
+
+To install everything needed, follow the tutorial : https://github.com/orbbec/ros_astra_camera.
+
+
+-------------------------------------------------------------------------
+How to use the geslight :
+	This is a quick guide for use and installation
+-------------------------------------------------------------------------
+
+Clone the repo:
+	git clone https://github.com/gelsightinc/gsrobotics.git
+
+And follow the tutorial.
+
+Note: If the computer does not have a webcam, then the camera in showimages_ros.py
+needs to be changed to video0:
+	in line 109:
+
+        gs['vs'][i] = WebcamVideoStream(src=2*i + 2).start() # make sure the id numbers of the cameras are ones recognized by the computer. Default, 2 and 4
+
+	change WebcamVideoStream call input to (src=0)
+
+
+
+-------------------------------------------------------------------------
+Fixes for some problems :
+-------------------------------------------------------------------------
+
+The pandas joint limits are usually wrong.
+	If you check in your robot description, you can notice that compared to the real joint limits the joint limits are not restrictive enough.
+	Most of the time it's because the last decimal is rounded up but in the moveit tutorials, there is one angle that is 5 degrees too much !
+	For more info see https://github.com/ros-planning/moveit_resources/issues/116
+	I have changed the joint_limits.yaml file in opt/ros/noetic/share/franka_description/robots/panda in order to fix some ik issues (the backup file is still there)
+
+The Perception pipeline doesn't show any octomap
+	After having cloned the panda_moveit_config, the sensor_manager.launch.xml file has an error:
+	the arg sensor_type is not called anywhere else but has a default of "" where it should be "pointcloud"
+
+The way the frank_gripper is set up makes it so that if the goal is not met with a tolerance of 0.005, it Aborts.
+	This is can problematic because for the following nodes, the gripper position is not well known (we control it by force)
+	This can be solved as this subjects : https://github.com/ros-planning/moveit_task_constructor/issues/328
+	the folder is in ros/noetic/share/franka_gripper/configure
+	note : this fix is no longer applied as I didn't need it anymore
+
+Using Carthesian path planning and more precisely the grasp msgs, the robot was going too fast leading to an error.
+	This shouldn't be a problem as for carthesian path planning, we can directly configure the time and speeds.
+	But for grasp msgs, we do not have direct access to it.
+	I've change the joint_limits.yaml config file (in panda_moveit_config) to not allow accelerations of more than 2.0 m/s.
+	The old config file can also be found there.
+
+
+-------------------------------------------------------------------------
+Perception demo :
+	I've made some demos to try out perception with both the openni cam, the gellsight mini and the panda
+-------------------------------------------------------------------------
+
+To try thoses demos out, first you should run:
+		roslaunch panda_demo sensor_franka.launch demo:="true"
+	remove the demo:=true if you want to use the real robot.
+
+In order to make those demos work, I need to get the Transformation between both frames:
+	To do so I've made a small code to set manualy the TF tree with the desired position and orientations :
+		rosrun panda_demo camera_position_calibrator.py x y z eulerx eulery eulerz
+	Note that after having used this code, you can change the static tf transform inside the launch file.
+
+The first demo is the auto_picker.
+	To run those demos you should have calibrated the camera first
+	First run
+		roslaunch panda_demo sensor_franka.launch (demo:="true" to run a demo amd not the real robot)
+	then run
+		roslaunch panda_demo auto_pick.launch
+		before telling the node to pick up the object be sure that the octomap around the object has been cleared (it takes a bit of time)
+
+	The auto_picker program has 3 nodes:
+		- The main code sending information to moveit or libfranka to move the robot
+		- a euclidean cluster detection code which uses the 3d camera to detect where an object might be in the workspace( defined inside of the code )
+		- a touch detection which uses the gellsight mini to detect if it's touching anything.
+			this code uses an action to recallibrate the sensor each time it is needed.
+			to see how to code an action server see:
+				https://github.com/ARQ-CRISP/server_template/blob/kinetic-devel/scripts/template_action_server.py
+				https://roboticsbackend.com/ros-create-custom-action/
+		
+--------------------------------------------------------------------------
+Further notes :
+--------------------------------------------------------------------------
+
+To control better the gripper, I've not used moveit but used franka_gripper directly, can be found here: 
+	/opt/ros/noetic/share/franka_gripper
+	This was faster when sending a lot of commands quickly
+
+When asking the gripper to stop, it took a long time to do so.
+	This made it impossible to stop the gripper when it touched an object, I had to resort to multiple different poses.
+
+Action server gs_screenshot is not used.

@@ -1,0 +1,7 @@
+#goal definition
+---
+#result definition
+float32 distance
+---
+#feedback
+bool calibrated

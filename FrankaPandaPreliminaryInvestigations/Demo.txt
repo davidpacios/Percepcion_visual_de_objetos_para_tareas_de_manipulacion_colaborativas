@@ -1,0 +1,59 @@
+# Spanish
+
+Para ejecutar el demo de pick automatico
+1. Asegurarse que el gelsight esté conectado
+2. En una terminal:
+
+cd ws_moveit
+roslaunch panda_demo sensor_franka.launch
+
+3. Esperar a que inicie y en otra terminal, en la misma ubicación:
+
+roslaunch panda_demo auto_pick.launch
+
+--------------
+    
+Para ejecutar el ejemplo de gelsight 3D:
+
+cd gsrobotics/examples
+python3 show3d.py
+
+--------------
+
+Para ejecutar fuerzas globales xyz (012) del papillarray:
+
+cd contactilesoftware/C++LIN/Example
+./example
+
+
+
+
+
+
+
+# English
+
+To execute auto pick and place:
+1. Make sure the gelsight is connected
+2. In a terminal:
+
+cd ws_moveit
+roslaunch panda_demo sensor_franka.launch
+
+3. Wait for start and on the same directory:
+
+roslaunch panda_demo auto_pick.launch
+
+--------------
+    
+To execute gelsight 3D example:
+
+cd gsrobotics/examples
+python3 show3d.py
+
+--------------
+
+To execute papillarray global forces in xyz (012) :
+
+cd contactilesoftware/C++LIN/Example
+./example
