@@ -57,10 +57,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_setup_assistant
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles /home/frankaros/ws_davidpacios/build/moveit_setup_assistant//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

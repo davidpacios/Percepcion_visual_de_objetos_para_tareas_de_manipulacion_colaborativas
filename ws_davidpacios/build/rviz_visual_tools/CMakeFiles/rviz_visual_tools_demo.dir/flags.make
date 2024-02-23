@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DQT_NO_KEYWORDS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rviz_visual_tools\"
 
-CXX_INCLUDES = -I/home/frankaros/ws_davidpacios/build/rviz_visual_tools -I/home/frankaros/ws_davidpacios/src/rviz_visual_tools -I/home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_demo_autogen/include -isystem /home/frankaros/ws_davidpacios/src/rviz_visual_tools/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3 -isystem /usr/include/OGRE/Overlay -isystem /usr/include/OGRE
+CXX_INCLUDES = -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_demo_autogen/include -isystem /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3 -isystem /usr/include/OGRE/Overlay -isystem /usr/include/OGRE
 
 CXX_FLAGS = 
 

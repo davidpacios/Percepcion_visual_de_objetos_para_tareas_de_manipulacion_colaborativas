@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/panda_demo
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/panda_demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/panda_demo
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/panda_demo
 
 # Utility rule file for graph_msgs_generate_messages_eus.
 
@@ -78,6 +78,6 @@ CMakeFiles/graph_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/graph_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/graph_msgs_generate_messages_eus.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/panda_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/panda_demo /home/frankaros/ws_davidpacios/src/panda_demo /home/frankaros/ws_davidpacios/build/panda_demo /home/frankaros/ws_davidpacios/build/panda_demo /home/frankaros/ws_davidpacios/build/panda_demo/CMakeFiles/graph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/panda_demo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/panda_demo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/panda_demo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/panda_demo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/panda_demo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/panda_demo/CMakeFiles/graph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/graph_msgs_generate_messages_eus.dir/depend
 

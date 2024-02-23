@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_runtime
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_runtime
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_runtime
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_runtime
 
 # Utility rule file for tests.
 
@@ -78,6 +78,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_runtime && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit/moveit_runtime /home/frankaros/ws_davidpacios/src/moveit/moveit_runtime /home/frankaros/ws_davidpacios/build/moveit_runtime /home/frankaros/ws_davidpacios/build/moveit_runtime /home/frankaros/ws_davidpacios/build/moveit_runtime/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_runtime && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_runtime /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_runtime /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_runtime /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_runtime /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_runtime/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests.dir/depend
 

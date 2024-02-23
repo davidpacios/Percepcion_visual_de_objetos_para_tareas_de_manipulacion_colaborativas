@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "moveit_ros_planning;moveit_ros_visualization;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmoveit_setup_assistant_tools".split(';') if "-lmoveit_setup_assistant_tools" != "" else []
 PROJECT_NAME = "moveit_setup_assistant"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "1.1.13"

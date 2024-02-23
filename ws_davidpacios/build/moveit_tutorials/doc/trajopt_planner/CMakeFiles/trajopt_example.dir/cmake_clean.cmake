@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/trajopt_example"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/trajopt_example.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/trajopt_example"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/trajopt_example.pdb"
   "CMakeFiles/trajopt_example.dir/src/trajopt_example.cpp.o"
   "CMakeFiles/trajopt_example.dir/src/trajopt_example.cpp.o.d"
 )

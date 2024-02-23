@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_planners_ompl/lib/moveit_planners_ompl/generate_state_database"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_planners_ompl/lib/moveit_planners_ompl/generate_state_database.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_planners_ompl/lib/moveit_planners_ompl/generate_state_database"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_planners_ompl/lib/moveit_planners_ompl/generate_state_database.pdb"
   "CMakeFiles/moveit_generate_state_database.dir/scripts/generate_state_database.cpp.o"
   "CMakeFiles/moveit_generate_state_database.dir/scripts/generate_state_database.cpp.o.d"
 )

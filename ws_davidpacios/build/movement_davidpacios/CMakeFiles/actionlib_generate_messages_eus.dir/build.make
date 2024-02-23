@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/movement_davidpacios
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/movement_davidpacios
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/movement_davidpacios
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/movement_davidpacios
 
 # Utility rule file for actionlib_generate_messages_eus.
 
@@ -78,6 +78,6 @@ CMakeFiles/actionlib_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/actionlib_generate_messages_eus.dir/clean
 
 CMakeFiles/actionlib_generate_messages_eus.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/movement_davidpacios && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/movement_davidpacios /home/frankaros/ws_davidpacios/src/movement_davidpacios /home/frankaros/ws_davidpacios/build/movement_davidpacios /home/frankaros/ws_davidpacios/build/movement_davidpacios /home/frankaros/ws_davidpacios/build/movement_davidpacios/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/movement_davidpacios && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/movement_davidpacios /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/movement_davidpacios /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/movement_davidpacios /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/movement_davidpacios /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/movement_davidpacios/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/actionlib_generate_messages_eus.dir/depend
 

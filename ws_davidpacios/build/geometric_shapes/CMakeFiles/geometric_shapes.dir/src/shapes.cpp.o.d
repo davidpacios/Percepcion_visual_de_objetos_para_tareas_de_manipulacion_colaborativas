@@ -1,7 +1,7 @@
 CMakeFiles/geometric_shapes.dir/src/shapes.cpp.o: \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/src/shapes.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/src/shapes.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
  /usr/include/c++/9/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

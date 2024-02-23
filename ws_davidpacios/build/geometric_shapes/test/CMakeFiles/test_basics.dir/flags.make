@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/frankaros/ws_davidpacios/src/geometric_shapes/include -I/home/frankaros/ws_davidpacios/build/geometric_shapes/test -isystem /usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /usr/include/libqhull_r -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest
+CXX_INCLUDES = -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test -isystem /usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /usr/include/libqhull_r -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest
 
 CXX_FLAGS = -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1
 

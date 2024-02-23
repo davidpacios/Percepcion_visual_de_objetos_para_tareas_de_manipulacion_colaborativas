@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_voxel_grid"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_voxel_grid.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_voxel_grid"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_voxel_grid.pdb"
   "CMakeFiles/test_voxel_grid.dir/test/test_voxel_grid.cpp.o"
   "CMakeFiles/test_voxel_grid.dir/test/test_voxel_grid.cpp.o.d"
 )

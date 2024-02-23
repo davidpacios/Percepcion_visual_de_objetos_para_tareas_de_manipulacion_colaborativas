@@ -1,1 +1,1 @@
-/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_visualization/lib/moveit_ros_visualization/moveit_joy.py
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_visualization/lib/moveit_ros_visualization/moveit_joy.py

@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit_tutorials
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_tutorials
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_tutorials
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials
 
 # Utility rule file for run_tests_moveit_tutorials.
 
@@ -74,10 +74,10 @@ doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/build: run_tests_moveit_tuto
 .PHONY : doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/build
 
 doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/clean:
-	cd /home/frankaros/ws_davidpacios/build/moveit_tutorials/doc/tests && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_moveit_tutorials.dir/cmake_clean.cmake
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials/doc/tests && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_moveit_tutorials.dir/cmake_clean.cmake
 .PHONY : doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/clean
 
 doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_tutorials && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit_tutorials /home/frankaros/ws_davidpacios/src/moveit_tutorials/doc/tests /home/frankaros/ws_davidpacios/build/moveit_tutorials /home/frankaros/ws_davidpacios/build/moveit_tutorials/doc/tests /home/frankaros/ws_davidpacios/build/moveit_tutorials/doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_tutorials /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_tutorials/doc/tests /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials/doc/tests /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_tutorials/doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : doc/tests/CMakeFiles/run_tests_moveit_tutorials.dir/depend
 

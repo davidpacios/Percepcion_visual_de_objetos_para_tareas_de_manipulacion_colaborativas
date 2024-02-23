@@ -7,7 +7,7 @@ events:
       - "/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 5.15.0-91-generic - x86_64
+      The system is: Linux - 5.9.1-rt20 - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/3.27.5/CompilerIdC/a.out
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/3.27.5/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/3.27.5/CompilerIdCXX/a.out
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/3.27.5/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,21 +61,21 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8280/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c8280.dir/build.make CMakeFiles/cmTC_c8280.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC'
-        Building C object CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0bfda/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0bfda.dir/build.make CMakeFiles/cmTC_0bfda.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh'
+        Building C object CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -84,8 +84,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxsAXSH.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccnsYTho.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -105,15 +105,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o /tmp/ccxsAXSH.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o /tmp/ccnsYTho.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        Linking C executable cmTC_c8280
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8280.dir/link.txt --verbose=1
-        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -o cmTC_c8280 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_0bfda
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bfda.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -o cmTC_0bfda 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -125,10 +125,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c8280' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmhzKf9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c8280 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c8280' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0bfda' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDd0TXN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0bfda /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0bfda' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh'
         
       exitCode: 0
   -
@@ -162,13 +162,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC']
+        ignore line: [Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8280/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c8280.dir/build.make CMakeFiles/cmTC_c8280.dir/build]
-        ignore line: [make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-SXjBqC']
-        ignore line: [Building C object CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0bfda/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_0bfda.dir/build.make CMakeFiles/cmTC_0bfda.dir/build]
+        ignore line: [make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-o4eenh']
+        ignore line: [Building C object CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -177,8 +177,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxsAXSH.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccnsYTho.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -198,15 +198,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o /tmp/ccxsAXSH.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o /tmp/ccnsYTho.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking C executable cmTC_c8280]
-        ignore line: [/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8280.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -o cmTC_c8280 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_0bfda]
+        ignore line: [/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bfda.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -o cmTC_0bfda ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -218,13 +218,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c8280' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmhzKf9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c8280 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0bfda' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDd0TXN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0bfda /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccmhzKf9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccDd0TXN.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -243,7 +243,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c8280] ==> ignore
+          arg [cmTC_0bfda] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -255,7 +255,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_c8280.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_0bfda.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -295,21 +295,21 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07ed0/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_07ed0.dir/build.make CMakeFiles/cmTC_07ed0.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA'
-        Building CXX object CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c733b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c733b.dir/build.make CMakeFiles/cmTC_c733b.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi'
+        Building CXX object CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -318,8 +318,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBHwQ5j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8MmPEZ.s
         GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -343,15 +343,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBHwQ5j.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8MmPEZ.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        Linking CXX executable cmTC_07ed0
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07ed0.dir/link.txt --verbose=1
-        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_07ed0 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_c733b
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c733b.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c733b 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -363,10 +363,10 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07ed0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3GsszJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_07ed0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07ed0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA'
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c733b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmNPCGo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c733b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c733b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi'
         
       exitCode: 0
   -
@@ -406,13 +406,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA']
+        ignore line: [Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07ed0/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_07ed0.dir/build.make CMakeFiles/cmTC_07ed0.dir/build]
-        ignore line: [make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-2B1oHA']
-        ignore line: [Building CXX object CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c733b/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c733b.dir/build.make CMakeFiles/cmTC_c733b.dir/build]
+        ignore line: [make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-rek5bi']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -c /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -421,8 +421,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccBHwQ5j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8MmPEZ.s]
         ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -446,15 +446,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBHwQ5j.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8MmPEZ.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        ignore line: [Linking CXX executable cmTC_07ed0]
-        ignore line: [/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07ed0.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_07ed0 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_c733b]
+        ignore line: [/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c733b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c733b ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -466,13 +466,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07ed0' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3GsszJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_07ed0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c733b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmNPCGo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c733b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc3GsszJ.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccmNPCGo.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -491,7 +491,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_07ed0] ==> ignore
+          arg [cmTC_c733b] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -503,7 +503,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_07ed0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c733b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -544,33 +544,33 @@ events:
       - "/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_984d4/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_984d4.dir/build.make CMakeFiles/cmTC_984d4.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB'
-        Building C object CMakeFiles/cmTC_984d4.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_984d4.dir/src.c.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB/src.c
-        Linking C executable cmTC_984d4
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_984d4.dir/link.txt --verbose=1
-        /usr/bin/cc -rdynamic CMakeFiles/cmTC_984d4.dir/src.c.o -o cmTC_984d4 
-        /usr/bin/ld: CMakeFiles/cmTC_984d4.dir/src.c.o: in function `main':
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f55ad/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f55ad.dir/build.make CMakeFiles/cmTC_f55ad.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f'
+        Building C object CMakeFiles/cmTC_f55ad.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f55ad.dir/src.c.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f/src.c
+        Linking C executable cmTC_f55ad
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f55ad.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f55ad.dir/src.c.o -o cmTC_f55ad 
+        /usr/bin/ld: CMakeFiles/cmTC_f55ad.dir/src.c.o: in function `main':
         src.c:(.text+0x46): undefined reference to `pthread_create'
         /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
         /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
         /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_984d4.dir/build.make:99: cmTC_984d4] Error 1
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-uaqeMB'
-        make: *** [Makefile:127: cmTC_984d4/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_f55ad.dir/build.make:99: cmTC_f55ad] Error 1
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-qBBh1f'
+        make: *** [Makefile:127: cmTC_f55ad/fast] Error 2
         
       exitCode: 2
   -
@@ -586,29 +586,29 @@ events:
       - "/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_51b51/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_51b51.dir/build.make CMakeFiles/cmTC_51b51.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy'
-        Building C object CMakeFiles/cmTC_51b51.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_51b51.dir/CheckFunctionExists.c.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy/CheckFunctionExists.c
-        Linking C executable cmTC_51b51
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51b51.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_51b51.dir/CheckFunctionExists.c.o -o cmTC_51b51  -lpthreads 
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f7a38/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f7a38.dir/build.make CMakeFiles/cmTC_f7a38.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe'
+        Building C object CMakeFiles/cmTC_f7a38.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_f7a38.dir/CheckFunctionExists.c.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe/CheckFunctionExists.c
+        Linking C executable cmTC_f7a38
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7a38.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_f7a38.dir/CheckFunctionExists.c.o -o cmTC_f7a38  -lpthreads 
         /usr/bin/ld: cannot find -lpthreads
         collect2: error: ld returned 1 exit status
-        make[1]: *** [CMakeFiles/cmTC_51b51.dir/build.make:99: cmTC_51b51] Error 1
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-wOZEDy'
-        make: *** [Makefile:127: cmTC_51b51/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_f7a38.dir/build.make:99: cmTC_f7a38] Error 1
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-LEHdCe'
+        make: *** [Makefile:127: cmTC_f7a38/fast] Error 2
         
       exitCode: 2
   -
@@ -624,25 +624,25 @@ events:
       - "/home/frankaros/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27/Modules/FindBoost.cmake:594 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e4fdb/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_e4fdb.dir/build.make CMakeFiles/cmTC_e4fdb.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC'
-        Building C object CMakeFiles/cmTC_e4fdb.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_e4fdb.dir/CheckFunctionExists.c.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC/CheckFunctionExists.c
-        Linking C executable cmTC_e4fdb
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4fdb.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_e4fdb.dir/CheckFunctionExists.c.o -o cmTC_e4fdb  -lpthread 
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xG7hRC'
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_230b9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_230b9.dir/build.make CMakeFiles/cmTC_230b9.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf'
+        Building C object CMakeFiles/cmTC_230b9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_230b9.dir/CheckFunctionExists.c.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf/CheckFunctionExists.c
+        Linking C executable cmTC_230b9
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_230b9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_230b9.dir/CheckFunctionExists.c.o -o cmTC_230b9  -lpthread 
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-opZYIf'
         
       exitCode: 0
   -
@@ -662,26 +662,26 @@ events:
     checks:
       - "Performing Test HAS_FLTO"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/frankaros/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
+      CMAKE_MODULE_PATH: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
     buildResult:
       variable: "HAS_FLTO"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_84185/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_84185.dir/build.make CMakeFiles/cmTC_84185.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB'
-        Building CXX object CMakeFiles/cmTC_84185.dir/src.cxx.o
-        /usr/bin/c++ -DHAS_FLTO  -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_84185.dir/src.cxx.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB/src.cxx
-        Linking CXX executable cmTC_84185
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84185.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_84185.dir/src.cxx.o -o cmTC_84185  -flto 
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZnVMnB'
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_815c7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_815c7.dir/build.make CMakeFiles/cmTC_815c7.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh'
+        Building CXX object CMakeFiles/cmTC_815c7.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO  -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_815c7.dir/src.cxx.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh/src.cxx
+        Linking CXX executable cmTC_815c7
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_815c7.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_815c7.dir/src.cxx.o -o cmTC_815c7  -flto 
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-AVrTYh'
         
       exitCode: 0
   -
@@ -696,26 +696,26 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/frankaros/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
+      CMAKE_MODULE_PATH: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
     buildResult:
       variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f9849/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_f9849.dir/build.make CMakeFiles/cmTC_f9849.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC'
-        Building CXX object CMakeFiles/cmTC_f9849.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fvisibility=hidden -o CMakeFiles/cmTC_f9849.dir/src.cxx.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC/src.cxx
-        Linking CXX executable cmTC_f9849
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9849.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_f9849.dir/src.cxx.o -o cmTC_f9849 
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-jxfjrC'
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1f7e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f1f7e.dir/build.make CMakeFiles/cmTC_f1f7e.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf'
+        Building CXX object CMakeFiles/cmTC_f1f7e.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fvisibility=hidden -o CMakeFiles/cmTC_f1f7e.dir/src.cxx.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf/src.cxx
+        Linking CXX executable cmTC_f1f7e
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1f7e.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_f1f7e.dir/src.cxx.o -o cmTC_f1f7e 
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-xmzNvf'
         
       exitCode: 0
   -
@@ -730,26 +730,26 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/frankaros/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
+      CMAKE_MODULE_PATH: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
     buildResult:
       variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_35171/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_35171.dir/build.make CMakeFiles/cmTC_35171.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA'
-        Building CXX object CMakeFiles/cmTC_35171.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_35171.dir/src.cxx.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA/src.cxx
-        Linking CXX executable cmTC_35171
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35171.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_35171.dir/src.cxx.o -o cmTC_35171 
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-ZCrVfA'
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_09d7d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_09d7d.dir/build.make CMakeFiles/cmTC_09d7d.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf'
+        Building CXX object CMakeFiles/cmTC_09d7d.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_09d7d.dir/src.cxx.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf/src.cxx
+        Linking CXX executable cmTC_09d7d
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09d7d.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_09d7d.dir/src.cxx.o -o cmTC_09d7d 
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-IvWeSf'
         
       exitCode: 0
   -
@@ -764,39 +764,39 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
     directories:
-      source: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC"
-      binary: "/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC"
+      source: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi"
+      binary: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/frankaros/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
+      CMAKE_MODULE_PATH: "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/cmake;/opt/ros/noetic/share/pybind11_catkin/cmake"
     buildResult:
       variable: "COMPILER_HAS_DEPRECATED_ATTR"
       cached: true
       stdout: |
-        Change Dir: '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC'
+        Change Dir: '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi'
         
-        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7f77/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_b7f77.dir/build.make CMakeFiles/cmTC_b7f77.dir/build
-        make[1]: Entering directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC'
-        Building CXX object CMakeFiles/cmTC_b7f77.dir/src.cxx.o
-        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_b7f77.dir/src.cxx.o -c /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx: In function ‘int main()’:
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+        Run Build Command(s): /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7f17a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7f17a.dir/build.make CMakeFiles/cmTC_7f17a.dir/build
+        make[1]: Entering directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi'
+        Building CXX object CMakeFiles/cmTC_7f17a.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_7f17a.dir/src.cxx.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx: In function ‘int main()’:
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
             2 |     int main() { return somefunc();}
               |                                  ^
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx:1:37: note: declared here
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx:1:37: note: declared here
             1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
               |                                     ^~~~~~~~
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
             2 |     int main() { return somefunc();}
               |                                  ^
-        /home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC/src.cxx:1:37: note: declared here
+        /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi/src.cxx:1:37: note: declared here
             1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
               |                                     ^~~~~~~~
-        Linking CXX executable cmTC_b7f77
-        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7f77.dir/link.txt --verbose=1
-        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_b7f77.dir/src.cxx.o -o cmTC_b7f77 
-        make[1]: Leaving directory '/home/frankaros/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-znxluC'
+        Linking CXX executable cmTC_7f17a
+        /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f17a.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_7f17a.dir/src.cxx.o -o cmTC_7f17a 
+        make[1]: Leaving directory '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_core/CMakeFiles/CMakeScratch/TryCompile-Fa0BCi'
         
       exitCode: 0
 ...

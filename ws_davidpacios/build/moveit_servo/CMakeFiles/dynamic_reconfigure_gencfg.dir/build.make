@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_servo
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo
 
 # Utility rule file for dynamic_reconfigure_gencfg.
 
@@ -78,6 +78,6 @@ CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
 .PHONY : CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 CMakeFiles/dynamic_reconfigure_gencfg.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_servo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
 

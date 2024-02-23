@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_ptp.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_ptp.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_ptp.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_ptp.so"
   "CMakeFiles/planning_context_loader_ptp.dir/src/joint_limits_container.cpp.o"
   "CMakeFiles/planning_context_loader_ptp.dir/src/joint_limits_container.cpp.o.d"
   "CMakeFiles/planning_context_loader_ptp.dir/src/planning_context_loader.cpp.o"

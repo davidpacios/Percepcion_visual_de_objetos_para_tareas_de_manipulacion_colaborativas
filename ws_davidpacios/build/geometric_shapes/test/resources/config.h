@@ -1,5 +1,5 @@
 #ifndef GEOMETRIC_SHAPES_TEST_RESOURCES_CONFIG_
 #define GEOMETRIC_SHAPES_TEST_RESOURCES_CONFIG_
 
-#define TEST_RESOURCES_DIR "/home/frankaros/ws_davidpacios/src/geometric_shapes/test/resources"
+#define TEST_RESOURCES_DIR "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test/resources"
 #endif

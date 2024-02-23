@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_perception/lib/moveit_ros_perception/mesh_filter_test"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_perception/lib/moveit_ros_perception/mesh_filter_test.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_perception/lib/moveit_ros_perception/mesh_filter_test"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_perception/lib/moveit_ros_perception/mesh_filter_test.pdb"
   "CMakeFiles/mesh_filter_test.dir/test/mesh_filter_test.cpp.o"
   "CMakeFiles/mesh_filter_test.dir/test/mesh_filter_test.cpp.o.d"
 )

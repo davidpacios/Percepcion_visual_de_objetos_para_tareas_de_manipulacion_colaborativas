@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "actionlib;control_msgs;moveit_core;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmoveit_simple_controller_manager".split(';') if "-lmoveit_simple_controller_manager" != "" else []
 PROJECT_NAME = "moveit_simple_controller_manager"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "1.1.13"

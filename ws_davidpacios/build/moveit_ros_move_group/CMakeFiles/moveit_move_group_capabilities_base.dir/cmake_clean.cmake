@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/.1.1.13"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_move_group/lib/libmoveit_move_group_capabilities_base.so.1.1.13"
   "CMakeFiles/moveit_move_group_capabilities_base.dir/src/move_group_capability.cpp.o"
   "CMakeFiles/moveit_move_group_capabilities_base.dir/src/move_group_capability.cpp.o.d"
   "CMakeFiles/moveit_move_group_capabilities_base.dir/src/move_group_context.cpp.o"

@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_servo
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo
 
 # Utility rule file for clean_test_results_moveit_servo.
 
@@ -67,7 +67,7 @@ include CMakeFiles/clean_test_results_moveit_servo.dir/compiler_depend.make
 include CMakeFiles/clean_test_results_moveit_servo.dir/progress.make
 
 CMakeFiles/clean_test_results_moveit_servo:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/ws_davidpacios/build/moveit_servo/test_results/moveit_servo
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo/test_results/moveit_servo
 
 clean_test_results_moveit_servo: CMakeFiles/clean_test_results_moveit_servo
 clean_test_results_moveit_servo: CMakeFiles/clean_test_results_moveit_servo.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/clean_test_results_moveit_servo.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_moveit_servo.dir/clean
 
 CMakeFiles/clean_test_results_moveit_servo.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_servo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo /home/frankaros/ws_davidpacios/build/moveit_servo/CMakeFiles/clean_test_results_moveit_servo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_servo/CMakeFiles/clean_test_results_moveit_servo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/clean_test_results_moveit_servo.dir/depend
 

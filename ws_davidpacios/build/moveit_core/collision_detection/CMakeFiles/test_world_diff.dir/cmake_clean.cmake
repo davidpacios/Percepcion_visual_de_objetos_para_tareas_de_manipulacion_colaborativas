@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_world_diff"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_world_diff.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_world_diff"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_world_diff.pdb"
   "CMakeFiles/test_world_diff.dir/test/test_world_diff.cpp.o"
   "CMakeFiles/test_world_diff.dir/test/test_world_diff.cpp.o.d"
 )

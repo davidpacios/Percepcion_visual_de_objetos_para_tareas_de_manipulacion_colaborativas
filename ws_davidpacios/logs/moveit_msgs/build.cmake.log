@@ -11,9 +11,9 @@ Not searching for unused variables given on the command line.
 [36m--[0m Check for working CXX compiler: /usr/bin/c++ - skipped
 [36m--[0m Detecting CXX compile features
 [36m--[0m Detecting CXX compile features - done
-[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs
-[36m--[0m Using CMAKE_PREFIX_PATH: /home/frankaros/ws_davidpacios/devel;/home/frankaros/ros_own_gripper/devel;/home/frankaros/ws_moveit/devel;/opt/ros/noetic;/home/frankaros/other_software/root/build;/home/frankaros/other_software/root/build;/home/frankaros/other_software/root/install
-[36m--[0m This workspace overlays: /home/frankaros/ws_davidpacios/devel;/home/frankaros/ros_own_gripper/devel;/home/frankaros/ws_moveit/devel;/opt/ros/noetic
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel;/opt/ros/noetic
 [33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
@@ -32,7 +32,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 [36m--[0m Using empy: /usr/lib/python3/dist-packages/em.py
 [36m--[0m Using CATKIN_ENABLE_TESTING: ON
 [36m--[0m Call enable_testing()
-[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/frankaros/ws_davidpacios/build/moveit_msgs/test_results
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_msgs/test_results
 [36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
 [36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
 [36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
@@ -75,17 +75,17 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 [36m--[0m catkin 0.8.10
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
-[36m--[0m Generating .msg files for action moveit_msgs/ExecuteTrajectory /home/frankaros/ws_davidpacios/src/moveit_msgs/action/ExecuteTrajectory.action
+[36m--[0m Generating .msg files for action moveit_msgs/ExecuteTrajectory /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_msgs/action/ExecuteTrajectory.action
 Generating for action ExecuteTrajectory
-[36m--[0m Generating .msg files for action moveit_msgs/MoveGroup /home/frankaros/ws_davidpacios/src/moveit_msgs/action/MoveGroup.action
+[36m--[0m Generating .msg files for action moveit_msgs/MoveGroup /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_msgs/action/MoveGroup.action
 Generating for action MoveGroup
-[36m--[0m Generating .msg files for action moveit_msgs/MoveGroupSequence /home/frankaros/ws_davidpacios/src/moveit_msgs/action/MoveGroupSequence.action
+[36m--[0m Generating .msg files for action moveit_msgs/MoveGroupSequence /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_msgs/action/MoveGroupSequence.action
 Generating for action MoveGroupSequence
-[36m--[0m Generating .msg files for action moveit_msgs/Pickup /home/frankaros/ws_davidpacios/src/moveit_msgs/action/Pickup.action
+[36m--[0m Generating .msg files for action moveit_msgs/Pickup /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_msgs/action/Pickup.action
 Generating for action Pickup
-[36m--[0m Generating .msg files for action moveit_msgs/Place /home/frankaros/ws_davidpacios/src/moveit_msgs/action/Place.action
+[36m--[0m Generating .msg files for action moveit_msgs/Place /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_msgs/action/Place.action
 Generating for action Place
 [36m--[0m moveit_msgs: 81 messages, 24 services
-[36m--[0m Configuring done (2.9s)
+[36m--[0m Configuring done (3.2s)
 [36m--[0m Generating done (0.2s)
-[36m--[0m Build files have been written to: /home/frankaros/ws_davidpacios/build/moveit_msgs
+[36m--[0m Build files have been written to: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_msgs

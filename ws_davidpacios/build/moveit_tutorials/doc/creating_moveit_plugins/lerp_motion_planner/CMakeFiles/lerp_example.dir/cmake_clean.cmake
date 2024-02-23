@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/lerp_example"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/lerp_example.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/lerp_example"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/lerp_example.pdb"
   "CMakeFiles/lerp_example.dir/src/lerp_example.cpp.o"
   "CMakeFiles/lerp_example.dir/src/lerp_example.cpp.o.d"
 )

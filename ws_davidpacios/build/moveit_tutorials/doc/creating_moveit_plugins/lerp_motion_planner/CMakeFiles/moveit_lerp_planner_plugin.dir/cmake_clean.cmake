@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/.0.1.0"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.so.0.1.0"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/.0.1.0"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/libmoveit_lerp_planner_plugin.so.0.1.0"
   "CMakeFiles/moveit_lerp_planner_plugin.dir/src/lerp_interface.cpp.o"
   "CMakeFiles/moveit_lerp_planner_plugin.dir/src/lerp_interface.cpp.o.d"
   "CMakeFiles/moveit_lerp_planner_plugin.dir/src/lerp_planner_manager.cpp.o"

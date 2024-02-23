@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/detect_and_add_cylinder_collision_object_demo"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/detect_and_add_cylinder_collision_object_demo.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/detect_and_add_cylinder_collision_object_demo"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/detect_and_add_cylinder_collision_object_demo.pdb"
   "CMakeFiles/detect_and_add_cylinder_collision_object_demo.dir/src/detect_and_add_cylinder_collision_object_demo.cpp.o"
   "CMakeFiles/detect_and_add_cylinder_collision_object_demo.dir/src/detect_and_add_cylinder_collision_object_demo.cpp.o.d"
 )

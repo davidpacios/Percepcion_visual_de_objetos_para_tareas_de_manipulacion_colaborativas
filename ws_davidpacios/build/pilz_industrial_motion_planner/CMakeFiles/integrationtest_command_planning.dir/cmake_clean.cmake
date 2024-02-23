@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/pilz_industrial_motion_planner/integrationtest_command_planning"
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/pilz_industrial_motion_planner/integrationtest_command_planning.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/pilz_industrial_motion_planner/integrationtest_command_planning"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/pilz_industrial_motion_planner/integrationtest_command_planning.pdb"
   "CMakeFiles/integrationtest_command_planning.dir/test/integrationtest_command_planning.cpp.o"
   "CMakeFiles/integrationtest_command_planning.dir/test/integrationtest_command_planning.cpp.o.d"
   "CMakeFiles/integrationtest_command_planning.dir/test/test_utils.cpp.o"

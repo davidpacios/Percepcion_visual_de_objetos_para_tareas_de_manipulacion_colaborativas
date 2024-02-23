@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "moveit_core;moveit_ros_planning;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "moveit_fake_controller_manager"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "1.1.13"

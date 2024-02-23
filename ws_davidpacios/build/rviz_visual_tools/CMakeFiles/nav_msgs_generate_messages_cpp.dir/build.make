@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/rviz_visual_tools
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/rviz_visual_tools
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools
 
 # Utility rule file for nav_msgs_generate_messages_cpp.
 
@@ -78,6 +78,6 @@ CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/rviz_visual_tools && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/rviz_visual_tools /home/frankaros/ws_davidpacios/src/rviz_visual_tools /home/frankaros/ws_davidpacios/build/rviz_visual_tools /home/frankaros/ws_davidpacios/build/rviz_visual_tools /home/frankaros/ws_davidpacios/build/rviz_visual_tools/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
 

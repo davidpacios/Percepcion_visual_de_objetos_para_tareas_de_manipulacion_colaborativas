@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_testhelpers.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_testhelpers.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_testhelpers.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_testhelpers.so"
   "CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/path_circle_generator.cpp.o"
   "CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/path_circle_generator.cpp.o.d"
   "CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/trajectory_generator.cpp.o"

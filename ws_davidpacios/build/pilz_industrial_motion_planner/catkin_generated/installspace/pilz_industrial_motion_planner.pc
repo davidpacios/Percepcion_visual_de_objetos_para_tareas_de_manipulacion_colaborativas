@@ -1,4 +1,4 @@
-prefix=/home/frankaros/ws_davidpacios/install
+prefix=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install
 
 Name: pilz_industrial_motion_planner
 Description: Description of pilz_industrial_motion_planner

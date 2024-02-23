@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_create_mesh"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_create_mesh.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_create_mesh"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_create_mesh.pdb"
   "CMakeFiles/test_create_mesh.dir/test_create_mesh.cpp.o"
   "CMakeFiles/test_create_mesh.dir/test_create_mesh.cpp.o.d"
 )

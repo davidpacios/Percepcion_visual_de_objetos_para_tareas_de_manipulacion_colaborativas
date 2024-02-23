@@ -1,5 +1,5 @@
 CMakeFiles/rviz_visual_tools_gui.dir/src/key_tool.cpp.o: \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/src/key_tool.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/src/key_tool.cpp \
  /usr/include/stdc-predef.h /usr/include/OGRE/OgreRay.h \
  /usr/include/OGRE/OgrePrerequisites.h /usr/include/OGRE/OgrePlatform.h \
  /usr/include/OGRE/OgreConfig.h /usr/include/OGRE/OgreBuildSettings.h \
@@ -1608,10 +1608,10 @@ CMakeFiles/rviz_visual_tools_gui.dir/src/key_tool.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QWheelEvent \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/src/key_tool.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/src/key_tool.h \
  /opt/ros/noetic/include/rviz/tool.h \
  /opt/ros/noetic/include/rviz/default_plugin/tools/move_tool.h \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
  /opt/ros/noetic/include/sensor_msgs/Joy.h \
  /opt/ros/noetic/include/pluginlib/class_list_macros.hpp \
  /opt/ros/noetic/include/class_loader/class_loader.hpp \

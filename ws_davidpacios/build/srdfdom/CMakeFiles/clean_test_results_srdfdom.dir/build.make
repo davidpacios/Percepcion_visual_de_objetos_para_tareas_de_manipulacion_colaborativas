@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/srdfdom
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/srdfdom
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom
 
 # Utility rule file for clean_test_results_srdfdom.
 
@@ -67,7 +67,7 @@ include CMakeFiles/clean_test_results_srdfdom.dir/compiler_depend.make
 include CMakeFiles/clean_test_results_srdfdom.dir/progress.make
 
 CMakeFiles/clean_test_results_srdfdom:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/ws_davidpacios/build/srdfdom/test_results/srdfdom
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom/test_results/srdfdom
 
 clean_test_results_srdfdom: CMakeFiles/clean_test_results_srdfdom
 clean_test_results_srdfdom: CMakeFiles/clean_test_results_srdfdom.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/clean_test_results_srdfdom.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_srdfdom.dir/clean
 
 CMakeFiles/clean_test_results_srdfdom.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/srdfdom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/srdfdom /home/frankaros/ws_davidpacios/src/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom/CMakeFiles/clean_test_results_srdfdom.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom/CMakeFiles/clean_test_results_srdfdom.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/clean_test_results_srdfdom.dir/depend
 

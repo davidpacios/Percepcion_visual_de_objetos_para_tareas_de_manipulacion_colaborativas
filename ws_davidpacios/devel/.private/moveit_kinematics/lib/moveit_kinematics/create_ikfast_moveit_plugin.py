@@ -3,7 +3,7 @@
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/home/frankaros/ws_davidpacios/src/moveit/moveit_kinematics/ikfast_kinematics_plugin/scripts/create_ikfast_moveit_plugin.py'
+python_script = '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_kinematics/ikfast_kinematics_plugin/scripts/create_ikfast_moveit_plugin.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

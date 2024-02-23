@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/.1.1.13"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so.1.1.13"
   "CMakeFiles/moveit_pick_place_planner.dir/src/approach_and_translate_stage.cpp.o"
   "CMakeFiles/moveit_pick_place_planner.dir/src/approach_and_translate_stage.cpp.o.d"
   "CMakeFiles/moveit_pick_place_planner.dir/src/manipulation_pipeline.cpp.o"

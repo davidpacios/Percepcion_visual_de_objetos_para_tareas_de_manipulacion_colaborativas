@@ -1,1 +1,1 @@
-/home/frankaros/ws_davidpacios/devel/.private/catkin_tools_prebuild/local_setup.sh
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/catkin_tools_prebuild/local_setup.sh

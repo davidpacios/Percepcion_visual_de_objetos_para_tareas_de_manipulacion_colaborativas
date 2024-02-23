@@ -1,5 +1,5 @@
 CMakeFiles/rviz_visual_tools_gui.dir/src/rviz_visual_tools_gui.cpp.o: \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/src/rviz_visual_tools_gui.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/src/rviz_visual_tools_gui.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/cstdio \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -284,7 +284,7 @@ CMakeFiles/rviz_visual_tools_gui.dir/src/rviz_visual_tools_gui.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/src/rviz_visual_tools_gui.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/src/rviz_visual_tools_gui.h \
  /opt/ros/noetic/include/ros/ros.h /opt/ros/noetic/include/ros/time.h \
  /opt/ros/noetic/include/ros/platform.h /usr/include/c++/9/iostream \
  /usr/include/c++/9/cmath /usr/include/math.h \
@@ -1234,7 +1234,7 @@ CMakeFiles/rviz_visual_tools_gui.dir/src/rviz_visual_tools_gui.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
  /opt/ros/noetic/include/sensor_msgs/Joy.h \
  /opt/ros/noetic/include/ros/message_operations.h \
  /opt/ros/noetic/include/std_msgs/Header.h \

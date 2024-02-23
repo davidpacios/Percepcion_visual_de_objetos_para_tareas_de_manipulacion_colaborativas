@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_ros_visualization
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_ros_visualization
 
 # Utility rule file for _run_tests_moveit_ros_visualization_rostest.
 
@@ -78,6 +78,6 @@ CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/clean:
 .PHONY : CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/clean
 
 CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_ros_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization /home/frankaros/ws_davidpacios/build/moveit_ros_visualization /home/frankaros/ws_davidpacios/build/moveit_ros_visualization /home/frankaros/ws_davidpacios/build/moveit_ros_visualization/CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_ros_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_ros_visualization /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_ros_visualization /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_ros_visualization/CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/_run_tests_moveit_ros_visualization_rostest.dir/depend
 

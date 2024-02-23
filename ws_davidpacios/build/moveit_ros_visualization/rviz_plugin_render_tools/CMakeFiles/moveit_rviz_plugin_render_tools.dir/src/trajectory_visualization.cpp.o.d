@@ -1,5 +1,5 @@
 rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/trajectory_visualization.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/src/trajectory_visualization.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/src/trajectory_visualization.cpp \
  /usr/include/stdc-predef.h /usr/include/boost/algorithm/string.hpp \
  /usr/include/boost/algorithm/string/std_containers_traits.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
@@ -587,7 +587,7 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/boost/algorithm/string/formatter.hpp \
  /usr/include/boost/algorithm/string/detail/formatter.hpp \
  /usr/include/boost/algorithm/string/erase.hpp \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/trajectory_visualization.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/trajectory_visualization.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
  /usr/include/boost/config/requires_threads.hpp \
@@ -919,8 +919,8 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/boost/chrono/ceil.hpp \
  /usr/include/boost/thread/pthread/pthread_mutex_scoped_lock.hpp \
  /usr/include/boost/thread/pthread/pthread_helpers.hpp \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
  /opt/ros/noetic/include/rviz/display.h /opt/ros/noetic/include/ros/ros.h \
  /opt/ros/noetic/include/ros/time.h \
  /opt/ros/noetic/include/ros/platform.h /usr/include/c++/9/stdlib.h \
@@ -1286,11 +1286,11 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/robot_state_visualization.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/robot_state.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/robot_state_visualization.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/robot_state.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
  /opt/ros/noetic/include/urdf/model.h /usr/include/urdf_model/model.h \
  /usr/include/urdf_model/link.h /usr/include/urdf_model/joint.h \
  /usr/include/urdf_model/pose.h /usr/include/urdf_exception/exception.h \
@@ -1300,10 +1300,10 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/urdf_world/types.h /usr/include/tinyxml.h \
  /usr/include/tinyxml2.h \
  /opt/ros/noetic/include/urdf/visibility_control.hpp \
- /home/frankaros/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
  /opt/ros/noetic/include/ros/message_operations.h \
  /opt/ros/noetic/include/random_numbers/random_numbers.h \
  /usr/include/boost/random/mersenne_twister.hpp \
@@ -1492,25 +1492,25 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
  /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_vector_container.h \
  /usr/include/eigen3/Eigen/Core /usr/include/eigen3/Eigen/StdVector \
  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
  /opt/ros/noetic/include/geometry_msgs/Pose.h \
  /opt/ros/noetic/include/geometry_msgs/Point.h \
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/attached_body.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/transforms/include/moveit/transforms/transforms.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/attached_body.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/transforms/include/moveit/transforms/transforms.h \
  /opt/ros/noetic/include/geometry_msgs/TransformStamped.h \
  /opt/ros/noetic/include/std_msgs/Header.h \
  /opt/ros/noetic/include/geometry_msgs/Transform.h \
@@ -1524,7 +1524,7 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /opt/ros/noetic/include/visualization_msgs/Marker.h \
  /opt/ros/noetic/include/std_msgs/ColorRGBA.h \
  /opt/ros/noetic/include/geometry_msgs/Twist.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/octomap_render.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/octomap_render.h \
  /opt/ros/noetic/include/rviz/ogre_helpers/point_cloud.h \
  /usr/include/OGRE/OgreSimpleRenderable.h \
  /usr/include/OGRE/OgrePrerequisites.h /usr/include/OGRE/OgrePlatform.h \
@@ -1730,7 +1730,7 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /opt/ros/noetic/include/rviz/robot/robot.h \
  /opt/ros/noetic/include/rviz/robot/link_updater.h \
  /usr/include/OGRE/OgreQuaternion.h /usr/include/OGRE/OgreAny.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/trajectory_panel.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/trajectory_panel.h \
  /opt/ros/noetic/include/rviz/panel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
@@ -1741,24 +1741,24 @@ rviz_plugin_render_tools/CMakeFiles/moveit_rviz_plugin_render_tools.dir/src/traj
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_trajectory/include/moveit/robot_trajectory/robot_trajectory.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotTrajectory.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_trajectory/include/moveit/robot_trajectory/robot_trajectory.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotTrajectory.h \
  /opt/ros/noetic/include/trajectory_msgs/MultiDOFJointTrajectory.h \
  /opt/ros/noetic/include/trajectory_msgs/MultiDOFJointTrajectoryPoint.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotState.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotState.h \
  /opt/ros/noetic/include/sensor_msgs/MultiDOFJointState.h \
  /opt/ros/noetic/include/geometry_msgs/Wrench.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AttachedCollisionObject.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/CollisionObject.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AttachedCollisionObject.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/CollisionObject.h \
  /opt/ros/noetic/include/object_recognition_msgs/ObjectType.h \
  /opt/ros/noetic/include/shape_msgs/SolidPrimitive.h \
  /opt/ros/noetic/include/shape_msgs/Mesh.h \
  /opt/ros/noetic/include/shape_msgs/MeshTriangle.h \
  /opt/ros/noetic/include/shape_msgs/Plane.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/DisplayTrajectory.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/planning_link_updater.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/DisplayTrajectory.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/visualization/rviz_plugin_render_tools/include/moveit/rviz_plugin_render_tools/planning_link_updater.h \
  /opt/ros/noetic/include/rviz/robot/link_updater.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/trajectory_processing/include/moveit/trajectory_processing/trajectory_tools.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/trajectory_processing/include/moveit/trajectory_processing/trajectory_tools.h \
  /opt/ros/noetic/include/rviz/display_context.h \
  /opt/ros/noetic/include/rviz/frame_manager.h \
  /opt/ros/noetic/include/tf2_ros/buffer.h \

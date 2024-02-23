@@ -1,8 +1,8 @@
-prefix=/home/frankaros/ws_davidpacios/devel/.private/moveit_servo
+prefix=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_servo
 
 Name: moveit_servo
 Description: Description of moveit_servo
 Version: 1.1.13
-Cflags: -I/home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo/include -I/usr/include/eigen3
+Cflags: -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo/include -I/usr/include/eigen3
 Libs: -L${prefix}/lib -lpose_tracking -lmoveit_servo_cpp_api
 Requires: control_msgs control_toolbox geometry_msgs moveit_msgs moveit_ros_planning_interface rosparam_shortcuts sensor_msgs std_msgs std_srvs tf2_eigen trajectory_msgs

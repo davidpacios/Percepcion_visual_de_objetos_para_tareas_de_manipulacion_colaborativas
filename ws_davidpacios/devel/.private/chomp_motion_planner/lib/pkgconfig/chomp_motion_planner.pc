@@ -1,8 +1,8 @@
-prefix=/home/frankaros/ws_davidpacios/devel/.private/chomp_motion_planner
+prefix=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/chomp_motion_planner
 
 Name: chomp_motion_planner
 Description: Description of chomp_motion_planner
 Version: 1.1.13
-Cflags: -I/home/frankaros/ws_davidpacios/src/moveit/moveit_planners/chomp/chomp_motion_planner/include
+Cflags: -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_planners/chomp/chomp_motion_planner/include
 Libs: -L${prefix}/lib -lchomp_motion_planner
 Requires: 

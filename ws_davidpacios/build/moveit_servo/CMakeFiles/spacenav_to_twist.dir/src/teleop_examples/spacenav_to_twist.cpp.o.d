@@ -1,5 +1,5 @@
 CMakeFiles/spacenav_to_twist.dir/src/teleop_examples/spacenav_to_twist.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_ros/moveit_servo/src/teleop_examples/spacenav_to_twist.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_ros/moveit_servo/src/teleop_examples/spacenav_to_twist.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/noetic/include/geometry_msgs/TwistStamped.h \
  /usr/include/c++/9/string \

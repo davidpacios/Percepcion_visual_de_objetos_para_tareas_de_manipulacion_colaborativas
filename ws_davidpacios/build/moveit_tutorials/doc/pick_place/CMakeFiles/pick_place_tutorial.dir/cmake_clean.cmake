@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/pick_place_tutorial"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/pick_place_tutorial.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/pick_place_tutorial"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/moveit_tutorials/pick_place_tutorial.pdb"
   "CMakeFiles/pick_place_tutorial.dir/src/pick_place_tutorial.cpp.o"
   "CMakeFiles/pick_place_tutorial.dir/src/pick_place_tutorial.cpp.o.d"
 )

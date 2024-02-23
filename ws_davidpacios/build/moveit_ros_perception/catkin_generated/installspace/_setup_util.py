@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/frankaros/ws_davidpacios/devel;/home/frankaros/ros_own_gripper/devel;/home/frankaros/ws_moveit/devel;/opt/ros/noetic;/home/frankaros/other_software/root/build;/home/frankaros/other_software/root/build;/home/frankaros/other_software/root/install'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

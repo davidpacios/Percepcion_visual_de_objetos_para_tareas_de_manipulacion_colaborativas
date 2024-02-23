@@ -67,14 +67,14 @@ set(rviz_visual_tools_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(rviz_visual_tools_SOURCE_PREFIX /home/frankaros/ws_davidpacios/src/rviz_visual_tools)
-  set(rviz_visual_tools_DEVEL_PREFIX /home/frankaros/ws_davidpacios/devel/.private/rviz_visual_tools)
+  set(rviz_visual_tools_SOURCE_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools)
+  set(rviz_visual_tools_DEVEL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/rviz_visual_tools)
   set(rviz_visual_tools_INSTALL_PREFIX "")
   set(rviz_visual_tools_PREFIX ${rviz_visual_tools_DEVEL_PREFIX})
 else()
   set(rviz_visual_tools_SOURCE_PREFIX "")
   set(rviz_visual_tools_DEVEL_PREFIX "")
-  set(rviz_visual_tools_INSTALL_PREFIX /home/frankaros/ws_davidpacios/install)
+  set(rviz_visual_tools_INSTALL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install)
   set(rviz_visual_tools_PREFIX ${rviz_visual_tools_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(rviz_visual_tools_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/frankaros/ws_davidpacios/src/rviz_visual_tools/include;/usr/include/OGRE " STREQUAL " ")
+if(NOT "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include;/usr/include/OGRE " STREQUAL " ")
   set(rviz_visual_tools_INCLUDE_DIRS "")
-  set(_include_dirs "/home/frankaros/ws_davidpacios/src/rviz_visual_tools/include;/usr/include/OGRE")
+  set(_include_dirs "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include;/usr/include/OGRE")
   if(NOT "https://github.com/davetcoleman/rviz_visual_tools/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/davetcoleman/rviz_visual_tools/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/davetcoleman/rviz_visual_tools " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/frankaros/ws_davidpacios/src/rviz_visual_tools/include;/usr/includ
         message(FATAL_ERROR "Project 'rviz_visual_tools' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'rviz_visual_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/ws_davidpacios/src/rviz_visual_tools/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'rviz_visual_tools' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/${idir}'.  ${_report}")
     endif()
     _list_append_unique(rviz_visual_tools_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frankaros/ws_davidpacios/devel/.private/rviz_visual_tools/lib;/home/frankaros/ws_davidpacios/devel/lib;/home/frankaros/ros_own_gripper/devel/lib;/home/frankaros/ws_moveit/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/rviz_visual_tools/lib;/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/.1.1.13"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.so.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_robot_interaction/lib/libmoveit_robot_interaction.so.1.1.13"
   "CMakeFiles/moveit_robot_interaction.dir/src/interaction_handler.cpp.o"
   "CMakeFiles/moveit_robot_interaction.dir/src/interaction_handler.cpp.o.d"
   "CMakeFiles/moveit_robot_interaction.dir/src/interactive_marker_helpers.cpp.o"

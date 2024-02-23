@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_ruckig_traj_smoothing"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_ruckig_traj_smoothing.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_ruckig_traj_smoothing"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_ruckig_traj_smoothing.pdb"
   "CMakeFiles/test_ruckig_traj_smoothing.dir/test/test_ruckig_traj_smoothing.cpp.o"
   "CMakeFiles/test_ruckig_traj_smoothing.dir/test/test_ruckig_traj_smoothing.cpp.o.d"
 )

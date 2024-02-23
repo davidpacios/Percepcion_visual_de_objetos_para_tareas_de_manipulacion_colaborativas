@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_bounding_cylinder"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_bounding_cylinder.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_bounding_cylinder"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_bounding_cylinder.pdb"
   "CMakeFiles/test_bounding_cylinder.dir/test_bounding_cylinder.cpp.o"
   "CMakeFiles/test_bounding_cylinder.dir/test_bounding_cylinder.cpp.o.d"
 )

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/.0.7.5"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.so.0.7.5"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/.0.7.5"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/libgeometric_shapes.so.0.7.5"
   "CMakeFiles/geometric_shapes.dir/src/aabb.cpp.o"
   "CMakeFiles/geometric_shapes.dir/src/aabb.cpp.o.d"
   "CMakeFiles/geometric_shapes.dir/src/bodies.cpp.o"

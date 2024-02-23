@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime;std_msgs;actionlib_msgs;sensor_msgs;geometry_msgs;trajectory_msgs;shape_msgs;object_recognition_msgs;octomap_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "moveit_msgs"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "0.11.4"

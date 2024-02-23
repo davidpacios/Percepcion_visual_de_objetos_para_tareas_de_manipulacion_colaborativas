@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/geometric_shapes
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/geometric_shapes
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes
 
 # Utility rule file for _run_tests_geometric_shapes.
 
@@ -74,10 +74,10 @@ test/CMakeFiles/_run_tests_geometric_shapes.dir/build: _run_tests_geometric_shap
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes.dir/build
 
 test/CMakeFiles/_run_tests_geometric_shapes.dir/clean:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_geometric_shapes.dir/cmake_clean.cmake
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_geometric_shapes.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes.dir/clean
 
 test/CMakeFiles/_run_tests_geometric_shapes.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/geometric_shapes /home/frankaros/ws_davidpacios/src/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes /home/frankaros/ws_davidpacios/build/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/_run_tests_geometric_shapes.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/_run_tests_geometric_shapes.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes.dir/depend
 

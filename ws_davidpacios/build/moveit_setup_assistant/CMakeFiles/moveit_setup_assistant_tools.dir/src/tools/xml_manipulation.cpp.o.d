@@ -1,7 +1,7 @@
 CMakeFiles/moveit_setup_assistant_tools.dir/src/tools/xml_manipulation.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_manipulation.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_manipulation.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/xml_manipulation.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/xml_manipulation.h \
  /usr/include/tinyxml.h /usr/include/ctype.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

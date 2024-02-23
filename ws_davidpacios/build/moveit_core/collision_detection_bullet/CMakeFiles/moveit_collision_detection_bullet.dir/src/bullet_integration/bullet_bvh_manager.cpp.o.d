@@ -1,8 +1,8 @@
 collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/bullet_integration/bullet_bvh_manager.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/src/bullet_integration/bullet_bvh_manager.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/src/bullet_integration/bullet_bvh_manager.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/bullet_bvh_manager.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/bullet_utils.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/bullet_bvh_manager.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/bullet_utils.h \
  /usr/include/bullet/btBulletCollisionCommon.h \
  /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionWorld.h \
  /usr/include/bullet/LinearMath/btVector3.h \
@@ -252,8 +252,8 @@ collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/
  /usr/include/bullet/LinearMath/btQuickprof.h \
  /usr/include/bullet/LinearMath/btIDebugDraw.h \
  /usr/include/bullet/LinearMath/btSerializer.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/mesh_operations.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/mesh_operations.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h \
@@ -868,8 +868,8 @@ collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/
  /usr/include/log4cxx/helpers/objectptr.h \
  /usr/include/log4cxx/helpers/classregistration.h \
  /opt/ros/noetic/include/rosconsole/macros_generated.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/basic_types.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_common.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/basic_types.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_common.h \
  /usr/include/boost/array.hpp /usr/include/boost/swap.hpp \
  /usr/include/boost/core/swap.hpp /usr/include/boost/detail/iterator.hpp \
  /usr/include/c++/9/iterator /usr/include/c++/9/bits/stream_iterator.h \
@@ -928,11 +928,11 @@ collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/
  /usr/include/boost/function/function_template.hpp \
  /usr/include/boost/core/no_exceptions_support.hpp /usr/include/c++/9/set \
  /usr/include/c++/9/bits/stl_set.h /usr/include/c++/9/bits/stl_multiset.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
  /opt/ros/noetic/include/urdf/model.h /usr/include/urdf_model/model.h \
  /usr/include/urdf_model/link.h /usr/include/urdf_model/joint.h \
  /usr/include/urdf_model/pose.h /usr/include/urdf_exception/exception.h \
@@ -1407,10 +1407,10 @@ collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/
  /opt/ros/noetic/include/ros/param.h /opt/ros/noetic/include/ros/topic.h \
  /opt/ros/noetic/include/ros/node_handle.h \
  /opt/ros/noetic/include/urdf/visibility_control.hpp \
- /home/frankaros/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
  /opt/ros/noetic/include/ros/message_operations.h \
  /opt/ros/noetic/include/random_numbers/random_numbers.h \
  /usr/include/boost/random/mersenne_twister.hpp \
@@ -1442,25 +1442,25 @@ collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/src/
  /usr/include/boost/random/detail/int_float_pair.hpp \
  /usr/include/boost/random/uniform_01.hpp \
  /usr/include/boost/random/exponential_distribution.hpp \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
  /opt/ros/noetic/include/geometry_msgs/Pose.h \
  /opt/ros/noetic/include/geometry_msgs/Point.h \
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/contact_checker_common.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection_bullet/include/moveit/collision_detection_bullet/bullet_integration/contact_checker_common.h \
  /usr/include/bullet/LinearMath/btConvexHullComputer.h \
  /usr/include/c++/9/fstream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_matrix.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionMatrix.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionEntry.h
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_matrix.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionMatrix.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionEntry.h

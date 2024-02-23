@@ -67,14 +67,14 @@ set(panda_demo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(panda_demo_SOURCE_PREFIX /home/frankaros/ws_davidpacios/src/panda_demo)
-  set(panda_demo_DEVEL_PREFIX /home/frankaros/ws_davidpacios/devel/.private/panda_demo)
+  set(panda_demo_SOURCE_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/panda_demo)
+  set(panda_demo_DEVEL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo)
   set(panda_demo_INSTALL_PREFIX "")
   set(panda_demo_PREFIX ${panda_demo_DEVEL_PREFIX})
 else()
   set(panda_demo_SOURCE_PREFIX "")
   set(panda_demo_DEVEL_PREFIX "")
-  set(panda_demo_INSTALL_PREFIX /home/frankaros/ws_davidpacios/install)
+  set(panda_demo_INSTALL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install)
   set(panda_demo_PREFIX ${panda_demo_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(panda_demo_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/include;/usr/include/eigen3 " STREQUAL " ")
   set(panda_demo_INCLUDE_DIRS "")
-  set(_include_dirs "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/include;/usr/include/eigen3")
+  set(_include_dirs "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/include;/usr/include/eigen3")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/include;/usr/in
         message(FATAL_ERROR "Project 'panda_demo' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'panda_demo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/ws_davidpacios/src/panda_demo/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'panda_demo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/panda_demo/${idir}'.  ${_report}")
     endif()
     _list_append_unique(panda_demo_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frankaros/ws_davidpacios/devel/.private/panda_demo/lib;/home/frankaros/ws_davidpacios/devel/lib;/home/frankaros/ros_own_gripper/devel/lib;/home/frankaros/ws_moveit/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib;/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

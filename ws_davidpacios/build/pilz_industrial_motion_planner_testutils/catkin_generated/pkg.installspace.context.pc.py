@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include".split(';') if
 PROJECT_CATKIN_DEPENDS = "moveit_core;moveit_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lpilz_industrial_motion_planner_testutils".split(';') if "-lpilz_industrial_motion_planner_testutils" != "" else []
 PROJECT_NAME = "pilz_industrial_motion_planner_testutils"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "1.1.13"

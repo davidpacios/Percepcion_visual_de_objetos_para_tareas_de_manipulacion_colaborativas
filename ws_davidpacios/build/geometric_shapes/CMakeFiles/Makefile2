@@ -54,10 +54,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/geometric_shapes
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/geometric_shapes
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -208,14 +208,14 @@ test/clean: test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operatio
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -243,14 +243,14 @@ CMakeFiles/tests.dir/all: test/CMakeFiles/test_ray_intersection.dir/all
 CMakeFiles/tests.dir/all: test/CMakeFiles/test_body_operations.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -269,14 +269,14 @@ CMakeFiles/tests.dir/clean:
 CMakeFiles/run_tests.dir/all: test/CMakeFiles/_run_tests_geometric_shapes.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -295,14 +295,14 @@ CMakeFiles/run_tests.dir/clean:
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -321,14 +321,14 @@ CMakeFiles/clean_test_results.dir/clean:
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -347,14 +347,14 @@ CMakeFiles/doxygen.dir/clean:
 CMakeFiles/shape_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make CMakeFiles/shape_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -373,14 +373,14 @@ CMakeFiles/shape_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/shape_msgs_generate_messages_eus.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make CMakeFiles/shape_msgs_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make CMakeFiles/shape_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/shape_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shape_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shape_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -399,14 +399,14 @@ CMakeFiles/shape_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/shape_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make CMakeFiles/shape_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -425,14 +425,14 @@ CMakeFiles/shape_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/shape_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -451,14 +451,14 @@ CMakeFiles/shape_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/shape_msgs_generate_messages_py.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_py.dir/build.make CMakeFiles/shape_msgs_generate_messages_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_msgs_generate_messages_py.dir/build.make CMakeFiles/shape_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_py"
 .PHONY : CMakeFiles/shape_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shape_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shape_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/shape_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -477,14 +477,14 @@ CMakeFiles/shape_msgs_generate_messages_py.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -503,14 +503,14 @@ CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -529,14 +529,14 @@ CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -555,14 +555,14 @@ CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -581,14 +581,14 @@ CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -607,14 +607,14 @@ CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
 CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -633,14 +633,14 @@ CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/std_msgs_generate_messages_eus.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -659,14 +659,14 @@ CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -685,14 +685,14 @@ CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -711,14 +711,14 @@ CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -737,14 +737,14 @@ CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -763,14 +763,14 @@ CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean:
 CMakeFiles/visualization_msgs_generate_messages_eus.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_eus"
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -789,14 +789,14 @@ CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
 CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -815,14 +815,14 @@ CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean:
 CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_nodejs"
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -841,14 +841,14 @@ CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
 CMakeFiles/visualization_msgs_generate_messages_py.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CMakeFiles/visualization_msgs_generate_messages_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_py"
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/visualization_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/visualization_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -867,14 +867,14 @@ CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
 CMakeFiles/geometric_shapes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometric_shapes.dir/build.make CMakeFiles/geometric_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometric_shapes.dir/build.make CMakeFiles/geometric_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target geometric_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target geometric_shapes"
 .PHONY : CMakeFiles/geometric_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/geometric_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/geometric_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : CMakeFiles/geometric_shapes.dir/rule
 
 # Convenience name for target.
@@ -893,14 +893,14 @@ CMakeFiles/geometric_shapes.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=11,12 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=11,12 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -920,14 +920,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=13,14 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=13,14 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -946,14 +946,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=15,16 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=15,16 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -972,14 +972,14 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=17,18 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=17,18 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -998,14 +998,14 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 test/CMakeFiles/test_basics.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_basics.dir/build.make test/CMakeFiles/test_basics.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_basics.dir/build.make test/CMakeFiles/test_basics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=19,20 "Built target test_basics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=19,20 "Built target test_basics"
 .PHONY : test/CMakeFiles/test_basics.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_basics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_basics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_basics.dir/rule
 
 # Convenience name for target.
@@ -1024,14 +1024,14 @@ test/CMakeFiles/test_basics.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes.dir/all: test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes.dir/rule
 
 # Convenience name for target.
@@ -1050,14 +1050,14 @@ test/CMakeFiles/run_tests_geometric_shapes.dir/clean:
 test/CMakeFiles/_run_tests_geometric_shapes.dir/all: test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes.dir/rule
 
 # Convenience name for target.
@@ -1085,14 +1085,14 @@ test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/all: test/CMakeFiles/run_te
 test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/all: test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest.dir/rule
 
 # Convenience name for target.
@@ -1120,14 +1120,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/all: test/CMakeFiles/_run_
 test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/all: test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/rule
 
 # Convenience name for target.
@@ -1146,14 +1146,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/all: test/CMakeFiles/test_basics.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_basics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_basics"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_basics.dir/rule
 
 # Convenience name for target.
@@ -1174,14 +1174,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/all: test/CMak
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/all: test/CMakeFiles/clean_test_results_geometric_shapes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_basics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_basics"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/rule
 
 # Convenience name for target.
@@ -1200,14 +1200,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_basics.dir/clean:
 test/CMakeFiles/clean_test_results_geometric_shapes.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/clean_test_results_geometric_shapes.dir/build.make test/CMakeFiles/clean_test_results_geometric_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/clean_test_results_geometric_shapes.dir/build.make test/CMakeFiles/clean_test_results_geometric_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target clean_test_results_geometric_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target clean_test_results_geometric_shapes"
 .PHONY : test/CMakeFiles/clean_test_results_geometric_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/clean_test_results_geometric_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/clean_test_results_geometric_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/clean_test_results_geometric_shapes.dir/rule
 
 # Convenience name for target.
@@ -1227,14 +1227,14 @@ test/CMakeFiles/test_point_inclusion.dir/all: CMakeFiles/geometric_shapes.dir/al
 test/CMakeFiles/test_point_inclusion.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_point_inclusion.dir/build.make test/CMakeFiles/test_point_inclusion.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_point_inclusion.dir/build.make test/CMakeFiles/test_point_inclusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=33,34 "Built target test_point_inclusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=33,34 "Built target test_point_inclusion"
 .PHONY : test/CMakeFiles/test_point_inclusion.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_point_inclusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_point_inclusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_point_inclusion.dir/rule
 
 # Convenience name for target.
@@ -1253,14 +1253,14 @@ test/CMakeFiles/test_point_inclusion.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all: test/CMakeFiles/test_point_inclusion.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_point_inclusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_point_inclusion"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_point_inclusion.dir/rule
 
 # Convenience name for target.
@@ -1281,14 +1281,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all: 
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all: test/CMakeFiles/test_point_inclusion.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_point_inclusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_point_inclusion"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_point_inclusion.dir/rule
 
 # Convenience name for target.
@@ -1308,14 +1308,14 @@ test/CMakeFiles/test_bounding_sphere.dir/all: CMakeFiles/geometric_shapes.dir/al
 test/CMakeFiles/test_bounding_sphere.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_sphere.dir/build.make test/CMakeFiles/test_bounding_sphere.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_sphere.dir/build.make test/CMakeFiles/test_bounding_sphere.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=27,28 "Built target test_bounding_sphere"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=27,28 "Built target test_bounding_sphere"
 .PHONY : test/CMakeFiles/test_bounding_sphere.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_bounding_sphere.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bounding_sphere.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_bounding_sphere.dir/rule
 
 # Convenience name for target.
@@ -1334,14 +1334,14 @@ test/CMakeFiles/test_bounding_sphere.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all: test/CMakeFiles/test_bounding_sphere.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_sphere"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_sphere"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/rule
 
 # Convenience name for target.
@@ -1362,14 +1362,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all: 
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all: test/CMakeFiles/test_bounding_sphere.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_sphere"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_sphere"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_sphere.dir/rule
 
 # Convenience name for target.
@@ -1389,14 +1389,14 @@ test/CMakeFiles/test_bounding_box.dir/all: CMakeFiles/geometric_shapes.dir/all
 test/CMakeFiles/test_bounding_box.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_box.dir/build.make test/CMakeFiles/test_bounding_box.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_box.dir/build.make test/CMakeFiles/test_bounding_box.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=23,24 "Built target test_bounding_box"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=23,24 "Built target test_bounding_box"
 .PHONY : test/CMakeFiles/test_bounding_box.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_bounding_box.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bounding_box.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_bounding_box.dir/rule
 
 # Convenience name for target.
@@ -1415,14 +1415,14 @@ test/CMakeFiles/test_bounding_box.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/all: test/CMakeFiles/test_bounding_box.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_box"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_box"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_box.dir/rule
 
 # Convenience name for target.
@@ -1443,14 +1443,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/all: tes
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/all: test/CMakeFiles/test_bounding_box.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_box"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_box"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_box.dir/rule
 
 # Convenience name for target.
@@ -1470,14 +1470,14 @@ test/CMakeFiles/test_bounding_cylinder.dir/all: CMakeFiles/geometric_shapes.dir/
 test/CMakeFiles/test_bounding_cylinder.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_cylinder.dir/build.make test/CMakeFiles/test_bounding_cylinder.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_bounding_cylinder.dir/build.make test/CMakeFiles/test_bounding_cylinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=25,26 "Built target test_bounding_cylinder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=25,26 "Built target test_bounding_cylinder"
 .PHONY : test/CMakeFiles/test_bounding_cylinder.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_bounding_cylinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bounding_cylinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_bounding_cylinder.dir/rule
 
 # Convenience name for target.
@@ -1496,14 +1496,14 @@ test/CMakeFiles/test_bounding_cylinder.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all: test/CMakeFiles/test_bounding_cylinder.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_cylinder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_bounding_cylinder"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/rule
 
 # Convenience name for target.
@@ -1524,14 +1524,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all: test/CMakeFiles/test_bounding_cylinder.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_cylinder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_bounding_cylinder"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_bounding_cylinder.dir/rule
 
 # Convenience name for target.
@@ -1551,14 +1551,14 @@ test/CMakeFiles/test_create_mesh.dir/all: CMakeFiles/geometric_shapes.dir/all
 test/CMakeFiles/test_create_mesh.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_create_mesh.dir/build.make test/CMakeFiles/test_create_mesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_create_mesh.dir/build.make test/CMakeFiles/test_create_mesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=29,30 "Built target test_create_mesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=29,30 "Built target test_create_mesh"
 .PHONY : test/CMakeFiles/test_create_mesh.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_create_mesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_create_mesh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_create_mesh.dir/rule
 
 # Convenience name for target.
@@ -1577,14 +1577,14 @@ test/CMakeFiles/test_create_mesh.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/all: test/CMakeFiles/test_create_mesh.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_create_mesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_create_mesh"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_create_mesh.dir/rule
 
 # Convenience name for target.
@@ -1605,14 +1605,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/all: test
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/all: test/CMakeFiles/test_create_mesh.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_create_mesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_create_mesh"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_create_mesh.dir/rule
 
 # Convenience name for target.
@@ -1632,14 +1632,14 @@ test/CMakeFiles/test_loaded_meshes.dir/all: CMakeFiles/geometric_shapes.dir/all
 test/CMakeFiles/test_loaded_meshes.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_loaded_meshes.dir/build.make test/CMakeFiles/test_loaded_meshes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_loaded_meshes.dir/build.make test/CMakeFiles/test_loaded_meshes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=31,32 "Built target test_loaded_meshes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=31,32 "Built target test_loaded_meshes"
 .PHONY : test/CMakeFiles/test_loaded_meshes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_loaded_meshes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_loaded_meshes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_loaded_meshes.dir/rule
 
 # Convenience name for target.
@@ -1658,14 +1658,14 @@ test/CMakeFiles/test_loaded_meshes.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all: test/CMakeFiles/test_loaded_meshes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_loaded_meshes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_loaded_meshes"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/rule
 
 # Convenience name for target.
@@ -1686,14 +1686,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all: te
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all: test/CMakeFiles/test_loaded_meshes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_loaded_meshes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_loaded_meshes"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_loaded_meshes.dir/rule
 
 # Convenience name for target.
@@ -1713,14 +1713,14 @@ test/CMakeFiles/test_shapes.dir/all: CMakeFiles/geometric_shapes.dir/all
 test/CMakeFiles/test_shapes.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_shapes.dir/build.make test/CMakeFiles/test_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_shapes.dir/build.make test/CMakeFiles/test_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=37,38 "Built target test_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=37,38 "Built target test_shapes"
 .PHONY : test/CMakeFiles/test_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_shapes.dir/rule
 
 # Convenience name for target.
@@ -1739,14 +1739,14 @@ test/CMakeFiles/test_shapes.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/all: test/CMakeFiles/test_shapes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_shapes"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_shapes.dir/rule
 
 # Convenience name for target.
@@ -1767,14 +1767,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/all: test/CMak
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/all: test/CMakeFiles/test_shapes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_shapes"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_shapes.dir/rule
 
 # Convenience name for target.
@@ -1794,14 +1794,14 @@ test/CMakeFiles/test_ray_intersection.dir/all: CMakeFiles/geometric_shapes.dir/a
 test/CMakeFiles/test_ray_intersection.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_ray_intersection.dir/build.make test/CMakeFiles/test_ray_intersection.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_ray_intersection.dir/build.make test/CMakeFiles/test_ray_intersection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=35,36 "Built target test_ray_intersection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=35,36 "Built target test_ray_intersection"
 .PHONY : test/CMakeFiles/test_ray_intersection.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_ray_intersection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_ray_intersection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_ray_intersection.dir/rule
 
 # Convenience name for target.
@@ -1820,14 +1820,14 @@ test/CMakeFiles/test_ray_intersection.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all: test/CMakeFiles/test_ray_intersection.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_ray_intersection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_ray_intersection"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_ray_intersection.dir/rule
 
 # Convenience name for target.
@@ -1848,14 +1848,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all:
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all: test/CMakeFiles/test_ray_intersection.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_ray_intersection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_ray_intersection"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_ray_intersection.dir/rule
 
 # Convenience name for target.
@@ -1875,14 +1875,14 @@ test/CMakeFiles/test_body_operations.dir/all: CMakeFiles/geometric_shapes.dir/al
 test/CMakeFiles/test_body_operations.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_body_operations.dir/build.make test/CMakeFiles/test_body_operations.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_body_operations.dir/build.make test/CMakeFiles/test_body_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=21,22 "Built target test_body_operations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=21,22 "Built target test_body_operations"
 .PHONY : test/CMakeFiles/test_body_operations.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_body_operations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_body_operations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_body_operations.dir/rule
 
 # Convenience name for target.
@@ -1901,14 +1901,14 @@ test/CMakeFiles/test_body_operations.dir/clean:
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/all: test/CMakeFiles/test_body_operations.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/build.make test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_body_operations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target run_tests_geometric_shapes_gtest_test_body_operations"
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/run_tests_geometric_shapes_gtest_test_body_operations.dir/rule
 
 # Convenience name for target.
@@ -1929,14 +1929,14 @@ test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/all: 
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/all: test/CMakeFiles/test_body_operations.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/build.make test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_body_operations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num= "Built target _run_tests_geometric_shapes_gtest_test_body_operations"
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles 0
 .PHONY : test/CMakeFiles/_run_tests_geometric_shapes_gtest_test_body_operations.dir/rule
 
 # Convenience name for target.

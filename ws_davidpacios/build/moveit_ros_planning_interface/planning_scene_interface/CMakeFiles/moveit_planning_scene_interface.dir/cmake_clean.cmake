@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/.1.1.13"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.so.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/.1.1.13"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/libmoveit_planning_scene_interface.so.1.1.13"
   "CMakeFiles/moveit_planning_scene_interface.dir/src/planning_scene_interface.cpp.o"
   "CMakeFiles/moveit_planning_scene_interface.dir/src/planning_scene_interface.cpp.o.d"
 )

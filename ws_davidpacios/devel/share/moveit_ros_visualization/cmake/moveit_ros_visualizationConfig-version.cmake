@@ -1,1 +1,1 @@
-/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_visualization/share/moveit_ros_visualization/cmake/moveit_ros_visualizationConfig-version.cmake
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_visualization/share/moveit_ros_visualization/cmake/moveit_ros_visualizationConfig-version.cmake

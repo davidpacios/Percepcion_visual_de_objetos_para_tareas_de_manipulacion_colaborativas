@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_robot_trajectory"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_robot_trajectory.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_robot_trajectory"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_robot_trajectory.pdb"
   "CMakeFiles/test_robot_trajectory.dir/test/test_robot_trajectory.cpp.o"
   "CMakeFiles/test_robot_trajectory.dir/test/test_robot_trajectory.cpp.o.d"
 )

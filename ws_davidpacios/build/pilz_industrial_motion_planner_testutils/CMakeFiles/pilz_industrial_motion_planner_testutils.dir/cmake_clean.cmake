@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner_testutils/lib/libpilz_industrial_motion_planner_testutils.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner_testutils/lib/libpilz_industrial_motion_planner_testutils.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner_testutils/lib/libpilz_industrial_motion_planner_testutils.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner_testutils/lib/libpilz_industrial_motion_planner_testutils.so"
   "CMakeFiles/pilz_industrial_motion_planner_testutils.dir/src/cartesianconfiguration.cpp.o"
   "CMakeFiles/pilz_industrial_motion_planner_testutils.dir/src/cartesianconfiguration.cpp.o.d"
   "CMakeFiles/pilz_industrial_motion_planner_testutils.dir/src/jointconfiguration.cpp.o"

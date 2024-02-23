@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_visual_tools/lib/.3.6.1"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.so.3.6.1"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_visual_tools/lib/.3.6.1"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_visual_tools/lib/libmoveit_visual_tools.so.3.6.1"
   "CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o"
   "CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o.d"
   "CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o"

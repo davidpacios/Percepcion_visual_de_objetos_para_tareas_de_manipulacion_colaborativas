@@ -1,0 +1,1 @@
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/astra_camera/share/common-lisp/ros/astra_camera/srv/_package_SetString.lisp

@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/srdfdom
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/srdfdom
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_cpp.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/test_cpp.dir/progress.make
 include CMakeFiles/test_cpp.dir/flags.make
 
 CMakeFiles/test_cpp.dir/test/test_parser.cpp.o: CMakeFiles/test_cpp.dir/flags.make
-CMakeFiles/test_cpp.dir/test/test_parser.cpp.o: /home/frankaros/ws_davidpacios/src/srdfdom/test/test_parser.cpp
+CMakeFiles/test_cpp.dir/test/test_parser.cpp.o: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/test/test_parser.cpp
 CMakeFiles/test_cpp.dir/test/test_parser.cpp.o: CMakeFiles/test_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/frankaros/ws_davidpacios/build/srdfdom/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_cpp.dir/test/test_parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_cpp.dir/test/test_parser.cpp.o -MF CMakeFiles/test_cpp.dir/test/test_parser.cpp.o.d -o CMakeFiles/test_cpp.dir/test/test_parser.cpp.o -c /home/frankaros/ws_davidpacios/src/srdfdom/test/test_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_cpp.dir/test/test_parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_cpp.dir/test/test_parser.cpp.o -MF CMakeFiles/test_cpp.dir/test/test_parser.cpp.o.d -o CMakeFiles/test_cpp.dir/test/test_parser.cpp.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/test/test_parser.cpp
 
 CMakeFiles/test_cpp.dir/test/test_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_cpp.dir/test/test_parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankaros/ws_davidpacios/src/srdfdom/test/test_parser.cpp > CMakeFiles/test_cpp.dir/test/test_parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/test/test_parser.cpp > CMakeFiles/test_cpp.dir/test/test_parser.cpp.i
 
 CMakeFiles/test_cpp.dir/test/test_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_cpp.dir/test/test_parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankaros/ws_davidpacios/src/srdfdom/test/test_parser.cpp -o CMakeFiles/test_cpp.dir/test/test_parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/test/test_parser.cpp -o CMakeFiles/test_cpp.dir/test/test_parser.cpp.s
 
 # Object files for target test_cpp
 test_cpp_OBJECTS = \
@@ -90,81 +90,81 @@ test_cpp_OBJECTS = \
 # External object files for target test_cpp
 test_cpp_EXTERNAL_OBJECTS =
 
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/test/test_parser.cpp.o
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/build.make
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: gtest/lib/libgtest.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/liburdf.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libclass_loader.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroslib.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librospack.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_bridge.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librostime.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libcpp_common.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/libsrdfdom.so.0.6.4
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/liburdf.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libclass_loader.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroslib.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librospack.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_bridge.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librostime.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libcpp_common.so
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/frankaros/ws_davidpacios/build/srdfdom/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp"
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/test/test_parser.cpp.o
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/build.make
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: gtest/lib/libgtest.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/liburdf.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libclass_loader.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroslib.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librospack.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_bridge.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librostime.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libcpp_common.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/libsrdfdom.so.0.6.4
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/liburdf.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libclass_loader.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroslib.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librospack.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_bridge.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/librostime.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /opt/ros/noetic/lib/libcpp_common.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp: CMakeFiles/test_cpp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test_cpp.dir/build: /home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp
+CMakeFiles/test_cpp.dir/build: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp
 .PHONY : CMakeFiles/test_cpp.dir/build
 
 CMakeFiles/test_cpp.dir/clean:
@@ -172,6 +172,6 @@ CMakeFiles/test_cpp.dir/clean:
 .PHONY : CMakeFiles/test_cpp.dir/clean
 
 CMakeFiles/test_cpp.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/srdfdom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/srdfdom /home/frankaros/ws_davidpacios/src/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom /home/frankaros/ws_davidpacios/build/srdfdom/CMakeFiles/test_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/srdfdom/CMakeFiles/test_cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_cpp.dir/depend
 

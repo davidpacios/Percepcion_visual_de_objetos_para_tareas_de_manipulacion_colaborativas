@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/libinteractivity_utils.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_tutorials/lib/libinteractivity_utils.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/libinteractivity_utils.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_tutorials/lib/libinteractivity_utils.so"
   "CMakeFiles/interactivity_utils.dir/src/imarker.cpp.o"
   "CMakeFiles/interactivity_utils.dir/src/imarker.cpp.o.d"
   "CMakeFiles/interactivity_utils.dir/src/interactive_robot.cpp.o"

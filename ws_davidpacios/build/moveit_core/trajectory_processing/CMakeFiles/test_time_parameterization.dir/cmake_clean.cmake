@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_time_parameterization"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_time_parameterization.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_time_parameterization"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_time_parameterization.pdb"
   "CMakeFiles/test_time_parameterization.dir/test/test_time_parameterization.cpp.o"
   "CMakeFiles/test_time_parameterization.dir/test/test_time_parameterization.cpp.o.d"
 )

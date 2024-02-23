@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libcommand_list_manager.pdb"
-  "/home/frankaros/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libcommand_list_manager.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libcommand_list_manager.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libcommand_list_manager.so"
   "CMakeFiles/command_list_manager.dir/src/command_list_manager.cpp.o"
   "CMakeFiles/command_list_manager.dir/src/command_list_manager.cpp.o.d"
   "CMakeFiles/command_list_manager.dir/src/plan_components_builder.cpp.o"

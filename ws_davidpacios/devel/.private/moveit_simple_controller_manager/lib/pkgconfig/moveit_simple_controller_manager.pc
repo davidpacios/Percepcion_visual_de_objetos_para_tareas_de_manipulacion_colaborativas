@@ -1,8 +1,8 @@
-prefix=/home/frankaros/ws_davidpacios/devel/.private/moveit_simple_controller_manager
+prefix=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_simple_controller_manager
 
 Name: moveit_simple_controller_manager
 Description: Description of moveit_simple_controller_manager
 Version: 1.1.13
-Cflags: -I/home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include
+Cflags: -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include
 Libs: -L${prefix}/lib -lmoveit_simple_controller_manager
 Requires: actionlib control_msgs moveit_core roscpp

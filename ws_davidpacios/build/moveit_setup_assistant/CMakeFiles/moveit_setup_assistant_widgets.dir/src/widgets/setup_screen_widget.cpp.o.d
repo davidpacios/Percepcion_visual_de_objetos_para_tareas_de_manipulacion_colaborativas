@@ -1,7 +1,7 @@
 CMakeFiles/moveit_setup_assistant_widgets.dir/src/widgets/setup_screen_widget.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

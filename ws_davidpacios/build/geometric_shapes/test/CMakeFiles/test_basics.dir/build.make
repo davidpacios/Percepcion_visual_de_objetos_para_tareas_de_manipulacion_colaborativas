@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/geometric_shapes
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/geometric_shapes
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/test_basics.dir/depend.make
@@ -70,18 +70,18 @@ include test/CMakeFiles/test_basics.dir/progress.make
 include test/CMakeFiles/test_basics.dir/flags.make
 
 test/CMakeFiles/test_basics.dir/test_basics.cpp.o: test/CMakeFiles/test_basics.dir/flags.make
-test/CMakeFiles/test_basics.dir/test_basics.cpp.o: /home/frankaros/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp
+test/CMakeFiles/test_basics.dir/test_basics.cpp.o: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp
 test/CMakeFiles/test_basics.dir/test_basics.cpp.o: test/CMakeFiles/test_basics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_basics.dir/test_basics.cpp.o"
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_basics.dir/test_basics.cpp.o -MF CMakeFiles/test_basics.dir/test_basics.cpp.o.d -o CMakeFiles/test_basics.dir/test_basics.cpp.o -c /home/frankaros/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_basics.dir/test_basics.cpp.o"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_basics.dir/test_basics.cpp.o -MF CMakeFiles/test_basics.dir/test_basics.cpp.o.d -o CMakeFiles/test_basics.dir/test_basics.cpp.o -c /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp
 
 test/CMakeFiles/test_basics.dir/test_basics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_basics.dir/test_basics.cpp.i"
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankaros/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp > CMakeFiles/test_basics.dir/test_basics.cpp.i
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp > CMakeFiles/test_basics.dir/test_basics.cpp.i
 
 test/CMakeFiles/test_basics.dir/test_basics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_basics.dir/test_basics.cpp.s"
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankaros/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp -o CMakeFiles/test_basics.dir/test_basics.cpp.s
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test/test_basics.cpp -o CMakeFiles/test_basics.dir/test_basics.cpp.s
 
 # Object files for target test_basics
 test_basics_OBJECTS = \
@@ -90,22 +90,22 @@ test_basics_OBJECTS = \
 # External object files for target test_basics
 test_basics_EXTERNAL_OBJECTS =
 
-/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/test_basics.cpp.o
-/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/build.make
-/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: gtest/lib/libgtest.so
-/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/frankaros/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics"
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_basics.dir/link.txt --verbose=$(VERBOSE)
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/test_basics.cpp.o
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/build.make
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: gtest/lib/libgtest.so
+/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics: test/CMakeFiles/test_basics.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_basics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-test/CMakeFiles/test_basics.dir/build: /home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics
+test/CMakeFiles/test_basics.dir/build: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_basics
 .PHONY : test/CMakeFiles/test_basics.dir/build
 
 test/CMakeFiles/test_basics.dir/clean:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/test_basics.dir/cmake_clean.cmake
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/test_basics.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/test_basics.dir/clean
 
 test/CMakeFiles/test_basics.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/geometric_shapes /home/frankaros/ws_davidpacios/src/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes /home/frankaros/ws_davidpacios/build/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/test_basics.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/test_basics.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/test_basics.dir/depend
 

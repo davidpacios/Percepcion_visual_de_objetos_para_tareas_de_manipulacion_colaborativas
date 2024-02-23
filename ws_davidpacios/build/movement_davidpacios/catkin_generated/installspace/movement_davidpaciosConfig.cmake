@@ -67,14 +67,14 @@ set(movement_davidpacios_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(movement_davidpacios_SOURCE_PREFIX /home/frankaros/ws_davidpacios/src/movement_davidpacios)
-  set(movement_davidpacios_DEVEL_PREFIX /home/frankaros/ws_davidpacios/devel/.private/movement_davidpacios)
+  set(movement_davidpacios_SOURCE_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/movement_davidpacios)
+  set(movement_davidpacios_DEVEL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/movement_davidpacios)
   set(movement_davidpacios_INSTALL_PREFIX "")
   set(movement_davidpacios_PREFIX ${movement_davidpacios_DEVEL_PREFIX})
 else()
   set(movement_davidpacios_SOURCE_PREFIX "")
   set(movement_davidpacios_DEVEL_PREFIX "")
-  set(movement_davidpacios_INSTALL_PREFIX /home/frankaros/ws_davidpacios/install)
+  set(movement_davidpacios_INSTALL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install)
   set(movement_davidpacios_PREFIX ${movement_davidpacios_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frankaros/ws_davidpacios/install/lib;/home/frankaros/ws_davidpacios/devel/lib;/home/frankaros/ros_own_gripper/devel/lib;/home/frankaros/ws_moveit/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install/lib;/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

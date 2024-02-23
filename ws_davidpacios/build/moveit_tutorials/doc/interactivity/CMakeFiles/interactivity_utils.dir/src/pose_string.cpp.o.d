@@ -1,7 +1,7 @@
 doc/interactivity/CMakeFiles/interactivity_utils.dir/src/pose_string.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit_tutorials/doc/interactivity/src/pose_string.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_tutorials/doc/interactivity/src/pose_string.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/moveit_tutorials/doc/interactivity/include/interactivity/pose_string.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_tutorials/doc/interactivity/include/interactivity/pose_string.h \
  /opt/ros/noetic/include/geometry_msgs/Pose.h /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

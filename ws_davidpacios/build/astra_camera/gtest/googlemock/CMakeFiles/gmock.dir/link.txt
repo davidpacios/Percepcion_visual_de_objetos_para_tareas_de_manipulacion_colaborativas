@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fPIC -O3 -O3 -DNDEBUG -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so "CMakeFiles/gmock.dir/src/gmock-all.cc.o"  -Wl,-rpath,/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/astra_camera/gtest/lib ../lib/libgtest.so -lpthread 

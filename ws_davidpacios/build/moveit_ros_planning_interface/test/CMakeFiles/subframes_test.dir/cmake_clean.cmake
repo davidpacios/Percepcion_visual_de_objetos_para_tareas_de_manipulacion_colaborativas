@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/moveit_ros_planning_interface/subframes_test"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/moveit_ros_planning_interface/subframes_test.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/moveit_ros_planning_interface/subframes_test"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning_interface/lib/moveit_ros_planning_interface/subframes_test.pdb"
   "CMakeFiles/subframes_test.dir/subframes_test.cpp.o"
   "CMakeFiles/subframes_test.dir/subframes_test.cpp.o.d"
 )

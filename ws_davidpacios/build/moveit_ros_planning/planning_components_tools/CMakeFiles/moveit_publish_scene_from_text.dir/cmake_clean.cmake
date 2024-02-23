@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text.pdb"
   "CMakeFiles/moveit_publish_scene_from_text.dir/src/publish_scene_from_text.cpp.o"
   "CMakeFiles/moveit_publish_scene_from_text.dir/src/publish_scene_from_text.cpp.o.d"
 )

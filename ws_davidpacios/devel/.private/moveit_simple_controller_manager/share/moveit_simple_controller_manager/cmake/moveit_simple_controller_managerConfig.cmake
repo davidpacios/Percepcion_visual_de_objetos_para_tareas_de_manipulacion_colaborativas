@@ -67,14 +67,14 @@ set(moveit_simple_controller_manager_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(moveit_simple_controller_manager_SOURCE_PREFIX /home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager)
-  set(moveit_simple_controller_manager_DEVEL_PREFIX /home/frankaros/ws_davidpacios/devel/.private/moveit_simple_controller_manager)
+  set(moveit_simple_controller_manager_SOURCE_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager)
+  set(moveit_simple_controller_manager_DEVEL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_simple_controller_manager)
   set(moveit_simple_controller_manager_INSTALL_PREFIX "")
   set(moveit_simple_controller_manager_PREFIX ${moveit_simple_controller_manager_DEVEL_PREFIX})
 else()
   set(moveit_simple_controller_manager_SOURCE_PREFIX "")
   set(moveit_simple_controller_manager_DEVEL_PREFIX "")
-  set(moveit_simple_controller_manager_INSTALL_PREFIX /home/frankaros/ws_davidpacios/install)
+  set(moveit_simple_controller_manager_INSTALL_PREFIX /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install)
   set(moveit_simple_controller_manager_PREFIX ${moveit_simple_controller_manager_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(moveit_simple_controller_manager_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include " STREQUAL " ")
+if(NOT "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include " STREQUAL " ")
   set(moveit_simple_controller_manager_INCLUDE_DIRS "")
-  set(_include_dirs "/home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include")
+  set(_include_dirs "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/include")
   if(NOT "https://github.com/ros-planning/moveit/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-planning/moveit/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://moveit.ros.org " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_c
         message(FATAL_ERROR "Project 'moveit_simple_controller_manager' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'moveit_simple_controller_manager' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'moveit_simple_controller_manager' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_plugins/moveit_simple_controller_manager/${idir}'.  ${_report}")
     endif()
     _list_append_unique(moveit_simple_controller_manager_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frankaros/ws_davidpacios/devel/.private/moveit_simple_controller_manager/lib;/home/frankaros/ws_davidpacios/devel/lib;/home/frankaros/ros_own_gripper/devel/lib;/home/frankaros/ws_moveit/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_simple_controller_manager/lib;/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

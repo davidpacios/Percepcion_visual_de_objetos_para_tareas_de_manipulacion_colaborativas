@@ -1,8 +1,8 @@
 CMakeFiles/rviz_visual_tools_gui.dir/rviz_visual_tools_gui_autogen/mocs_compilation.cpp.o: \
- /home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/mocs_compilation.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/moc_key_tool.cpp \
- /home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/../../../../src/rviz_visual_tools/src/key_tool.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/moc_key_tool.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/../../../../src/rviz_visual_tools/src/key_tool.h \
  /opt/ros/noetic/include/rviz/tool.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
@@ -321,7 +321,7 @@ CMakeFiles/rviz_visual_tools_gui.dir/rviz_visual_tools_gui_autogen/mocs_compilat
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
  /opt/ros/noetic/include/rviz/rviz_export.h \
  /opt/ros/noetic/include/rviz/default_plugin/tools/move_tool.h \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_reciever.h \
  /opt/ros/noetic/include/sensor_msgs/Joy.h \
  /opt/ros/noetic/include/ros/types.h \
  /opt/ros/noetic/include/ros/serialization.h \
@@ -1191,8 +1191,8 @@ CMakeFiles/rviz_visual_tools_gui.dir/rviz_visual_tools_gui_autogen/mocs_compilat
  /opt/ros/noetic/include/ros/this_node.h \
  /opt/ros/noetic/include/ros/param.h /opt/ros/noetic/include/ros/topic.h \
  /opt/ros/noetic/include/ros/node_handle.h \
- /home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/moc_rviz_visual_tools_gui.cpp \
- /home/frankaros/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/../../../../src/rviz_visual_tools/src/rviz_visual_tools_gui.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/moc_rviz_visual_tools_gui.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/rviz_visual_tools_gui_autogen/UVLADIE3JM/../../../../src/rviz_visual_tools/src/rviz_visual_tools_gui.h \
  /opt/ros/noetic/include/rviz/panel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \

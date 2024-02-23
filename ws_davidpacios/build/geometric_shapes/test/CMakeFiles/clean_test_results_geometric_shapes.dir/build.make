@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/geometric_shapes
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/geometric_shapes
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes
 
 # Utility rule file for clean_test_results_geometric_shapes.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/clean_test_results_geometric_shapes.dir/compiler_depend.
 include test/CMakeFiles/clean_test_results_geometric_shapes.dir/progress.make
 
 test/CMakeFiles/clean_test_results_geometric_shapes:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/ws_davidpacios/build/geometric_shapes/test_results/geometric_shapes
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test_results/geometric_shapes
 
 clean_test_results_geometric_shapes: test/CMakeFiles/clean_test_results_geometric_shapes
 clean_test_results_geometric_shapes: test/CMakeFiles/clean_test_results_geometric_shapes.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/clean_test_results_geometric_shapes.dir/build: clean_test_result
 .PHONY : test/CMakeFiles/clean_test_results_geometric_shapes.dir/build
 
 test/CMakeFiles/clean_test_results_geometric_shapes.dir/clean:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_geometric_shapes.dir/cmake_clean.cmake
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_geometric_shapes.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/clean_test_results_geometric_shapes.dir/clean
 
 test/CMakeFiles/clean_test_results_geometric_shapes.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/geometric_shapes /home/frankaros/ws_davidpacios/src/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes /home/frankaros/ws_davidpacios/build/geometric_shapes/test /home/frankaros/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/clean_test_results_geometric_shapes.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/geometric_shapes/test/CMakeFiles/clean_test_results_geometric_shapes.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/clean_test_results_geometric_shapes.dir/depend
 

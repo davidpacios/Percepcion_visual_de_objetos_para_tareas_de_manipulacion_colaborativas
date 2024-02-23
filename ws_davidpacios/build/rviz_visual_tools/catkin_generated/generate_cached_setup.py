@@ -12,16 +12,16 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/frankaros/ws_davidpacios/devel;/home/frankaros/ros_own_gripper/devel;/home/frankaros/ws_moveit/devel;/opt/ros/noetic'.split(';'):
+    for workspace in '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel;/opt/ros/noetic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python3/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/frankaros/ws_davidpacios/devel/.private/rviz_visual_tools/env.sh')
+code = generate_environment_script('/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/rviz_visual_tools/env.sh')
 
-output_filename = '/home/frankaros/ws_davidpacios/build/rviz_visual_tools/catkin_generated/setup_cached.sh'
+output_filename = '/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/rviz_visual_tools/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

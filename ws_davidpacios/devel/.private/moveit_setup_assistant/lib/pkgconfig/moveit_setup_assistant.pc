@@ -1,8 +1,8 @@
-prefix=/home/frankaros/ws_davidpacios/devel/.private/moveit_setup_assistant
+prefix=/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_setup_assistant
 
 Name: moveit_setup_assistant
 Description: Description of moveit_setup_assistant
 Version: 1.1.13
-Cflags: -I/home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/include
+Cflags: -I/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/include
 Libs: -L${prefix}/lib -lmoveit_setup_assistant_tools
 Requires: moveit_ros_planning moveit_ros_visualization roscpp

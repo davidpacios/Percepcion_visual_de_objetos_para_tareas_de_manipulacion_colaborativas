@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/pcl_filter"
-  "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/pcl_filter.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/pcl_filter"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/pcl_filter.pdb"
   "CMakeFiles/pcl_filter.dir/src/pcl_filter.cpp.o"
   "CMakeFiles/pcl_filter.dir/src/pcl_filter.cpp.o.d"
 )

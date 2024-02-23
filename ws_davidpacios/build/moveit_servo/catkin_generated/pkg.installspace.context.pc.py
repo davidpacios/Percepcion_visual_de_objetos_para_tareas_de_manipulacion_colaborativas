@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "control_msgs;control_toolbox;geometry_msgs;moveit_msgs;moveit_ros_planning_interface;rosparam_shortcuts;sensor_msgs;std_msgs;std_srvs;tf2_eigen;trajectory_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lpose_tracking;-lmoveit_servo_cpp_api".split(';') if "-lpose_tracking;-lmoveit_servo_cpp_api" != "" else []
 PROJECT_NAME = "moveit_servo"
-PROJECT_SPACE_DIR = "/home/frankaros/ws_davidpacios/install"
+PROJECT_SPACE_DIR = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/install"
 PROJECT_VERSION = "1.1.13"

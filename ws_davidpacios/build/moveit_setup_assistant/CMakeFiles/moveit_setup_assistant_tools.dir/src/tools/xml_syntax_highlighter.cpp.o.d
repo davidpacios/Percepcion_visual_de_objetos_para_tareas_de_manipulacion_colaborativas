@@ -1,7 +1,7 @@
 CMakeFiles/moveit_setup_assistant_tools.dir/src/tools/xml_syntax_highlighter.cpp.o: \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_syntax_highlighter.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_syntax_highlighter.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_syntax_highlighter.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/src/tools/xml_syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QSyntaxHighlighter \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \

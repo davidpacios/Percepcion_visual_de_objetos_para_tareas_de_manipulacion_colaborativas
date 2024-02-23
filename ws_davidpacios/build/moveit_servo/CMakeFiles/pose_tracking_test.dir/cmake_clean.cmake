@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/pose_tracking_test"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/pose_tracking_test.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/pose_tracking_test"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/pose_tracking_test.pdb"
   "CMakeFiles/pose_tracking_test.dir/test/pose_tracking_test.cpp.o"
   "CMakeFiles/pose_tracking_test.dir/test/pose_tracking_test.cpp.o.d"
 )

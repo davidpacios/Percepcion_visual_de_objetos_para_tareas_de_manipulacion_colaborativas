@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/python3/dist-packages/pymoveit_core.cpython-38-x86_64-linux-gnu.so"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/python3/dist-packages/pymoveit_core.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/python3/dist-packages/pymoveit_core.cpython-38-x86_64-linux-gnu.so"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/python3/dist-packages/pymoveit_core.pdb"
   "CMakeFiles/pymoveit_core.dir/collision_detection/src/pycollision_detection.cpp.o"
   "CMakeFiles/pymoveit_core.dir/collision_detection/src/pycollision_detection.cpp.o.d"
   "CMakeFiles/pymoveit_core.dir/kinematic_constraints/src/pykinematic_constraint.cpp.o"

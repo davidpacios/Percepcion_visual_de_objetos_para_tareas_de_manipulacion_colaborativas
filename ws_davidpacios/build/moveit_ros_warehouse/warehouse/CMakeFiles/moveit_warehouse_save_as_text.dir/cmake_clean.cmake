@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_warehouse/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text.pdb"
   "CMakeFiles/moveit_warehouse_save_as_text.dir/src/save_as_text.cpp.o"
   "CMakeFiles/moveit_warehouse_save_as_text.dir/src/save_as_text.cpp.o.d"
 )

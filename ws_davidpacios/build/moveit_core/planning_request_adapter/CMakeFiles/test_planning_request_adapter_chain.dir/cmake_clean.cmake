@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_planning_request_adapter_chain"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_planning_request_adapter_chain.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_planning_request_adapter_chain"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/lib/moveit_core/test_planning_request_adapter_chain.pdb"
   "CMakeFiles/test_planning_request_adapter_chain.dir/test/test_planning_request_adapter_chain.cpp.o"
   "CMakeFiles/test_planning_request_adapter_chain.dir/test/test_planning_request_adapter_chain.cpp.o.d"
 )

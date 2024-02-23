@@ -1,11 +1,11 @@
 CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_autogen/mocs_compilation.cpp.o: \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/mocs_compilation.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_author_information_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/author_information_widget.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/moveit_config_data.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_author_information_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/author_information_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/moveit_config_data.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/class_forward.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/macros/include/moveit/macros/declare_ptr.h \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -151,10 +151,10 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/planning_scene/include/moveit/planning_scene/planning_scene.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/planning_scene/include/moveit/planning_scene/planning_scene.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/robot_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h \
  /opt/ros/noetic/include/urdf/model.h /usr/include/urdf_model/model.h \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
@@ -1141,10 +1141,10 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /opt/ros/noetic/include/ros/param.h /opt/ros/noetic/include/ros/topic.h \
  /opt/ros/noetic/include/ros/node_handle.h \
  /opt/ros/noetic/include/urdf/visibility_control.hpp \
- /home/frankaros/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/include/srdfdom/model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model_group.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointLimits.h \
  /opt/ros/noetic/include/ros/message_operations.h \
  /opt/ros/noetic/include/random_numbers/random_numbers.h \
  /usr/include/boost/random/mersenne_twister.hpp \
@@ -1333,26 +1333,26 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/link_model.h \
  /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_vector_container.h \
  /usr/include/eigen3/Eigen/Core /usr/include/eigen3/Eigen/StdVector \
  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/check_isometry.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/kinematics_base/include/moveit/kinematics_base/kinematics_base.h \
  /opt/ros/noetic/include/geometry_msgs/Pose.h \
  /opt/ros/noetic/include/geometry_msgs/Point.h \
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/robot_state.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/attached_body.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/transforms/include/moveit/transforms/transforms.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/MoveItErrorCodes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_kinematics_base_export.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/fixed_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/floating_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/planar_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/revolute_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_model/include/moveit/robot_model/prismatic_joint_model.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/robot_state.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_state/include/moveit/robot_state/attached_body.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/transforms/include/moveit/transforms/transforms.h \
  /opt/ros/noetic/include/geometry_msgs/TransformStamped.h \
  /opt/ros/noetic/include/std_msgs/Header.h \
  /opt/ros/noetic/include/geometry_msgs/Transform.h \
@@ -1366,50 +1366,50 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /opt/ros/noetic/include/visualization_msgs/Marker.h \
  /opt/ros/noetic/include/std_msgs/ColorRGBA.h \
  /opt/ros/noetic/include/geometry_msgs/Twist.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_detector_allocator.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_env.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_matrix.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_common.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionMatrix.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionEntry.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/LinkPadding.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/LinkScale.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/world.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/world_diff.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/kinematic_constraints/include/moveit/kinematic_constraints/kinematic_constraint.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/bodies.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/aabb.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/obb.h \
- /home/frankaros/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/Constraints.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointConstraint.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PositionConstraint.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/BoundingVolume.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_detector_allocator.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_env.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_matrix.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/collision_common.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionMatrix.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AllowedCollisionEntry.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/LinkPadding.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/LinkScale.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/world.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_detection/include/moveit/collision_detection/world_diff.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/kinematic_constraints/include/moveit/kinematic_constraints/kinematic_constraint.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/bodies.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/aabb.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/obb.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/geometric_shapes/include/geometric_shapes/shapes.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/Constraints.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/JointConstraint.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PositionConstraint.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/BoundingVolume.h \
  /opt/ros/noetic/include/shape_msgs/SolidPrimitive.h \
  /opt/ros/noetic/include/shape_msgs/Mesh.h \
  /opt/ros/noetic/include/shape_msgs/MeshTriangle.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/OrientationConstraint.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/VisibilityConstraint.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/OrientationConstraint.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/VisibilityConstraint.h \
  /opt/ros/noetic/include/geometry_msgs/PoseStamped.h \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_core/robot_trajectory/include/moveit/robot_trajectory/robot_trajectory.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotTrajectory.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/robot_trajectory/include/moveit/robot_trajectory/robot_trajectory.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotTrajectory.h \
  /opt/ros/noetic/include/trajectory_msgs/MultiDOFJointTrajectory.h \
  /opt/ros/noetic/include/trajectory_msgs/MultiDOFJointTrajectoryPoint.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotState.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/RobotState.h \
  /opt/ros/noetic/include/sensor_msgs/MultiDOFJointState.h \
  /opt/ros/noetic/include/geometry_msgs/Wrench.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AttachedCollisionObject.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/CollisionObject.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/AttachedCollisionObject.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/CollisionObject.h \
  /opt/ros/noetic/include/object_recognition_msgs/ObjectType.h \
  /opt/ros/noetic/include/shape_msgs/Plane.h /usr/include/c++/9/deque \
  /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningScene.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/ObjectColor.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningSceneWorld.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningScene.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/ObjectColor.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningSceneWorld.h \
  /opt/ros/noetic/include/octomap_msgs/OctomapWithPose.h \
  /opt/ros/noetic/include/octomap_msgs/Octomap.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningSceneComponents.h \
- /home/frankaros/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_planning_scene_export.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_msgs/include/moveit_msgs/PlanningSceneComponents.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_core/include/moveit/moveit_planning_scene_export.h \
  /usr/include/yaml-cpp/yaml.h /usr/include/yaml-cpp/parser.h \
  /usr/include/yaml-cpp/dll.h /usr/include/yaml-cpp/noncopyable.h \
  /usr/include/yaml-cpp/emitter.h /usr/include/yaml-cpp/binary.h \
@@ -1431,8 +1431,8 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/yaml-cpp/node/convert.h \
  /usr/include/yaml-cpp/node/detail/impl.h \
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
- /home/frankaros/ws_davidpacios/src/srdfdom/include/srdfdom/srdf_writer.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/srdfdom/include/srdfdom/srdf_writer.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1517,8 +1517,8 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_configuration_files_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/configuration_files_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_configuration_files_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/configuration_files_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QList \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
@@ -1531,12 +1531,12 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_controller_edit_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/controller_edit_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_controllers_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/controllers_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_default_collisions_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/default_collisions_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_controller_edit_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/controller_edit_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_controllers_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/controllers_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_default_collisions_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/default_collisions_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h \
  /usr/include/c++/9/future /usr/include/c++/9/thread \
@@ -1581,22 +1581,22 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/boost/move/make_unique.hpp \
  /usr/include/boost/thread/shared_mutex.hpp \
  /usr/include/boost/thread/pthread/shared_mutex.hpp \
- /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/compute_default_collisions.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_double_list_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/double_list_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_end_effectors_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/end_effectors_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_group_edit_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/group_edit_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_header_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/header_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant/include/moveit/setup_assistant/tools/compute_default_collisions.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_double_list_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/double_list_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_end_effectors_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/end_effectors_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_group_edit_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/group_edit_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_header_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/header_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_kinematic_chain_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/kinematic_chain_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_navigation_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/navigation_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_kinematic_chain_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/kinematic_chain_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_navigation_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/navigation_widget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
@@ -1619,22 +1619,22 @@ CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_aut
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStyledItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleditemdelegate.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_passive_joints_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/passive_joints_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_perception_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/perception_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_planning_groups_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/planning_groups_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_robot_poses_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/robot_poses_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_setup_assistant_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/setup_assistant_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/start_screen_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/virtual_joints_widget.h \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/simulation_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_passive_joints_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/passive_joints_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_perception_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/perception_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_planning_groups_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/planning_groups_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_robot_poses_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/robot_poses_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_setup_assistant_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/setup_assistant_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/start_screen_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/virtual_joints_widget.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/../../../../src/moveit/moveit_setup_assistant/src/widgets/simulation_widget.h \
  /usr/include/boost/program_options/variables_map.hpp \
  /usr/include/boost/program_options/config.hpp /usr/include/boost/any.hpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_setup_screen_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_simulation_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_start_screen_widget.cpp \
- /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_virtual_joints_widget.cpp
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_setup_screen_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_simulation_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_start_screen_widget.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/moveit_setup_assistant_widgets_autogen/RZ4CM6YYJ6/moc_virtual_joints_widget.cpp

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/euclidean_cluster"
-  "/home/frankaros/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/euclidean_cluster.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/euclidean_cluster"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/euclidean_cluster.pdb"
   "CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.o"
   "CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.o.d"
 )

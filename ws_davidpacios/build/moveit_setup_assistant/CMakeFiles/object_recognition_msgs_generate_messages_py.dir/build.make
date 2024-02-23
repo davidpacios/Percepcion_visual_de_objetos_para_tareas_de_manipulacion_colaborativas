@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_setup_assistant
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant
 
 # Utility rule file for object_recognition_msgs_generate_messages_py.
 
@@ -78,6 +78,6 @@ CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/object_recognition_msgs_generate_messages_py.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_setup_assistant && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant /home/frankaros/ws_davidpacios/src/moveit/moveit_setup_assistant /home/frankaros/ws_davidpacios/build/moveit_setup_assistant /home/frankaros/ws_davidpacios/build/moveit_setup_assistant /home/frankaros/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_setup_assistant /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_setup_assistant/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/object_recognition_msgs_generate_messages_py.dir/depend
 

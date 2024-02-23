@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_ray_intersection"
-  "/home/frankaros/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_ray_intersection.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_ray_intersection"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/geometric_shapes/lib/geometric_shapes/test_ray_intersection.pdb"
   "CMakeFiles/test_ray_intersection.dir/test_ray_intersection.cpp.o"
   "CMakeFiles/test_ray_intersection.dir/test_ray_intersection.cpp.o.d"
 )

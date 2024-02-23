@@ -1,5 +1,5 @@
 CMakeFiles/rviz_visual_tools_gui.dir/src/remote_control.cpp.o: \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/src/remote_control.cpp \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/src/remote_control.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -121,7 +121,7 @@ CMakeFiles/rviz_visual_tools_gui.dir/src/remote_control.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
- /home/frankaros/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_control.h \
+ /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/rviz_visual_tools/include/rviz_visual_tools/remote_control.h \
  /opt/ros/noetic/include/ros/ros.h /opt/ros/noetic/include/ros/time.h \
  /opt/ros/noetic/include/ros/platform.h /usr/include/c++/9/stdlib.h \
  /usr/include/c++/9/iostream /usr/include/c++/9/ostream \

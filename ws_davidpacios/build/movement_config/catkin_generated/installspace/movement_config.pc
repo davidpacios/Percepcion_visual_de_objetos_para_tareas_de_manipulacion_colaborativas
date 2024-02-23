@@ -1,8 +1,0 @@
-prefix=/home/frankaros/ws_davidpacios/install
-
-Name: movement_config
-Description: Description of movement_config
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

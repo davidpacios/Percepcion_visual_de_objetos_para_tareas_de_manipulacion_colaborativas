@@ -1,25 +1,66 @@
 [  0%] Built target std_msgs_generate_messages_py
 [  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionResult
 [  0%] Built target _panda_demo_generate_messages_check_deps_GsFeedback
 [  0%] Built target _panda_demo_generate_messages_check_deps_GsAction
-[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionGoal
-[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionResult
-[  0%] Built target std_msgs_generate_messages_cpp
-[  0%] Built target std_msgs_generate_messages_eus
-[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionFeedback
 [  0%] Built target _panda_demo_generate_messages_check_deps_GsGoal
-[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionFeedback
+[  0%] Built target _panda_demo_generate_messages_check_deps_GsActionGoal
 [  0%] Built target actionlib_msgs_generate_messages_eus
 [  0%] Built target std_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_nodejs
 [  0%] Built target actionlib_msgs_generate_messages_lisp
-[  0%] Built target actionlib_msgs_generate_messages_nodejs
 [  0%] Built target _panda_demo_generate_messages_check_deps_GsResult
-[ 17%] Built target panda_demo_generate_messages_cpp
-[ 56%] Built target panda_demo_generate_messages_py
-[ 56%] Built target panda_demo_generate_messages_eus
-[ 73%] Built target panda_demo_generate_messages_lisp
-[ 78%] Built target pcl_filter
-[ 95%] Built target panda_demo_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  2%] [32mBuilding CXX object CMakeFiles/pcl_filter.dir/src/pcl_filter.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/euclidean_cluster.dir/src/euclidean_cluster.cpp.o[0m
+[  9%] [34m[1mGenerating EusLisp code from panda_demo/GsActionGoal.msg[0m
+[  9%] [34m[1mGenerating EusLisp code from panda_demo/GsAction.msg[0m
+[ 12%] [34m[1mGenerating Lisp code from panda_demo/GsAction.msg[0m
+[ 14%] [34m[1mGenerating Python from MSG panda_demo/GsAction[0m
+[ 17%] [34m[1mGenerating C++ code from panda_demo/GsAction.msg[0m
+[ 19%] [34m[1mGenerating Javascript code from panda_demo/GsAction.msg[0m
+[ 21%] [34m[1mGenerating Lisp code from panda_demo/GsActionGoal.msg[0m
+[ 24%] [34m[1mGenerating EusLisp code from panda_demo/GsActionResult.msg[0m
+[ 26%] [34m[1mGenerating Javascript code from panda_demo/GsActionGoal.msg[0m
+[ 29%] [34m[1mGenerating EusLisp code from panda_demo/GsActionFeedback.msg[0m
+[ 31%] [34m[1mGenerating Lisp code from panda_demo/GsActionResult.msg[0m
+[ 34%] [34m[1mGenerating C++ code from panda_demo/GsActionGoal.msg[0m
+[ 36%] [34m[1mGenerating Javascript code from panda_demo/GsActionResult.msg[0m
+[ 39%] [34m[1mGenerating Python from MSG panda_demo/GsActionGoal[0m
+[ 41%] [34m[1mGenerating Lisp code from panda_demo/GsActionFeedback.msg[0m
+[ 46%] [34m[1mGenerating EusLisp code from panda_demo/GsGoal.msg[0m
+[ 46%] [34m[1mGenerating Lisp code from panda_demo/GsGoal.msg[0m
+[ 48%] [34m[1mGenerating EusLisp code from panda_demo/GsResult.msg[0m
+[ 51%] [34m[1mGenerating Javascript code from panda_demo/GsActionFeedback.msg[0m
+[ 53%] [34m[1mGenerating Lisp code from panda_demo/GsResult.msg[0m
+[ 56%] [34m[1mGenerating C++ code from panda_demo/GsActionResult.msg[0m
+[ 58%] [34m[1mGenerating EusLisp code from panda_demo/GsFeedback.msg[0m
+[ 60%] [34m[1mGenerating Lisp code from panda_demo/GsFeedback.msg[0m
+[ 63%] [34m[1mGenerating Javascript code from panda_demo/GsGoal.msg[0m
+[ 63%] Built target panda_demo_generate_messages_lisp
+[ 65%] [34m[1mGenerating EusLisp manifest code for panda_demo[0m
+[ 68%] [34m[1mGenerating Javascript code from panda_demo/GsResult.msg[0m
+[ 70%] [34m[1mGenerating Python from MSG panda_demo/GsActionResult[0m
+[ 73%] [34m[1mGenerating Javascript code from panda_demo/GsFeedback.msg[0m
+[ 75%] [34m[1mGenerating Python from MSG panda_demo/GsActionFeedback[0m
+[ 78%] [34m[1mGenerating Python from MSG panda_demo/GsGoal[0m
+[ 80%] [34m[1mGenerating C++ code from panda_demo/GsActionFeedback.msg[0m
+[ 80%] Built target panda_demo_generate_messages_nodejs
+[ 82%] [34m[1mGenerating C++ code from panda_demo/GsGoal.msg[0m
+[ 85%] [34m[1mGenerating Python from MSG panda_demo/GsResult[0m
+[ 90%] [34m[1mGenerating C++ code from panda_demo/GsResult.msg[0m
+[ 90%] [34m[1mGenerating Python from MSG panda_demo/GsFeedback[0m
+[ 92%] [34m[1mGenerating C++ code from panda_demo/GsFeedback.msg[0m
+[ 92%] Built target panda_demo_generate_messages_cpp
+[ 95%] [34m[1mGenerating Python msg __init__.py for panda_demo[0m
+[ 95%] Built target panda_demo_generate_messages_py
+[ 95%] Built target panda_demo_generate_messages_eus
+[ 95%] Built target panda_demo_generate_messages
+[ 97%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/pcl_filter[0m
+[ 97%] Built target pcl_filter
+[100%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/panda_demo/lib/panda_demo/euclidean_cluster[0m
 [100%] Built target euclidean_cluster
-[100%] Built target panda_demo_generate_messages

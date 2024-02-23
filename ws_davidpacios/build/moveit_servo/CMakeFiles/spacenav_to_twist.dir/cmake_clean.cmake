@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/spacenav_to_twist"
-  "/home/frankaros/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/spacenav_to_twist.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/spacenav_to_twist"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_servo/lib/moveit_servo/spacenav_to_twist.pdb"
   "CMakeFiles/spacenav_to_twist.dir/src/teleop_examples/spacenav_to_twist.cpp.o"
   "CMakeFiles/spacenav_to_twist.dir/src/teleop_examples/spacenav_to_twist.cpp.o.d"
 )

@@ -53,10 +53,10 @@ RM = /home/frankaros/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankaros/ws_davidpacios/src/moveit_resources/panda_description
+CMAKE_SOURCE_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_resources/panda_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankaros/ws_davidpacios/build/moveit_resources_panda_description
+CMAKE_BINARY_DIR = /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_resources_panda_description
 
 # Utility rule file for moveit_resources_panda_description_xacro_generated_to_devel_space_.
 
@@ -78,6 +78,6 @@ CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.di
 .PHONY : CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.dir/clean
 
 CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.dir/depend:
-	cd /home/frankaros/ws_davidpacios/build/moveit_resources_panda_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/ws_davidpacios/src/moveit_resources/panda_description /home/frankaros/ws_davidpacios/src/moveit_resources/panda_description /home/frankaros/ws_davidpacios/build/moveit_resources_panda_description /home/frankaros/ws_davidpacios/build/moveit_resources_panda_description /home/frankaros/ws_davidpacios/build/moveit_resources_panda_description/CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_resources_panda_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_resources/panda_description /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit_resources/panda_description /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_resources_panda_description /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_resources_panda_description /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/build/moveit_resources_panda_description/CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/moveit_resources_panda_description_xacro_generated_to_devel_space_.dir/depend
 

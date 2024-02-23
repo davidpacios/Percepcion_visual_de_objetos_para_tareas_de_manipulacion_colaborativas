@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp"
-  "/home/frankaros/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp.pdb"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp"
+  "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/srdfdom/lib/srdfdom/test_cpp.pdb"
   "CMakeFiles/test_cpp.dir/test/test_parser.cpp.o"
   "CMakeFiles/test_cpp.dir/test/test_parser.cpp.o.d"
 )
