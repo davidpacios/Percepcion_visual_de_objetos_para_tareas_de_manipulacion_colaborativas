@@ -11,5 +11,6 @@ rosrun davidpacios_movement movement.py
 # Camara Astra RGBD
 https://www.yahboom.net/public/upload/upload-html/1637059883/Astra%20camera%20calibration.html
 roslaunch astra_camera astra.launch
-rosrun camera_calibration cameracalibrator.py image:=/camera/color/image_raw camera:=/camera/camera --size 7x9 --square 0.021
+rosrun camera_calibration cameracalibrator.py image:=/camera/color/image_raw camera:=/camera/camera --size 8x6 --square 0.0245
+
 
