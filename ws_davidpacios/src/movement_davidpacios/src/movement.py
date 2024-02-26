@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from __future__ import print_function
+import numpy
 from six.moves import input
 import os
 import sys
@@ -10,11 +11,15 @@ import moveit_commander
 import moveit_msgs.msg
 import geometry_msgs.msg
 import trajectory_msgs.msg
+from std_msgs.msg import Float32
+import franka_gripper.msg
 
 import tf2_ros
 import tf2_geometry_msgs  # Importante para realizar la transformación de geometría
 from geometry_msgs.msg import PoseStamped
 from sensor_msgs.msg import JointState
+import actionlib
+import panda_demo.msg
 
 
 from math import pi, tau, dist, fabs, cos
@@ -139,6 +144,21 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.eef_link = eef_link
         self.group_names = group_names
 
+        self.homing_client = actionlib.SimpleActionClient('franka_gripper/homing', franka_gripper.msg.HomingAction)
+        self.homing_client.wait_for_server()
+
+        self.move_client = actionlib.SimpleActionClient('franka_gripper/move', franka_gripper.msg.MoveAction)
+        self.move_client.wait_for_server()
+
+        self.callibration_client = actionlib.SimpleActionClient('gs_action', panda_demo.msg.GsAction)
+        self.callibration_client.wait_for_server()
+
+        print("============ Subscribing to topic gs_max_distance ...")
+        self.max_dist = None
+        rospy.Subscriber("gs_max_distance", Float32, self.cb_gs)
+        while self.max_dist  == None and not rospy.is_shutdown():
+            rospy.sleep(0.1)
+
     def get_current_pose(self):
         return self.move_group.get_current_pose().pose
 
@@ -177,7 +197,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         grasp.post_grasp_retreat.desired_distance = 0.25
 
         desired_opening = 0.04  # adjust as needed
-        desired_closing = 0.01  # adjust as needed
+        desired_closing = 0.02  # adjust as needed
 
         self.openGripper(grasp.pre_grasp_posture, desired_opening)
         self.closedGripper(grasp.grasp_posture, desired_closing)
@@ -386,6 +406,49 @@ class MoveGroupPythonInterfaceTutorial(object):
         return self.wait_for_state_update(
             box_is_attached=False, box_is_known=False, timeout=timeout
         )
+
+     # Check if the gellsight is touched
+
+    def check_touch(self):
+        print("Dataaa:",self.max_dist)
+        return self.max_dist.data >= 5
+    
+    def cb_gs(self,dist) :
+        self.max_dist = dist
+
+
+    # Send a goal to the gripper
+    def move_gripper(self,pose):
+        goal = franka_gripper.msg.MoveGoal()
+        goal.width = pose
+        goal.speed = 0.1
+
+        self.move_client.send_goal(goal)
+        self.move_client.wait_for_result()
+
+    # Open the gripper
+    def open_gripper(self):
+        plan = moveit_msgs.msg.RobotTrajectory()
+
+        plan.joint_trajectory.header.frame_id="panda_link0"
+        plan.joint_trajectory.joint_names = ["panda_finger_joint1","panda_finger_joint2"]
+
+        point1 = trajectory_msgs.msg.JointTrajectoryPoint()
+        point1.positions = self.hand_group.get_current_state().joint_state.position[7:9]
+        point1.effort = [0,0]
+        point1.time_from_start = rospy.Duration.from_sec(0.0)
+
+        point2 = trajectory_msgs.msg.JointTrajectoryPoint()
+        point2.positions = [0.04,0.04]
+        point2.effort = [0,0]
+        point2.time_from_start = rospy.Duration.from_sec(0.5)
+
+        plan.joint_trajectory.points.append(point1)
+        plan.joint_trajectory.points.append(point2)
+
+        self.hand_group.execute(plan, wait=True)
+        self.hand_group.stop()
+
 
 def main():
     try:
