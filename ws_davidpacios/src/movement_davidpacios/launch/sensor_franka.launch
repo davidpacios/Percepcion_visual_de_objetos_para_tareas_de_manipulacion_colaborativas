@@ -4,9 +4,9 @@
   <arg name="robot_ip" default="172.16.0.2" />
   
   <!-- Launch astra camera -->
-  <include file="$(find astra_camera)/launch/astra.launch">
+  <!-- <include file="$(find astra_camera)/launch/astra.launch">
     <arg name="enable_color" value="False"/>
-  </include>
+  </include> -->
 
   <param name="robot_description_planning/shape_transform_cache_lookup_wait_time" value="0.5" />
   <!-- Launch real-robot control -->

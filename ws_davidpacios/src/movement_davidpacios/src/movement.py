@@ -157,7 +157,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         # grasp.post_grasp_retreat.desired_distance = 0.25
 
         desired_opening = 0.04  # adjust as needed
-        desired_closing = 0.02  # adjust as needed
+        desired_closing = 0.04  # adjust as needed
 
         self.openGripper(grasp.pre_grasp_posture, desired_opening)
         self.closedGripper(grasp.grasp_posture, desired_closing)
@@ -277,7 +277,7 @@ class MoveGroupPythonInterfaceTutorial(object):
     def move_gripper(self,pose):
         goal = franka_gripper.msg.MoveGoal()
         goal.width = pose
-        goal.speed = 0.1
+        goal.speed = 0.3
 
         self.move_client.send_goal(goal)
         self.move_client.wait_for_result()
