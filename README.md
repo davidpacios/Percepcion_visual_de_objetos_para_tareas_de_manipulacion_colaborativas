@@ -5,8 +5,8 @@
 Se empleará el brazo robótico colaborativo Franka Panda junto con ROS y MoveIt! para desarrollar tareas de manipulación en cooperación con un operador humano. Además, se utilizará una cámara RGBD y la librería PCL para detectar la posición del objeto y ajustar automáticamente la trayectoria del robot.
 
 # Pick and place node
-roslaunch panda_moveit_config franka_control.launch robot_ip:=172.16.0.2 
-rosrun davidpacios_movement movement.py
+roslaunch movement_davidpacios sensor_franka.launch
+roslaunch movement_davidpacios pick_and_place.launch
 
 # Camara Astra RGBD
 https://www.yahboom.net/public/upload/upload-html/1637059883/Astra%20camera%20calibration.html

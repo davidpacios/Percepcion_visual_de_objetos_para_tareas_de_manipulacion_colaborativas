@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="robot_ip" default="172.16.0.2" />
+  
+  <!-- Launch astra camera -->
+  <include file="$(find astra_camera)/launch/astra.launch">
+    <arg name="enable_color" value="False"/>
+  </include>
+
+  <param name="robot_description_planning/shape_transform_cache_lookup_wait_time" value="0.5" />
+  <!-- Launch real-robot control -->
+  <include file="$(find panda_moveit_config)/launch/franka_control.launch" >
+    <arg name="robot_ip" value="$(arg robot_ip)" />
+  </include>
+  
+</launch>

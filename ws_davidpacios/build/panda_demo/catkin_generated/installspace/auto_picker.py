@@ -220,7 +220,7 @@ class RobotInterface(object):
         place_location.post_place_retreat.min_distance = 0.1
         place_location.post_place_retreat.desired_distance = 0.25
 
-        self.openGripper(place_location.post_place_posture)
+        self.openGripper(place_location.homming)
 
         self.move_group.set_support_surface_name("table")
         self.move_group.place(self.box_name, place_location)

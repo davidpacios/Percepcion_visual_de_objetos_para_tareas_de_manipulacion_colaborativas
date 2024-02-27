@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="movement_davidpacios" type="movement.py" name="movement" output="screen"/>
+  <node pkg="movement_davidpacios" type="gs_action_server.py" name="gs_action_server"/>  
+  
+</launch>
