@@ -104,9 +104,6 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.eef_link = eef_link
         self.group_names = group_names
 
-        # self.homing_client = actionlib.SimpleActionClient('franka_gripper/homing', franka_gripper.msg.HomingAction)
-        # self.homing_client.wait_for_server()
-
         self.move_client = actionlib.SimpleActionClient('franka_gripper/move', franka_gripper.msg.MoveAction)
         self.move_client.wait_for_server()
 
@@ -277,7 +274,7 @@ class MoveGroupPythonInterfaceTutorial(object):
     def move_gripper(self,pose):
         goal = franka_gripper.msg.MoveGoal()
         goal.width = pose
-        goal.speed = 0.3
+        goal.speed = 0.3    
 
         self.move_client.send_goal(goal)
         self.move_client.wait_for_result()
