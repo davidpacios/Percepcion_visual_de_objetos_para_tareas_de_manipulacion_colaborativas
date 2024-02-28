@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="planar_3dof">
+<xacro:property name="pi" value="3.1415926535897931" />
+<xacro:property name="link_length" value="0.5" />
+<xacro:property name="base_height" value="0.1" />
+<xacro:property name="vel_max" value="0.5" />
+<material name="grey">
+	<color rgba="0.7 0.7 0.7 1.0"/>
+</material>
+<link name="base_link"/>
+
+<xacro:macro name="link_planar" params="link_name visual_mesh collision_mesh">
+<link name="${link_name}">
+	<visual>
+		<geometry>
+			<mesh filename="${visual_mesh}"/>
+		</geometry>
+		<material name="grey"/>
+	</visual>
+	<collision>
+		<geometry>
+			<mesh filename="${collision_mesh}"/>
+		</geometry>
+	</collision>
+</link>
+</xacro:macro>
+
+<xacro:link_planar 
+  link_name="link_1" 
+  visual_mesh="package://gripper_description/meshes/visual/arm_link.stl" 
+  collision_mesh="package://gripper_description/meshes/collision/arm_link.stl" />
+
+<xacro:link_planar 
+  link_name="link_2" 
+  visual_mesh="package://gripper_description/meshes/visual/arm_link.stl" 
+  collision_mesh="package://gripper_description/meshes/collision/arm_link.stl" />
+
+<xacro:link_planar 
+  link_name="gripper" 
+  visual_mesh="package://gripper_description/meshes/visual/gripper.stl" 
+  collision_mesh="package://gripper_description/meshes/collision/gripper.stl" />
+
+<joint name="joint_1" type="revolute">
+	<parent link="base_link"/>
+	<child link="link_1"/>
+	<origin xyz="0 0 ${base_height}" rpy="0 ${-pi/2.0} 0"/>
+	<axis xyz="0 0 1" />
+	<limit lower="${-pi/2.0}" upper="${pi/2.0}" effort="0" velocity="${vel_max}"/>
+</joint>
+<joint name="joint_2" type="revolute">
+	<parent link="link_1"/>
+	<child link="link_2"/>
+	<origin xyz="${link_length} 0.0 0.0" rpy="0 0 0"/>
+	<axis xyz="0 0 1" />
+	<limit lower="${-pi/2.0}" upper="${pi/2.0}" effort="0" velocity="${vel_max}"/>
+</joint>
+<joint name="joint_3" type="revolute">
+	<parent link="link_2"/>
+	<child link="gripper"/>
+	<origin xyz="${link_length} 0.0 0.0" rpy="0 0 0"/>
+	<axis xyz="0 0 1" />
+	<limit lower="${-pi/2.0}" upper="${pi/2.0}" effort="0" velocity="${vel_max}"/>
+</joint>
+</robot>
