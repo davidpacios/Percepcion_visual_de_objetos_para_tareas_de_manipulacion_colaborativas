@@ -113,7 +113,7 @@ class RobotInterface(object):
 
         print("============ Subscribing to topic gs_max_distance ...")
         self.max_dist = None
-        rospy.Subscriber("gs_max_distance", Float32, self.cb_gs)
+        rospy.Subscriber("gs_max_distance", Float32, self.callback_gelsightmini)
         while self.max_dist  == None and not rospy.is_shutdown():
             rospy.sleep(0.1)
         
@@ -289,7 +289,7 @@ class RobotInterface(object):
     def cb_pick(self,pose):
         self.pick_pose = pose
     
-    def cb_gs(self,dist) :
+    def callback_gelsightmini(self,dist) :
         self.max_dist = dist
         
 
