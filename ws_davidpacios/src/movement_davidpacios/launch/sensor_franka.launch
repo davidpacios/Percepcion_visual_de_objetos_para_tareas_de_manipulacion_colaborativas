@@ -4,14 +4,26 @@
   <arg name="robot_ip" default="172.16.0.2" />
   
   <!-- Launch astra camera -->
-  <!-- <include file="$(find astra_camera)/launch/astra.launch">
+  <include file="$(find astra_camera)/launch/astra.launch">
     <arg name="enable_color" value="False"/>
-  </include> -->
+  </include>
 
   <param name="robot_description_planning/shape_transform_cache_lookup_wait_time" value="0.5" />
+
   <!-- Launch real-robot control -->
   <include file="$(find panda_moveit_config)/launch/franka_control.launch" >
     <arg name="robot_ip" value="$(arg robot_ip)" />
   </include>
+
+   <!-- Publish the transform between the two -->
+   <!-- -0.37 2.0 0.605: Son las coordenadas de traslación (x, y, z) de la transformación de la cámara con respecto al marco de referencia 'world'.
+         0.0 0.0 -0.6427876096865393 0.766044443118978: Son los componentes del cuaternión de rotación (x, y, z, w) que definen la orientación de la cámara con respecto al marco de referencia 'world'.
+         world camera_link: Especifica los nombres de los marcos de referencia entre los cuales se está publicando la transformación. -->
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-0.37 2.0 0.605 0.0 0.0 -0.6427876096865393 0.766044443118978 world camera_link" /> -->
+
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-0.3070680766604795 0.00024276332985745172 0.5896203102467074 0.9241370103166062 -0.38206043741467205 -0.0006716150400381913 0.00039655873749405105 world camera_link" /> -->
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-1.3070680766604795 0.50024276332985745172 0.4896203102467074 0.0 0.0 0.0 1.0 world camera_link" />
+
   
 </launch>
