@@ -23,7 +23,5 @@
 
   <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-0.3070680766604795 0.00024276332985745172 0.5896203102467074 0.9241370103166062 -0.38206043741467205 -0.0006716150400381913 0.00039655873749405105 world camera_link" /> -->
 
-  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-1.3070680766604795 0.50024276332985745172 0.4896203102467074 0.0 0.0 0.0 1.0 world camera_link" />
-
-  
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="0.2270680766604795 1.30024276332985745172 0.4896203102467074 0.0 0.0 -0.6427876096865393 0.766044443118978 world camera_link" />
 </launch>
