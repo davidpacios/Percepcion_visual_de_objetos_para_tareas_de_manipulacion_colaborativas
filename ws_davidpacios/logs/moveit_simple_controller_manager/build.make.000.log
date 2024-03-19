@@ -1,4 +1,0 @@
-[ 33%] [32mBuilding CXX object CMakeFiles/moveit_simple_controller_manager.dir/src/moveit_simple_controller_manager.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/moveit_simple_controller_manager.dir/src/follow_joint_trajectory_controller_handle.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_simple_controller_manager/lib/libmoveit_simple_controller_manager.so[0m
-[100%] Built target moveit_simple_controller_manager

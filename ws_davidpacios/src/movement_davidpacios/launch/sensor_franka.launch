@@ -2,11 +2,38 @@
 <launch>
 
   <arg name="robot_ip" default="172.16.0.2" />
+  <!-- <arg name="serial_no"             default=""/>
+  <arg name="json_file_path"        default=""/>
+  <arg name="camera"                default="camera"/> -->
+
   
   <!-- Launch astra camera -->
   <include file="$(find astra_camera)/launch/astra.launch">
-    <arg name="enable_color" value="False"/>
+    <arg name="enable_color" value="true"/>
   </include>
+
+  <!-- Launch realsense camera -->
+  <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="serial_no"         value="$(arg serial_no)"/>
+      <arg name="json_file_path"    value="$(arg json_file_path)"/>
+      <arg name="depth_width"       value="640"/>
+      <arg name="depth_height"      value="480"/>
+      <arg name="depth_fps"         value="30"/>
+      <arg name="color_width"       value="640"/>
+      <arg name="color_height"      value="480"/>
+      <arg name="color_fps"         value="30"/>
+      <arg name="enable_depth"      value="true"/>
+      <arg name="enable_color"      value="true"/>
+      <arg name="enable_infra1"     value="false"/>
+      <arg name="enable_infra2"     value="false"/>
+      <arg name="enable_fisheye"    value="false"/>
+      <arg name="enable_gyro"       value="false"/>
+      <arg name="enable_accel"      value="false"/>
+      <arg name="enable_pointcloud" value="true"/>
+      <arg name="enable_sync"       value="true"/>
+      <arg name="tf_prefix"         value="$(arg camera)"/>
+
+  </include> -->
 
   <param name="robot_description_planning/shape_transform_cache_lookup_wait_time" value="0.5" />
 
@@ -19,9 +46,6 @@
    <!-- -0.37 2.0 0.605: Son las coordenadas de traslación (x, y, z) de la transformación de la cámara con respecto al marco de referencia 'world'.
          0.0 0.0 -0.6427876096865393 0.766044443118978: Son los componentes del cuaternión de rotación (x, y, z, w) que definen la orientación de la cámara con respecto al marco de referencia 'world'.
          world camera_link: Especifica los nombres de los marcos de referencia entre los cuales se está publicando la transformación. -->
-  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-0.37 2.0 0.605 0.0 0.0 -0.6427876096865393 0.766044443118978 world camera_link" /> -->
-
-  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="-0.3070680766604795 0.00024276332985745172 0.5896203102467074 0.9241370103166062 -0.38206043741467205 -0.0006716150400381913 0.00039655873749405105 world camera_link" /> -->
-
   <node pkg="tf2_ros" type="static_transform_publisher" name="camera_tf" args="0.2270680766604795 1.30024276332985745172 0.4896203102467074 0.0 0.0 -0.6427876096865393 0.766044443118978 world camera_link" />
+
 </launch>

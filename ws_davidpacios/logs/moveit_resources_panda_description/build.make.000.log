@@ -1,4 +1,0 @@
-[ 33%] [34m[1mcreating dir /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_resources_panda_description/share/moveit_resources_panda_description/robots[0m
-[ 66%] [34m[1mCopying to devel space: /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_resources_panda_description/share/moveit_resources_panda_description/robots/panda.urdf[0m
-[100%] Built target moveit_resources_panda_description_xacro_to_devel_space_
-[100%] Built target moveit_resources_panda_description_xacro_generated_to_devel_space_

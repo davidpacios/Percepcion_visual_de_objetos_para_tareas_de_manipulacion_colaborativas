@@ -11,8 +11,7 @@ for i in range(10):  # Probamos con los primeros 10 índices
             print(f"Opción {i}: No abierto")
 
 
-cap = cv2.VideoCapture(1, cv2.CAP_V4L2)
-
+cap = cv2.VideoCapture(8, cv2.CAP_V4L2)
 
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 parameters = cv2.aruco.DetectorParameters()
