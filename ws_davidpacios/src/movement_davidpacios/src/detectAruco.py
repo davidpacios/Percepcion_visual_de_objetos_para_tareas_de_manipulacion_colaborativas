@@ -25,7 +25,6 @@ def image_callback(msg):
         if ids is not None:
             cv2.aruco.drawDetectedMarkers(frame, corners, ids)
     
-
         # Mostrar la imagen
         cv2.imshow("Image", frame)
         cv2.waitKey(1)

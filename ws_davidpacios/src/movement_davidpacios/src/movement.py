@@ -96,6 +96,12 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.callibration_client = actionlib.SimpleActionClient('gs_action', panda_demo.msg.GsAction)
         self.callibration_client.wait_for_server()
 
+        print("============ Subscribing to topic arucos_position ...")
+        self.arucos = []
+        rospy.Subscriber("arucos_position", PoseStamped, self.callback_arucos_position)
+        while not self.arucos and not rospy.is_shutdown():
+            rospy.sleep(0.1)
+
         print("============ Subscribing to topic gs_max_distance ...")
         self.max_dist = None
         rospy.Subscriber("gs_max_distance", Float32, self.callback_gelsightmini)
@@ -258,9 +264,12 @@ class MoveGroupPythonInterfaceTutorial(object):
         return self.wait_for_state_update(
             box_is_attached=False, box_is_known=False, timeout=timeout
         )
+    
+    def callback_arucos_position(self, data):
+        # Maneja la posición del marcador ArUco recibida
+        self.arucos.append(data)
 
      # Check if the gellsight is touched
-    
     def check_touch(self):
         print("Data:",self.max_dist)
         return self.max_dist.data >= 5
