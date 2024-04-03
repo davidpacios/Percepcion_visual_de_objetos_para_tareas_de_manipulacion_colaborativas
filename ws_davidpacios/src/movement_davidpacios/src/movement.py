@@ -5,7 +5,6 @@ import numpy
 from six.moves import input
 import os
 import sys
-import copy
 import rospy
 import moveit_commander
 import moveit_msgs.msg
@@ -14,29 +13,26 @@ import trajectory_msgs.msg
 from std_msgs.msg import Float32
 import franka_gripper.msg
 
-import tf2_ros
-import tf2_geometry_msgs  # Importante para realizar la transformación de geometría
-
 import actionlib
 import panda_demo.msg
 
-from math import pi, tau, dist, fabs, cos
 from std_msgs.msg import String
-from moveit_commander.conversions import pose_to_list
 from geometry_msgs.msg import PoseStamped
-from sensor_msgs.msg import JointState
+
+#(0.86,0,0.03) panda_link0 == (4.47,3.80,0) camera_link
+#(x,y,z) panda_link0 == (2.10, 4.41,0) camera_link
 
 initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
         
 object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
-pose_pick = geometry_msgs.msg.Pose()
-pose_pick.position.x = 0.4161880497314183
-pose_pick.position.y = 0.11825780711004699
-pose_pick.position.z = 0.14369141349788575
-pose_pick.orientation.x = -0.9231143539216148
-pose_pick.orientation.y = -0.3840649074696301
-pose_pick.orientation.z = -0.01819345318830564
-pose_pick.orientation.w = 0.00479944739623474
+# pose_pick = geometry_msgs.msg.Pose()
+# pose_pick.position.x = 0.4161880497314183
+# pose_pick.position.y = 0.11825780711004699
+# pose_pick.position.z = 0.14369141349788575
+# pose_pick.orientation.x = -0.9231143539216148
+# pose_pick.orientation.y = -0.3840649074696301
+# pose_pick.orientation.z = -0.01819345318830564
+# pose_pick.orientation.w = 0.00479944739623474
 
 final_position = [1.7637484339747513, -0.7131722207323297, -0.09763801533611195, -2.82389828109355, -0.08833917383383795, 2.136842511844892, 0.9294967901285764, 0.03993682563304901, 0.03993682563304901]
 pose_place = geometry_msgs.msg.Pose()
@@ -48,6 +44,7 @@ pose_place.orientation.z = 0.0
 pose_place.orientation.w = 1.0
 
 gripper_max_opening = 0.04  # adjust as needed
+
 
 def clear_screen():
     # Verifica si el sistema operativo es Windows o no
@@ -97,8 +94,8 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.callibration_client.wait_for_server()
 
         print("============ Subscribing to topic arucos_position ...")
-        self.arucos = []
-        rospy.Subscriber("arucos_position", PoseStamped, self.callback_arucos_position)
+        self.arucos = None
+        rospy.Subscriber("aruco_poses", String, self.callback_arucos_position)
         while not self.arucos and not rospy.is_shutdown():
             rospy.sleep(0.1)
 
@@ -148,7 +145,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.hand_group.execute(plan, wait=True)
         self.hand_group.stop()
 
-    def pick(self,grasp_pose):
+    def move_to_pick(self,grasp_pose):
         grasp = moveit_msgs.msg.Grasp()
 
         grasp.grasp_pose.header.frame_id = "panda_link0"
@@ -171,6 +168,9 @@ class MoveGroupPythonInterfaceTutorial(object):
 
         self.move_group.stop()
 
+        return
+
+    def pick(self,object_pose):
         return
 
     def place(self,place_pose):
@@ -264,20 +264,14 @@ class MoveGroupPythonInterfaceTutorial(object):
         return self.wait_for_state_update(
             box_is_attached=False, box_is_known=False, timeout=timeout
         )
-    
-    def callback_arucos_position(self, data):
-        # Maneja la posición del marcador ArUco recibida
-        self.arucos.append(data)
-
-     # Check if the gellsight is touched
+        
     def check_touch(self):
         print("Data:",self.max_dist)
-        return self.max_dist.data >= 5
+        return self.max_dist.data >= 8
     
     def callback_gelsightmini(self,dist) :
         self.max_dist = dist
 
-    # Send a goal to the gripper
     def move_gripper(self,pose):
         goal = franka_gripper.msg.MoveGoal()
         goal.width = pose
@@ -285,94 +279,147 @@ class MoveGroupPythonInterfaceTutorial(object):
 
         self.move_client.send_goal(goal)
         self.move_client.wait_for_result()
+    
+    def callback_arucos_position(self, data):
+        self.arucos = []
+        # Recupera la información de los arucos desde el mensaje de tipo String
+        arucos_info = data.data.split(';')
+        
+        # Parsea la información de cada aruco y crea objetos PoseStamped
+        for aruco_info in arucos_info:
+            if aruco_info:  # Verifica si la cadena no está vacía
+                aruco_data = aruco_info.split(':')
+                if len(aruco_data) >= 4:  # Verifica si hay al menos 4 elementos (id, x, y, z)
+                    pose_msg = PoseStamped()
+                    pose_msg.header.frame_id = f"aruco_{aruco_data[0]}"
+                    pose_msg.header.stamp = rospy.Time.now()
+                    pose_msg.pose.position.x = float(aruco_data[1])
+                    pose_msg.pose.position.y = float(aruco_data[2])
+                    pose_msg.pose.position.z = float(aruco_data[3])    
+                    pose_msg.pose.orientation.x = float(aruco_data[4])                
+                    pose_msg.pose.orientation.y = float(aruco_data[5])                
+                    pose_msg.pose.orientation.z = float(aruco_data[6])                
+                    pose_msg.pose.orientation.w = float(aruco_data[7]) 
+
+                    # Añade el objeto PoseStamped a la lista de arucos
+                    self.arucos.append(pose_msg)
+
+    def select_aruco(self):
+        print("Seleccione un marcador ArUco:")
+        for i, aruco_data in enumerate(self.arucos):
+            print(f"{i+1}. ID del marcador: {aruco_data.header.frame_id.replace('aruco_', '')}")
+            print(f"Posición (x, y, z): ({aruco_data.pose.position.x}, {aruco_data.pose.position.y}, {aruco_data.pose.position.z})")
+
+        while True:
+            try:
+                selection = int(input("Select an Arucon (Pulse 0 to go back): "))
+                if selection == 0: return None
+
+                aruco_position = self.arucos[selection - 1].pose
+                print(f"Ha seleccionado el marcador ArUco con ID {self.arucos[selection - 1].header.frame_id.replace('aruco_', '')}:")
+                print(aruco_position)
+                return aruco_position
+            
+            except (ValueError, IndexError):
+                print("Opción no válida. Por favor, ingrese un número válido.")
+
+
+def go_initial_position_and_open_gripper(MoveGroup):
+    if initial_position is not None:
+            MoveGroup.go_to_joint_state(initial_position)
+    else:
+        print("Initial position not set.")
+    MoveGroup.open_gripper()
+
+def go_object_position(MoveGroup):
+    if object_position is None:
+        print("Object position not set.")
+        return
+    MoveGroup.go_to_joint_state(object_position)
+
+def go_final_position(MoveGroup):
+    if final_position is None:
+        print("Object position not set.")
+        return
+    MoveGroup.go_to_joint_state(final_position)
+
+def pick_and_place(MoveGroup):
+    if initial_position is None:
+        print("Initial position not set.")
+        return
+
+    object_pose = MoveGroup.select_aruco()
+    
+    if object_pose == None:
+        return
+      
+    a = MoveGroup.add_box()
+    print("Object have been added: ", a)
+
+    MoveGroup.open_gripper()
+    MoveGroup.go_to_joint_state(initial_position)
+
+    print("Picking")
+    MoveGroup.callibration_client.send_goal(panda_demo.msg.GsGoal())
+    MoveGroup.move_to_pick(object_pose)
+    MoveGroup.callibration_client.wait_for_result()
+    # Close the gripper progressively until the gellsight touches
+    poses = numpy.linspace(0.08,0.0,100)
+    for pose in poses:
+        MoveGroup.move_gripper(pose)
+        if MoveGroup.check_touch():
+            print("Toutching ... width =",pose)
+            break
+    print("Picked")
+
+    MoveGroup.go_to_joint_state(initial_position)
+
+    print("Placing")
+    MoveGroup.place(pose_place)
+    print("Placed")
+    
+    MoveGroup.go_to_joint_state(initial_position)
+    MoveGroup.open_gripper()
+
+    a = MoveGroup.remove_box()
+    print("Object have been removed: ", a)
 
 def main():
     try:
         #clear_screen()
         print("")
         print("----------------------------------------------------------")
-        print("Welcome to the Movement Tutorial, created by David Pacios")
+        print("Welcome to the Movement-DPV, created by David Pacios Vázquez")
         print("----------------------------------------------------------")
-        print("Press Ctrl-D to exit at any time")
         print("")
-        m = MoveGroupPythonInterfaceTutorial()
-        
+        MoveGroup = MoveGroupPythonInterfaceTutorial()
         while True:
             print("0. Initial position")
             print("1. Go to object position")
             print("3. Go to final posicion")
-            print("5. Execute all")
+            print("5. Pick and Place with Arucos")
             print("6. Exit")
             
             choice = input("Enter your choice (0-6): ")
             
             if choice == '0':
-                if initial_position is not None:
-                    m.go_to_joint_state(initial_position)
-                else:
-                    print("Initial position not set.")
-
+                go_initial_position_and_open_gripper(MoveGroup)
+                
             elif choice == '1':
-                if object_position is not None:
-                    m.go_to_joint_state(object_position)
-                else:
-                    print("Object position not set.")
+                go_object_position(MoveGroup)
                 
             elif choice == '3':
-                if final_position is not None:
-                    m.go_to_joint_state(final_position)
-                else:
-                    print("Object position not set.")
+                go_final_position(MoveGroup)
 
             elif choice == '5':
+                pick_and_place(MoveGroup)
 
-                if initial_position is not None and object_position is not None:
-                    a = m.add_box()
-                    print("Se ha añadido una caja: ", a)
-                    print("Starting")
-                    m.open_gripper()
-                    m.go_to_joint_state(initial_position)
-                    # Start calibration action
-                    m.callibration_client.send_goal(panda_demo.msg.GsGoal())
-                    print("Picking")
-                    m.pick(pose_pick)
-                    # Wait for the calibration to be done
-                    m.callibration_client.wait_for_result()
-                    print("Gellsight Mini Callibration Finished")
-
-                    # Close the gripper progressively until the gellsight touches
-                    poses = numpy.linspace(0.08,0.0,100)
-                    for pose in poses:
-                        m.move_gripper(pose)
-                        if m.check_touch():
-                            print("Toutching ... width =",pose)
-                            break
-                    print("Picked")
-
-                    m.go_to_joint_state(initial_position)
-
-                    print("Placing")
-                    m.place(pose_place)
-                    print("Placed")
-                    
-                    m.go_to_joint_state(initial_position)
-                    m.open_gripper()
-                    print("Ending")
-                    a = m.remove_box()
-                    print("Se ha eliminado una caja: ", a)
-                else:
-                    print("Not set.")
-
-            elif choice == '6':
-                if initial_position is not None:
-                    m.go_to_joint_state(initial_position)
-                else:
-                    print("Initial position not set.")
+            if choice == '6':
+                go_initial_position_and_open_gripper(MoveGroup)
                 break
             else:
                 print("Invalid choice. Please enter a number between 0 and 5.")
-
-        print("============ Movement tutorial demo complete!")
+        print("============ Movement-DPV ended!")
     except KeyboardInterrupt:
         return
 

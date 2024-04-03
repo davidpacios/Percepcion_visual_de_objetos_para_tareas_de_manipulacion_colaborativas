@@ -8,6 +8,7 @@ Se trabajará con el brazo robótico colaborativo Franka Panda para llevar a cab
 ## Pick and place node
 roslaunch movement_davidpacios sensor_franka.launch
 roslaunch movement_davidpacios pick_and_place.launch
+rosrun movemenet_davidpacios calibration.py
 
 ## Camara Astra RGBD
 https://www.yahboom.net/public/upload/upload-html/1637059883/Astra%20camera%20calibration.html
