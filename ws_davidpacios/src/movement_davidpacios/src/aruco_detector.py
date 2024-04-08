@@ -5,6 +5,7 @@ from cv_bridge import CvBridge
 import cv2
 from std_msgs.msg import String
 import numpy as np
+import tf
 
 bridge = CvBridge()
 
@@ -21,11 +22,12 @@ camera_matrix = np.array([[554.26, 0, 320],
 dist_coeffs = np.zeros((4, 1)) #Coeficientes de distorsión
 
 # Publicador para las posiciones y orientaciones de los arucos
-aruco_pose_pub = rospy.Publisher('/aruco_poses', String, queue_size=10)  # Cambiado el tipo de mensaje a una lista de PoseStamped
+aruco_pose_pub = rospy.Publisher('/aruco_poses', String, queue_size=10) 
+aruco_pose_calibration_pub = rospy.Publisher('/aruco_pose_panda_link0', String, queue_size=10) 
 
 counter = 0
 ids_saved = []
-#aruco_info = ""
+aruco_info = ""
 
 # pose_pick = geometry_msgs.msg.Pose()
 # pose_pick.position.x = 0.4161880497314183
@@ -35,7 +37,6 @@ ids_saved = []
 # pose_pick.orientation.y = -0.3840649074696301
 # pose_pick.orientation.z = -0.01819345318830564
 # pose_pick.orientation.w = 0.00479944739623474
-aruco_info = "100:0.4161880497314183:0.11825780711004699:0.14369141349788575:-0.9231143539216148:-0.3840649074696301:-0.01819345318830564:0.00479944739623474;"
 
 def image_callback(msg):
     global ids_saved
@@ -54,30 +55,35 @@ def image_callback(msg):
             
             # Construir el mensaje de tipo String con la información de los arucos
             for i in range(len(ids)):
-                if ids[i][0] in ids_saved:
+                id_aruco = ids[i][0]
+                corner = corners[i][0]
+
+                if id_aruco in ids_saved:
                     continue
 
-                marker_id = ids[i][0]
-                marker_x = corners[i][0][0][0] / 100
-                marker_y = corners[i][0][0][1] / 100
-                marker_z = 0 / 100
-                orientation_x = 0
-                orientation_y = 0
-                orientation_z = 0
-                orientation_w = 0
+                # Calcular la posición y la orientación del marcador
+                rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(corner, 0.1, camera_matrix, dist_coeffs)
+                
+                # Convertir la orientación de rotación a cuaternión
+                rvec_matrix = cv2.Rodrigues(rvec)[0]
+                q = tf.transformations.quaternion_from_matrix(rvec_matrix)
+                
+                if id_aruco == 7: #Aruco Calibration
+                    aruco_aux = f"{id_aruco}:{tvec[0][0]:.2f}:{tvec[0][1]:.2f}:{tvec[0][2]:.2f}:{q[0]:.2f}:{q[1]:.2f}:{q[2]:.2f}:{q[3]:.2f};"
+                    aruco_pose_pub.publish(aruco_aux)
+                    continue
 
-                aruco_info += f"{marker_id}:{marker_x}:{marker_y}:{marker_z}:{orientation_x}:{orientation_y}:{orientation_z}:{orientation_w};"
-
-                ids_saved.append(marker_id)
+                # Formatear la información del ArUco
+                aruco_info += f"{id_aruco}:{tvec[0][0]:.2f}:{tvec[0][1]:.2f}:{tvec[0][2]:.2f}:{q[0]:.2f}:{q[1]:.2f}:{q[2]:.2f}:{q[3]:.2f};"
+                ids_saved.append(id_aruco)
 
             counter+=1;
-            
             if counter == 50:
+                print(aruco_info)
                 aruco_pose_pub.publish(aruco_info)
                 counter = 0
-                #aruco_info = ""
-                aruco_info = "100:0.4161880497314183:0.11825780711004699:0.14369141349788575:-0.9231143539216148:-0.3840649074696301:-0.01819345318830564:0.00479944739623474;"
-
+                aruco_info = ""
+                #aruco_info = "100:0.4161880497314183:0.11825780711004699:0.14369141349788575:-0.9231143539216148:-0.3840649074696301:-0.01819345318830564:0.00479944739623474;"
                 ids_saved = []
             
         # Mostrar la imagen

@@ -2,7 +2,9 @@
 <launch>
 
   <node pkg="movement_davidpacios" type="movement.py" name="movement" output="screen"/>
+  <node pkg="movement_davidpacios" type="aruco_poses_trf.py" name="aruco_poses_trf"/>
   <node pkg="movement_davidpacios" type="gs_action_server.py" name="gs_action_server"/>  
-  <node pkg="movement_davidpacios" type="aruco_detector.py" name="aruco_detector"/>  
+  <node pkg="movement_davidpacios" type="aruco_detector.py" name="aruco_detector"/>
+  <node pkg="movement_davidpacios" type="trf_camera_link_to_world.py" name="trf_camera_link_to_world"/>
   
 </launch>

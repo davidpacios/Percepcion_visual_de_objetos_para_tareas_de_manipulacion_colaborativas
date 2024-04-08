@@ -19,9 +19,6 @@ import panda_demo.msg
 from std_msgs.msg import String
 from geometry_msgs.msg import PoseStamped
 
-#(0.86,0,0.03) panda_link0 == (4.47,3.80,0) camera_link
-#(x,y,z) panda_link0 == (2.10, 4.41,0) camera_link
-
 initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
         
 object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
@@ -93,9 +90,9 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.callibration_client = actionlib.SimpleActionClient('gs_action', panda_demo.msg.GsAction)
         self.callibration_client.wait_for_server()
 
-        print("============ Subscribing to topic arucos_position ...")
+        print("============ Subscribing to topic arucos_poses_trf ...")
         self.arucos = None
-        rospy.Subscriber("aruco_poses", String, self.callback_arucos_position)
+        rospy.Subscriber("aruco_poses_trf", String, self.callback_arucos_position)
         while not self.arucos and not rospy.is_shutdown():
             rospy.sleep(0.1)
 
