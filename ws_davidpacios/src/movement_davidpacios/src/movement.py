@@ -305,7 +305,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         print("Seleccione un marcador ArUco:")
         for i, aruco_data in enumerate(self.arucos):
             print(f"{i+1}. ID del marcador: {aruco_data.header.frame_id.replace('aruco_', '')}")
-            print(f"Posición (x, y, z): ({aruco_data.pose.position.x}, {aruco_data.pose.position.y}, {aruco_data.pose.position.z})")
+            print(f"Posición (x, y, z): ({aruco_data.pose.position.x}, {aruco_data.pose.position.y}, {aruco_data.pose.position.z}, {aruco_data.pose.orientation.x}, {aruco_data.pose.orientation.y}, {aruco_data.pose.orientation.z},{aruco_data.pose.orientation.w})")
 
         while True:
             try:
