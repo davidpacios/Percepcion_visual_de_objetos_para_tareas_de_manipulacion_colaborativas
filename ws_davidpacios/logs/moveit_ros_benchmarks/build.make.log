@@ -10,7 +10,7 @@ In file included from [01m[K/usr/include/boost/config/header_deprecated.hpp:18
       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
 [ 28%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_benchmarks/lib/libmoveit_ros_benchmarks.so[0m
 [ 42%] Built target moveit_ros_benchmarks
-[ 71%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_benchmarks/lib/moveit_ros_benchmarks/moveit_run_benchmark[0m
 [ 71%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_benchmarks/lib/moveit_ros_benchmarks/moveit_combine_predefined_poses_benchmark[0m
+[ 71%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_benchmarks/lib/moveit_ros_benchmarks/moveit_run_benchmark[0m
 [ 85%] Built target moveit_run_benchmark
 [100%] Built target moveit_combine_predefined_poses_benchmark
