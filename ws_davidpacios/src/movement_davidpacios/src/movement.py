@@ -178,22 +178,18 @@ class MoveGroupPythonInterfaceTutorial(object):
         place_location.place_pose.pose = place_pose
 
         place_location.pre_place_approach.direction.header.frame_id = "panda_link0"
-
         place_location.pre_place_approach.direction.vector.z = -1.0
         place_location.pre_place_approach.min_distance = 0.1
         place_location.pre_place_approach.desired_distance = 0.2
 
 
         place_location.post_place_retreat.direction.header.frame_id = "panda_link0"
-
         place_location.post_place_retreat.direction.vector.z = 1.0
         place_location.post_place_retreat.min_distance = 0.1
         place_location.post_place_retreat.desired_distance = 0.25
 
         self.openGripper(place_location.post_place_posture, gripper_max_opening)
-
         self.move_group.place(self.box_name, place_location)
-
         self.move_group.stop()
 
         return

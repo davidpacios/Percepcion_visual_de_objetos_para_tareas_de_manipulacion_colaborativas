@@ -66,16 +66,12 @@ def image_callback(msg):
 
 
             obj_points = np.array([[0, 0, 0], [marker_length, 0, 0], [marker_length, marker_length, 0], [0, marker_length, 0]], dtype=np.float32)
-            # Obtener los puntos 2D del marcador ArUco
             image_points = corner.reshape(-1, 1, 2)
-            # Calcular la pose del marcador usando solvePnP
             success, rvec, tvec = cv2.solvePnP(obj_points, image_points, camera_matrix, dist_coeffs)
-            # Convertir la orientación de rotación a cuaternión
             rvec_matrix = cv2.Rodrigues(rvec)[0]
-            # Añadir una fila de ceros con un 1 en la última posición
-            rvec_matrix_4x4 = np.vstack([rvec_matrix, [0, 0, 0]])
-            # Añadir una columna de ceros con un 1 en la última posición
-            rvec_matrix_4x4 = np.hstack([rvec_matrix_4x4, np.array([[0], [0], [0], [1]])])
+            rvec_matrix_4x4 = np.eye(4)
+            rvec_matrix_4x4[:3, :3] = rvec_matrix
+            rvec_matrix_4x4[:3, 3] = tvec.flatten()
             q = tr.quaternion_from_matrix(rvec_matrix_4x4)
         
             # print(f"Marcador ID {ids[i]}:")

@@ -24,29 +24,6 @@ def transform_callback(msg):
     global aux
     if not aux: aux = True
 
-    arucos_data = msg.data[:-1]
-    aruco_info = arucos_data.split(':')
-    id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
-
-
-    # Crear un objeto TransformStamped con la información recibida
-    t = geometry_msgs.msg.TransformStamped()
-    t.header.stamp = rospy.Time.now()
-    t.header.frame_id = "aruco_frame"
-    t.child_frame_id = "camera_link"
-
-    # Transformación entre aruco_frame y camera_link
-    t.transform.translation.x = x
-    t.transform.translation.y = y
-    t.transform.translation.z = z
-    t.transform.rotation.x = x_orientation
-    t.transform.rotation.y = y_orientation
-    t.transform.rotation.z = z_orientation
-    t.transform.rotation.w = w_orientation
-    
-    # Publicar la transformación entre aruco_frame y camera_link
-    broadcaster.sendTransform(t)
-
     # Añadir transformación entre panda_link0 y aruco_frame
     t_nueva = geometry_msgs.msg.TransformStamped()
     t_nueva.header.stamp = rospy.Time.now()
@@ -62,6 +39,30 @@ def transform_callback(msg):
     
     # Publicar la nueva transformación entre panda_link0 y aruco_frame
     broadcaster.sendTransform(t_nueva)
+
+    arucos_data = msg.data[:-1]
+    aruco_info = arucos_data.split(':')
+    id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
+
+    # Crear un objeto TransformStamped con la información recibida
+    t = geometry_msgs.msg.TransformStamped()
+    t.header.stamp = rospy.Time.now()
+    t.header.frame_id = "camera_link"
+    t.child_frame_id = "aruco_frame"
+
+    # Transformación entre aruco_frame y camera_link
+    t.transform.translation.x = x
+    t.transform.translation.y = y
+    t.transform.translation.z = z
+    t.transform.rotation.x = x_orientation
+    t.transform.rotation.y = y_orientation
+    t.transform.rotation.z = z_orientation
+    t.transform.rotation.w = w_orientation
+    
+    # Publicar la transformación entre aruco_frame y camera_link
+    broadcaster.sendTransform(t)
+
+   
 
 if __name__ == '__main__':
     main()
