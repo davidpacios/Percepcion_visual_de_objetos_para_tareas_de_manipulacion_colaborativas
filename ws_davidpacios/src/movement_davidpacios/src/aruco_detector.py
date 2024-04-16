@@ -8,6 +8,8 @@ import numpy as np
 import tf
 import tf.transformations as tr
 import math
+import os
+import yaml
 from scipy.spatial.transform import Rotation as R
 
 bridge = CvBridge()
@@ -17,12 +19,10 @@ aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 parameters = cv2.aruco.DetectorParameters()
 detector = cv2.aruco.ArucoDetector(aruco_dict, parameters)
 
+# Calibration parameters yaml file
+camera_calibration_parameters_filename = "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/movement_davidpacios/camera/rgb_camera.yaml"
 # Parámetros íntrinsecos de la cámara Astra Orbbec
-camera_matrix = np.array([[554.26, 0, 320], 
-                          [0, 460.89, 240], 
-                          [0, 0, 1]]) #Matriz de la cámara
 
-dist_coeffs = np.zeros((4, 1)) #Coeficientes de distorsión
 
 # Publicador para las posiciones y orientaciones de los arucos
 aruco_pose_pub = rospy.Publisher('/aruco_poses', String, queue_size=10)
@@ -114,7 +114,6 @@ def image_callback(msg):
             aruco_pose_pub.publish(aruco_info)
             counter = 0
             aruco_info = ""
-            #aruco_info = "100:0.4161880497314183:0.11825780711004699:0.14369141349788575:-0.9231143539216148:-0.3840649074696301:-0.01819345318830564:0.00479944739623474;"
             ids_saved = []
             
         # Mostrar la imagen
@@ -124,32 +123,35 @@ def image_callback(msg):
     except Exception as e:
         print(e)
 
-
-def euler_from_quaternion(x, y, z, w):
-  """
-  Convert a quaternion into euler angles (roll, pitch, yaw)
-  roll is rotation around x in radians (counterclockwise)
-  pitch is rotation around y in radians (counterclockwise)
-  yaw is rotation around z in radians (counterclockwise)
-  """
-  t0 = +2.0 * (w * x + y * z)
-  t1 = +1.0 - 2.0 * (x * x + y * y)
-  roll_x = math.atan2(t0, t1)
-      
-  t2 = +2.0 * (w * y - z * x)
-  t2 = +1.0 if t2 > +1.0 else t2
-  t2 = -1.0 if t2 < -1.0 else t2
-  pitch_y = math.asin(t2)
-      
-  t3 = +2.0 * (w * z + x * y)
-  t4 = +1.0 - 2.0 * (y * y + z * z)
-  yaw_z = math.atan2(t3, t4)
-      
-  return roll_x, pitch_y, yaw_z # in radians
-
 def main():
     rospy.init_node('aruco_detector', anonymous=True)
+    global camera_matrix
+    global  dist_coeffs
+    try:
+        # Abrir el archivo YAML
+        with open(camera_calibration_parameters_filename, 'r') as f:
+            contenido_yaml = yaml.safe_load(f)
+            
+            # Extraer la matriz de la cámara y los coeficientes de distorsión
+            camera_matrix_str = contenido_yaml['camera_matrix']['data']
+            dist_coeffs_str = contenido_yaml['distortion_coefficients']['data']
+            
+            # Convertir los coeficientes de distorsión de string a una lista de floats
+            dist_coeffs = np.array([float(coeff) for coeff in dist_coeffs_str[0].split()]).reshape(-1, 1)
+            # Convertir la matriz de la cámara de string a un array numpy
+            camera_matrix = np.array(camera_matrix_str).reshape(3, 3)
 
+            print("Matriz de la cámara:")
+            print(camera_matrix)
+            print("\nCoeficientes de distorsión:")
+            print(dist_coeffs)
+            
+    except FileNotFoundError:
+        print(f"Error: El archivo '{camera_calibration_parameters_filename}' no se encuentra.")
+        return
+    except IOError:
+        print(f"Error: No se puede abrir el archivo '{camera_calibration_parameters_filename}'.")
+        return
     rospy.Subscriber("/camera/color/image_raw", Image, image_callback)
     rospy.spin()
 

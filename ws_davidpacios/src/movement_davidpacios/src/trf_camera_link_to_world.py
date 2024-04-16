@@ -25,19 +25,22 @@ def transform_callback(msg):
     # # # Añadir transformación entre panda_link0 y aruco_frame
     # t_nueva = geometry_msgs.msg.TransformStamped()
     # t_nueva.header.stamp = rospy.Time.now()
-    # t_nueva.header.frame_id = "panda_link0"
-    # t_nueva.child_frame_id = "aruco_frame"
-    # t_nueva.transform.translation.x = 0.08  
-    # t_nueva.transform.translation.y = 0.06
+    # t_nueva.header.frame_id = "aruco_frame"
+    # t_nueva.child_frame_id = "world"
+    # t_nueva.transform.translation.x = -0.12  
+    # t_nueva.transform.translation.y = -0.03
     # t_nueva.transform.translation.z = 0.00  
     # t_nueva.transform.rotation.x = 0
     # t_nueva.transform.rotation.y = 0
     # t_nueva.transform.rotation.z = 0
     # t_nueva.transform.rotation.w = 1
+
+
     # broadcaster.sendTransform(t_nueva)
-    arucos_data = msg.data[:-1]
-    aruco_info = arucos_data.split(':')
-    id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
+    
+    # arucos_data = msg.data[:-1]
+    # aruco_info = arucos_data.split(':')
+    # id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
     # # # Crear un objeto TransformStamped con la información recibida
     # t = geometry_msgs.msg.TransformStamped()
     # t.header.stamp = rospy.Time.now()
@@ -61,7 +64,7 @@ def transform_callback(msg):
     id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
 
     transform_matrix_world_marker = transformations.concatenate_matrices(
-        transformations.translation_matrix((0.08 , 0.06, 0.00)),
+        transformations.translation_matrix((0.12 , 0.03, 0.00)), #medio del aruco
         transformations.quaternion_matrix((0, 0, 0, 1))
     )
     
