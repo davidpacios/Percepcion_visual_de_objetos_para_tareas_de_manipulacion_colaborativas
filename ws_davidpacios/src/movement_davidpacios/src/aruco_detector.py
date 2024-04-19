@@ -30,7 +30,7 @@ aruco_pose_pub_frame = rospy.Publisher('/aruco_pose_frame', String, queue_size=1
 
 id_aruco_to_frame = 8
 marker_length_to_frame = 0.06  # Longitud del lado del marcador ArUco (en metros)
-marker_length_to_pick_and_place = 0.06 #0.024
+marker_length_to_pick_and_place = 0.024
 
 counter = 0
 ids_saved = []
@@ -70,6 +70,7 @@ def image_callback(msg):
             obj_points = np.array([[0, 0, 0], [marker_length, 0, 0], [marker_length, marker_length, 0], [0, marker_length, 0]], dtype=np.float32)
             image_points = corner.reshape(-1, 1, 2)
             success, rvec, tvec = cv2.solvePnP(obj_points, image_points, camera_matrix, dist_coeffs)
+            cv2.drawFrameAxes(frame, camera_matrix, dist_coeffs, rvec, tvec, marker_length)
 
             rvec_matrix = cv2.Rodrigues(rvec)[0]
             rvec_matrix_4x4 = np.eye(4)

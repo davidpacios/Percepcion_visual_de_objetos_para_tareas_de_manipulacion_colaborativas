@@ -310,6 +310,12 @@ class MoveGroupPythonInterfaceTutorial(object):
 
                 aruco_position = self.arucos[selection - 1].pose
                 print(f"Ha seleccionado el marcador ArUco con ID {self.arucos[selection - 1].header.frame_id.replace('aruco_', '')}:")
+                aruco_position.position.y = aruco_position.position.y - 0.03
+                aruco_position.position.z =0.14369141349788575
+                aruco_position.orientation.x = -0.9231143539216148
+                aruco_position.orientation.y = -0.3840649074696301
+                aruco_position.orientation.z = -0.01819345318830564
+                aruco_position.orientation.w = 0.00479944739623474
                 print(aruco_position)
                 return aruco_position
             
