@@ -6,6 +6,7 @@ from six.moves import input
 import os
 import sys
 import rospy
+import copy
 import moveit_commander
 import moveit_msgs.msg
 import geometry_msgs.msg
@@ -31,14 +32,16 @@ object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, 
 # pose_pick.orientation.z = -0.01819345318830564
 # pose_pick.orientation.w = 0.00479944739623474
 
-final_position = [1.7637484339747513, -0.7131722207323297, -0.09763801533611195, -2.82389828109355, -0.08833917383383795, 2.136842511844892, 0.9294967901285764, 0.03993682563304901, 0.03993682563304901]
+#final_position = [1.7637484339747513, -0.7131722207323297, -0.09763801533611195, -2.82389828109355, -0.08833917383383795, 2.136842511844892, 0.9294967901285764, 0.03993682563304901, 0.03993682563304901]
+final_position = [1.3605640052806658, 0.3207102461614107, -0.25589921778963326, -2.5753901793192084, 0.008905913329786724, 2.9101156651708813, 0.26960057997918624]
 pose_place = geometry_msgs.msg.Pose()
-pose_place.position.y = 0.2
-pose_place.position.z = 0.105/2 - 0.03
-pose_place.orientation.x = 0.0
-pose_place.orientation.y = 0.0
-pose_place.orientation.z = 0.0
-pose_place.orientation.w = 1.0
+pose_place.position.x = 0.20732071751250256
+pose_place.position.y = 0.2812454062595378
+pose_place.position.z = 0.02362088204387037
+pose_place.orientation.x = 0
+pose_place.orientation.y = 0
+pose_place.orientation.z = 0
+pose_place.orientation.w = 1
 
 gripper_max_opening = 0.04  # adjust as needed
 
@@ -260,7 +263,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         
     def check_touch(self):
         print("Data:",self.max_dist)
-        return self.max_dist.data >= 8
+        return self.max_dist.data >= 8.5
     
     def callback_gelsightmini(self,dist) :
         self.max_dist = dist
@@ -310,8 +313,8 @@ class MoveGroupPythonInterfaceTutorial(object):
 
                 aruco_position = self.arucos[selection - 1].pose
                 print(f"Ha seleccionado el marcador ArUco con ID {self.arucos[selection - 1].header.frame_id.replace('aruco_', '')}:")
-                aruco_position.position.y = aruco_position.position.y - 0.03
-                aruco_position.position.z =0.14369141349788575
+                aruco_position.position.y = aruco_position.position.y - 0.032
+                aruco_position.position.z = 0.14362088204387037
                 aruco_position.orientation.x = -0.9231143539216148
                 aruco_position.orientation.y = -0.3840649074696301
                 aruco_position.orientation.z = -0.01819345318830564

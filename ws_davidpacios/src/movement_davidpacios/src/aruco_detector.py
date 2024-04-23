@@ -29,8 +29,8 @@ aruco_pose_pub = rospy.Publisher('/aruco_poses', String, queue_size=10)
 aruco_pose_pub_frame = rospy.Publisher('/aruco_pose_frame', String, queue_size=10) 
 
 id_aruco_to_frame = 8
-marker_length_to_frame = 0.06  # Longitud del lado del marcador ArUco (en metros)
-marker_length_to_pick_and_place = 0.024
+marker_length_to_frame = 0.1 # Longitud del lado del marcador ArUco (en metros)
+marker_length_to_pick_and_place = 0.05
 
 counter = 0
 ids_saved = []
