@@ -7,14 +7,12 @@ from tf import transformations
 import numpy as np
 from collections import Counter
 
-
 id_aruco_calibration = 8
-calibrated = False
 
 def main():
-    rospy.init_node('trf_camera_link_to_world') 
-
     global broadcaster
+
+    rospy.init_node('trf_camera_link_to_world') 
     broadcaster = tf2_ros.TransformBroadcaster()  
 
     # Suscribirse al topic que contiene la información de la transformación
@@ -25,8 +23,7 @@ def main():
     rospy.spin()
 
 def transform_callback(msg):
-    
-
+    print(msg)
     # Obtener las posiciones y orientaciones de la aruco
     arucos_data = msg.data[:-1]
     aruco_info = arucos_data.split(':')
@@ -78,8 +75,6 @@ def transform_callback(msg):
     t_camera_marker.transform.rotation.w = w_orientation
 
     broadcaster.sendTransform(t_camera_marker)
-
-    calibrated = True
 
 if __name__ == '__main__':
     main()

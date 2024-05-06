@@ -6,33 +6,19 @@ from six.moves import input
 import os
 import sys
 import rospy
-import copy
 import moveit_commander
 import moveit_msgs.msg
 import geometry_msgs.msg
 import trajectory_msgs.msg
 from std_msgs.msg import Float32
 import franka_gripper.msg
-
 import actionlib
 import panda_demo.msg
-
 from std_msgs.msg import String
 from geometry_msgs.msg import PoseStamped
 
 initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
-        
 object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
-# pose_pick = geometry_msgs.msg.Pose()
-# pose_pick.position.x = 0.4161880497314183
-# pose_pick.position.y = 0.11825780711004699
-# pose_pick.position.z = 0.14369141349788575
-# pose_pick.orientation.x = -0.9231143539216148
-# pose_pick.orientation.y = -0.3840649074696301
-# pose_pick.orientation.z = -0.01819345318830564
-# pose_pick.orientation.w = 0.00479944739623474
-
-#final_position = [1.7637484339747513, -0.7131722207323297, -0.09763801533611195, -2.82389828109355, -0.08833917383383795, 2.136842511844892, 0.9294967901285764, 0.03993682563304901, 0.03993682563304901]
 final_position = [1.3605640052806658, 0.3207102461614107, -0.25589921778963326, -2.5753901793192084, 0.008905913329786724, 2.9101156651708813, 0.26960057997918624]
 pose_place = geometry_msgs.msg.Pose()
 pose_place.position.x = 0.20732071751250256
@@ -44,7 +30,6 @@ pose_place.orientation.z = 0
 pose_place.orientation.w = 1
 
 gripper_max_opening = 0.04  # adjust as needed
-
 
 def clear_screen():
     # Verifica si el sistema operativo es Windows o no
@@ -263,7 +248,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         
     def check_touch(self):
         print("Data:",self.max_dist)
-        return self.max_dist.data >= 8.5
+        return self.max_dist.data >= 6.5
     
     def callback_gelsightmini(self,dist) :
         self.max_dist = dist
@@ -313,7 +298,7 @@ class MoveGroupPythonInterfaceTutorial(object):
 
                 aruco_position = self.arucos[selection - 1].pose
                 print(f"Ha seleccionado el marcador ArUco con ID {self.arucos[selection - 1].header.frame_id.replace('aruco_', '')}:")
-                aruco_position.position.y = aruco_position.position.y - 0.032
+                aruco_position.position.y = aruco_position.position.y - 0.020
                 aruco_position.position.z = 0.14362088204387037
                 aruco_position.orientation.x = -0.9231143539216148
                 aruco_position.orientation.y = -0.3840649074696301
@@ -324,7 +309,6 @@ class MoveGroupPythonInterfaceTutorial(object):
             
             except (ValueError, IndexError):
                 print("Opción no válida. Por favor, ingrese un número válido.")
-
 
 def go_initial_position_and_open_gripper(MoveGroup):
     if initial_position is not None:
