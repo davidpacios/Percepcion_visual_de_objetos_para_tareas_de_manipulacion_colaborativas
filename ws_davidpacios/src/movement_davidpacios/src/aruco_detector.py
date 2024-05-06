@@ -79,43 +79,43 @@ def image_callback(msg):
 
             q = tr.quaternion_from_matrix(rvec_matrix_4x4)
         
-            # print(f"Marcador ID {ids[i]}:")
-            # print("Tvec:", tvec)
-            # print("Rvec:", rvec)
-            # print("Matrix:", rvec_matrix)
-            # print("Matrix_4x4:", rvec_matrix_4x4)
-            # print("Q:", q)
-            # print()
+            print(f"Marcador ID {ids[i]}:")
+            print("Tvec:", tvec)
+            print("Rvec:", rvec)
+            print("Matrix:", rvec_matrix)
+            print("Matrix_4x4:", rvec_matrix_4x4)
+            print("Q:", q)
+            print()
     
             rotation_matrix = np.eye(4)
             rotation_matrix[0:3, 0:3] = cv2.Rodrigues(np.array(rvec))[0]
             r = R.from_matrix(rotation_matrix[0:3, 0:3])
             quat = r.as_quat()
 
-            # print(f"Marcador2 ID {ids[i]}:")
-            # print("Tvec:", tvec)
-            # print("Rvec:", rvec)
-            # print("Matrix:", rotation_matrix)
-            # print("Q:", quat)
-            # print("--------------------------")
+            print(f"Marcador2 ID {ids[i]}:")
+            print("Tvec:", tvec)
+            print("Rvec:", rvec)
+            print("Matrix:", rotation_matrix)
+            print("Q:", quat)
+            print("--------------------------")
 
-        #     if id_aruco == id_aruco_to_frame:
-        #         aruco_info_frame = f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
-        #         aruco_pose_pub_frame.publish(aruco_info_frame)
-        #         continue
+            if id_aruco == id_aruco_to_frame:
+                aruco_info_frame = f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
+                aruco_pose_pub_frame.publish(aruco_info_frame)
+                continue
 
-        #     #Formatear la información del ArUco
-        #     aruco_info += f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
-        #     ids_saved.append(id_aruco)
+            #Formatear la información del ArUco
+            aruco_info += f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
+            ids_saved.append(id_aruco)
 
 
-        # counter+=1;
-        # if counter == 50:
-        #     #print(aruco_info)
-        #     aruco_pose_pub.publish(aruco_info)
-        #     counter = 0
-        #     aruco_info = ""
-        #     ids_saved = []
+        counter+=1;
+        if counter == 50:
+            #print(aruco_info)
+            aruco_pose_pub.publish(aruco_info)
+            counter = 0
+            aruco_info = ""
+            ids_saved = []
             
         # Mostrar la imagen
         cv2.imshow("Image", frame)

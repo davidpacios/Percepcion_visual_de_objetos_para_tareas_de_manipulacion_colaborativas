@@ -25,8 +25,6 @@ def main():
     rospy.spin()
 
 def transform_callback(msg):
-    
-
     # Obtener las posiciones y orientaciones de la aruco
     arucos_data = msg.data[:-1]
     aruco_info = arucos_data.split(':')
@@ -78,8 +76,6 @@ def transform_callback(msg):
     t_camera_marker.transform.rotation.w = w_orientation
 
     broadcaster.sendTransform(t_camera_marker)
-
-    calibrated = True
 
 if __name__ == '__main__':
     main()
