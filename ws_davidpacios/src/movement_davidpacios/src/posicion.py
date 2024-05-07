@@ -64,9 +64,21 @@ class Movement(object):
                 current_joint_state = self.get_current_joint_state()
                 # Get the current joint state of the robot
                 current_pose = self.get_current_pose()
+                pose_reference_frame = self.move_group.get_pose_reference_frame()
+                print(pose_reference_frame)
+                
 
                 print("Current joint state of the robot:", current_joint_state)
                 print("Current pose of the robot:", current_pose)
+                # Dentro del bloque try en el método main()
+
+                # Print move_group information
+                move_group_attributes = dir(self.move_group)
+                rospy.loginfo("MoveGroup Attributes:")
+                for attribute in move_group_attributes:
+                    attribute_value = getattr(self.move_group, attribute)
+                    rospy.loginfo("%s: %s", attribute, attribute_value)
+
         except KeyboardInterrupt:
             return
 

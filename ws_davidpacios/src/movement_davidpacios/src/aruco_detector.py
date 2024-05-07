@@ -29,8 +29,8 @@ aruco_pose_pub = rospy.Publisher('/aruco_poses', String, queue_size=10)
 aruco_pose_pub_frame = rospy.Publisher('/aruco_pose_frame', String, queue_size=10) 
 
 id_aruco_to_frame = 8
-marker_length_to_frame = 0.95 # Longitud del lado del marcador ArUco (en metros) o.35mm el cubo
-marker_length_to_pick_and_place = 0.95
+marker_length_to_frame = 0.095 # Longitud del lado del marcador ArUco (en metros) o.35mm el cubo
+marker_length_to_pick_and_place = 0.030
 
 counter = 0
 ids_saved = []
@@ -44,29 +44,16 @@ def image_callback(msg):
         # Convertir el mensaje de imagen de ROS a una imagen OpenCV
         frame = bridge.imgmsg_to_cv2(msg, "bgr8")
     
-        # Detectar los marcadores
         corners, ids, rejected = detector.detectMarkers(frame)
-        
-        # Dibujar los marcadores
-        if ids is None:
-            return
-        
+        if ids is None: return
         cv2.aruco.drawDetectedMarkers(frame, corners, ids)
         
         for i in range(len(ids)):
             id_aruco = ids[i][0]
             corner = corners[i][0]
 
-            if id_aruco in ids_saved:
-                continue
-
-            # Obtener los puntos 3D del marcador ArUco (esquina en la parte superior izquierda)
-            if id_aruco == id_aruco_to_frame:
-                marker_length = marker_length_to_frame
-            else:
-                marker_length = marker_length_to_pick_and_place
-
-
+            if id_aruco == id_aruco_to_frame: marker_length = marker_length_to_frame
+            else: marker_length = marker_length_to_pick_and_place
             obj_points = np.array([[0, 0, 0], [marker_length, 0, 0], [marker_length, marker_length, 0], [0, marker_length, 0]], dtype=np.float32)
             image_points = corner.reshape(-1, 1, 2)
             success, rvec, tvec = cv2.solvePnP(obj_points, image_points, camera_matrix, dist_coeffs)
@@ -76,48 +63,22 @@ def image_callback(msg):
             rvec_matrix_4x4 = np.eye(4)
             rvec_matrix_4x4[:3, :3] = rvec_matrix
             rvec_matrix_4x4[:3, 3] = tvec.flatten()
-
             q = tr.quaternion_from_matrix(rvec_matrix_4x4)
-        
-            print(f"Marcador ID {ids[i]}:")
-            print("Tvec:", tvec)
-            print("Rvec:", rvec)
-            print("Matrix:", rvec_matrix)
-            print("Matrix_4x4:", rvec_matrix_4x4)
-            print("Q:", q)
-            print()
-    
-            rotation_matrix = np.eye(4)
-            rotation_matrix[0:3, 0:3] = cv2.Rodrigues(np.array(rvec))[0]
-            r = R.from_matrix(rotation_matrix[0:3, 0:3])
-            quat = r.as_quat()
-
-            print(f"Marcador2 ID {ids[i]}:")
-            print("Tvec:", tvec)
-            print("Rvec:", rvec)
-            print("Matrix:", rotation_matrix)
-            print("Q:", quat)
-            print("--------------------------")
 
             if id_aruco == id_aruco_to_frame:
                 aruco_info_frame = f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
                 aruco_pose_pub_frame.publish(aruco_info_frame)
-                continue
-
-            #Formatear la información del ArUco
-            aruco_info += f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
-            ids_saved.append(id_aruco)
-
+            elif id_aruco not in ids_saved:
+                aruco_info += f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
+                ids_saved.append(id_aruco)
 
         counter+=1;
         if counter == 50:
-            #print(aruco_info)
             aruco_pose_pub.publish(aruco_info)
             counter = 0
             aruco_info = ""
             ids_saved = []
             
-        # Mostrar la imagen
         cv2.imshow("Image", frame)
         cv2.waitKey(1)
         
@@ -158,3 +119,23 @@ def main():
 
 if __name__ == '__main__':
     main()
+                 
+# print(f"Marcador ID {ids[i]}:")
+# print("Tvec:", tvec)
+# print("Rvec:", rvec)
+# print("Matrix:", rvec_matrix)
+# print("Matrix_4x4:", rvec_matrix_4x4)
+# print("Q:", q)
+# print()
+
+# rotation_matrix = np.eye(4)
+# rotation_matrix[0:3, 0:3] = cv2.Rodrigues(np.array(rvec))[0]
+# r = R.from_matrix(rotation_matrix[0:3, 0:3])
+# quat = r.as_quat()
+
+# print(f"Marcador2 ID {ids[i]}:")
+# print("Tvec:", tvec)
+# print("Rvec:", rvec)
+# print("Matrix:", rotation_matrix)
+# print("Q:", quat)
+# print("--------------------------")

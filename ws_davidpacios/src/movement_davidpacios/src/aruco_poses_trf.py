@@ -9,8 +9,6 @@ from tf import transformations
 pub = rospy.Publisher('/aruco_poses_trf', String, queue_size=10)
 
 def aruco_callback(msg):
-    
-
     aruco_poses = msg.data.split(';')[:-1]
     #transformed_poses = ""
     transformed_poses = "100:0.4161880497314183:0.11825780711004699:0.14369141349788575:-0.9231143539216148:-0.3840649074696301:-0.01819345318830564:0.00479944739623474;"

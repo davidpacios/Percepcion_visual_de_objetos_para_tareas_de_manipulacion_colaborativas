@@ -7,14 +7,12 @@ from tf import transformations
 import numpy as np
 from collections import Counter
 
-
 id_aruco_calibration = 8
-calibrated = False
 
 def main():
-    rospy.init_node('trf_camera_link_to_world') 
-
     global broadcaster
+
+    rospy.init_node('trf_camera_link_to_world') 
     broadcaster = tf2_ros.TransformBroadcaster()  
 
     # Suscribirse al topic que contiene la información de la transformación
