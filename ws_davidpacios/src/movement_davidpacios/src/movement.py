@@ -19,11 +19,11 @@ from geometry_msgs.msg import PoseStamped
 
 initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
 object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
-final_position = [1.3605640052806658, 0.3207102461614107, -0.25589921778963326, -2.5753901793192084, 0.008905913329786724, 2.9101156651708813, 0.26960057997918624]
+final_position = [0.31117872249452694, 0.661868957685263, 0.23851138023744548, -1.9054843345423356, -0.29362653295861346, 2.599592895878686, -0.050700302571436415]
 pose_place = geometry_msgs.msg.Pose()
-pose_place.position.x = 0.20732071751250256
-pose_place.position.y = 0.2812454062595378
-pose_place.position.z = 0.02362088204387037
+pose_place.position.x = 0.46409545551322356
+pose_place.position.y = 0.3672940207021908
+pose_place.position.z = 0.04
 pose_place.orientation.x = 0
 pose_place.orientation.y = 0
 pose_place.orientation.z = 0
@@ -130,38 +130,38 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.hand_group.execute(plan, wait=True)
         self.hand_group.stop()
 
-    def move_to_pick(self,grasp_pose):
+    
+    def move_to_pick(self, grasp_pose):
         grasp = moveit_msgs.msg.Grasp()
 
         grasp.grasp_pose.header.frame_id = "panda_link0"
         grasp.grasp_pose.pose = grasp_pose
 
-
         grasp.pre_grasp_approach.direction.header.frame_id = "panda_link0"
-
         grasp.pre_grasp_approach.direction.vector.z = -1.0
         grasp.pre_grasp_approach.min_distance = 0.095
         grasp.pre_grasp_approach.desired_distance = 0.2
-
 
         grasp.post_grasp_retreat.direction.header.frame_id = "panda_link0"
 
         self.openGripper(grasp.pre_grasp_posture, gripper_max_opening)
         self.closedGripper(grasp.grasp_posture, gripper_max_opening)
 
-        self.move_group.pick(self.box_name, grasp)
+        # Planear la trayectoria sin ejecutarla
+        plan = self.move_group.plan()
 
-        self.move_group.stop()
+        if plan:
+            print("Plan de ejecución generado con éxito.")
+            self.move_group.pick(self.box_name, grasp)
+            self.move_group.stop()
+        else:
+            print("No se pudo generar un plan de ejecución. Verifica los parámetros de entrada.")
 
         return
 
-    def pick(self,object_pose):
-        return
 
     def place(self,place_pose):
-
         place_location = moveit_msgs.msg.PlaceLocation()
-
         place_location.place_pose.header.frame_id = "panda_link0"
         place_location.place_pose.pose = place_pose
 
@@ -175,11 +175,16 @@ class MoveGroupPythonInterfaceTutorial(object):
         place_location.post_place_retreat.direction.vector.z = 1.0
         place_location.post_place_retreat.min_distance = 0.1
         place_location.post_place_retreat.desired_distance = 0.25
-
+        
         self.openGripper(place_location.post_place_posture, gripper_max_opening)
         self.move_group.place(self.box_name, place_location)
         self.move_group.stop()
 
+        return
+    
+    def place_2(self,place_pose):
+        self.go_to_joint_state(final_position)
+        self.open_gripper()
         return
 
     def go_to_joint_state(self, j):
@@ -248,7 +253,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         
     def check_touch(self):
         print("Data:",self.max_dist)
-        return self.max_dist.data >= 6.5
+        return self.max_dist.data > 9
     
     def callback_gelsightmini(self,dist) :
         self.max_dist = dist
@@ -295,10 +300,13 @@ class MoveGroupPythonInterfaceTutorial(object):
             try:
                 selection = int(input("Select an Arucon (Pulse 0 to go back): "))
                 if selection == 0: return None
-
                 aruco_position = self.arucos[selection - 1].pose
-                print(f"Ha seleccionado el marcador ArUco con ID {self.arucos[selection - 1].header.frame_id.replace('aruco_', '')}:")
-                aruco_position.position.y = aruco_position.position.y - 0.020
+                aruco_id = aruco_data.header.frame_id.replace('aruco_', '')
+
+                print(f"Ha seleccionado el marcador ArUco con ID {aruco_id}:")
+                if selection != 1:
+                    aruco_position.position.x = aruco_position.position.x + 0.03
+                    aruco_position.position.y = aruco_position.position.y - 0.025
                 aruco_position.position.z = 0.14362088204387037
                 aruco_position.orientation.x = -0.9231143539216148
                 aruco_position.orientation.y = -0.3840649074696301
@@ -345,8 +353,9 @@ def pick_and_place(MoveGroup):
     MoveGroup.open_gripper()
     MoveGroup.go_to_joint_state(initial_position)
 
-    print("Picking")
+    print("Calibrating")
     MoveGroup.callibration_client.send_goal(panda_demo.msg.GsGoal())
+    print("Picking")
     MoveGroup.move_to_pick(object_pose)
     MoveGroup.callibration_client.wait_for_result()
     # Close the gripper progressively until the gellsight touches
@@ -362,6 +371,7 @@ def pick_and_place(MoveGroup):
 
     print("Placing")
     MoveGroup.place(pose_place)
+    #MoveGroup.place_2(pose_place)
     print("Placed")
     
     MoveGroup.go_to_joint_state(initial_position)
