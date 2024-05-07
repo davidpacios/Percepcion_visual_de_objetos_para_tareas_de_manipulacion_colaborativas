@@ -23,7 +23,6 @@ def main():
     rospy.spin()
 
 def transform_callback(msg):
-    print(msg)
     # Obtener las posiciones y orientaciones de la aruco
     arucos_data = msg.data[:-1]
     aruco_info = arucos_data.split(':')
