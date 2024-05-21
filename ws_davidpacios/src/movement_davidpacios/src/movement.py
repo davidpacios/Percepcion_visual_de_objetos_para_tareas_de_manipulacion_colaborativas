@@ -28,6 +28,7 @@ pose_place.orientation.x = 0
 pose_place.orientation.y = 0
 pose_place.orientation.z = 0
 pose_place.orientation.w = 1
+a = False
 
 gripper_max_opening = 0.04  # adjust as needed
 
@@ -160,7 +161,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         return
 
 
-    def place(self,place_pose):
+    def place(self, place_pose):
         place_location = moveit_msgs.msg.PlaceLocation()
         place_location.place_pose.header.frame_id = "panda_link0"
         place_location.place_pose.pose = place_pose
@@ -170,17 +171,34 @@ class MoveGroupPythonInterfaceTutorial(object):
         place_location.pre_place_approach.min_distance = 0.1
         place_location.pre_place_approach.desired_distance = 0.2
 
-
         place_location.post_place_retreat.direction.header.frame_id = "panda_link0"
         place_location.post_place_retreat.direction.vector.z = 1.0
         place_location.post_place_retreat.min_distance = 0.1
         place_location.post_place_retreat.desired_distance = 0.25
         
         self.openGripper(place_location.post_place_posture, gripper_max_opening)
-        self.move_group.place(self.box_name, place_location)
-        self.move_group.stop()
 
+        # Use the correct method to place the object
+        success = self.move_group.place(self.box_name, place_location)
+        if success:
+            print("Placement executed successfully.")
+        else:
+            print("Placement failed.")
+        
         return
+    
+    def place_fixed(self, place_pose):
+        # Plan a path to the fixed place_pose
+        self.move_group.set_pose_target(place_pose)
+        plan = self.move_group.go(wait=True)
+        self.move_group.stop()
+        self.move_group.clear_pose_targets()
+
+        # Open the gripper
+        self.open_gripper()
+        return
+
+
     
     def place_2(self,place_pose):
         self.go_to_joint_state(final_position)
@@ -253,7 +271,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         
     def check_touch(self):
         print("Data:",self.max_dist)
-        return self.max_dist.data > 9
+        return self.max_dist.data > 11 #diferencia máxima de intensidad de píxeles que se podría esperar en la imagen
     
     def callback_gelsightmini(self,dist) :
         self.max_dist = dist
@@ -305,9 +323,9 @@ class MoveGroupPythonInterfaceTutorial(object):
 
                 print(f"Ha seleccionado el marcador ArUco con ID {aruco_id}:")
                 if selection != 1:
-                    aruco_position.position.x = aruco_position.position.x + 0.03
-                    aruco_position.position.y = aruco_position.position.y - 0.025
-                aruco_position.position.z = 0.14362088204387037
+                    aruco_position.position.x = aruco_position.position.x + 0.035
+                    aruco_position.position.y = aruco_position.position.y
+                aruco_position.position.z = 0.15
                 aruco_position.orientation.x = -0.9231143539216148
                 aruco_position.orientation.y = -0.3840649074696301
                 aruco_position.orientation.z = -0.01819345318830564
@@ -346,39 +364,41 @@ def pick_and_place(MoveGroup):
     
     if object_pose == None:
         return
-      
+
     a = MoveGroup.add_box()
-    print("Object have been added: ", a)
+    print("Object has been added: ", a)
 
     MoveGroup.open_gripper()
     MoveGroup.go_to_joint_state(initial_position)
 
     print("Calibrating")
     MoveGroup.callibration_client.send_goal(panda_demo.msg.GsGoal())
+    MoveGroup.callibration_client.wait_for_result()
+
     print("Picking")
     MoveGroup.move_to_pick(object_pose)
-    MoveGroup.callibration_client.wait_for_result()
-    # Close the gripper progressively until the gellsight touches
-    poses = numpy.linspace(0.08,0.0,100)
+
+    # Close the gripper progressively until the gelsight touches
+    poses = numpy.linspace(0.08, 0.0, 100)
     for pose in poses:
         MoveGroup.move_gripper(pose)
         if MoveGroup.check_touch():
-            print("Toutching ... width =",pose)
+            print("Touching... width =", pose)
             break
     print("Picked")
 
     MoveGroup.go_to_joint_state(initial_position)
 
     print("Placing")
-    MoveGroup.place(pose_place)
-    #MoveGroup.place_2(pose_place)
+    # Use the fixed place_pose
+    MoveGroup.place_fixed(pose_place)
     print("Placed")
-    
+
     MoveGroup.go_to_joint_state(initial_position)
     MoveGroup.open_gripper()
 
     a = MoveGroup.remove_box()
-    print("Object have been removed: ", a)
+    print("Object has been removed: ", a)
 
 def main():
     try:
@@ -412,6 +432,8 @@ def main():
 
             if choice == '6':
                 go_initial_position_and_open_gripper(MoveGroup)
+                if(a):
+                    a = MoveGroup.remove_box()
                 break
             else:
                 print("Invalid choice. Please enter a number between 0 and 5.")

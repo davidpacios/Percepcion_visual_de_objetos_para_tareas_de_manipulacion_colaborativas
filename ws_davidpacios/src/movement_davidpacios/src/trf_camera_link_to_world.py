@@ -8,6 +8,13 @@ import numpy as np
 from collections import Counter
 
 id_aruco_calibration = 8
+x = None 
+y = None
+z = None
+x_orientationz = None
+y_orientationz = None
+z_orientationz = None
+w_orientation = None
 
 def main():
     global broadcaster
@@ -23,10 +30,20 @@ def main():
     rospy.spin()
 
 def transform_callback(msg):
+    global x, y, z, x_orientation, y_orientation, z_orientation, w_orientation
+
     # Obtener las posiciones y orientaciones de la aruco
     arucos_data = msg.data[:-1]
     aruco_info = arucos_data.split(':')
-    id_aruco, x, y, z, x_orientation, y_orientation, z_orientation, w_orientation = map(float, aruco_info)
+    if x == None:
+        id_aruco, x_aux, y_aux, z_aux, x_orientation_aux, y_orientation_aux, z_orientation_aux, w_orientation_aux = map(float, aruco_info)
+        x = x_aux
+        y = y_aux
+        z = z_aux
+        x_orientation = x_orientation_aux
+        y_orientation = y_orientation_aux
+        z_orientation = z_orientation_aux
+        w_orientation = w_orientation_aux
 
     t_nueva = geometry_msgs.msg.TransformStamped()
     t_nueva.header.stamp = rospy.Time.now()
@@ -74,6 +91,9 @@ def transform_callback(msg):
     t_camera_marker.transform.rotation.w = w_orientation
 
     broadcaster.sendTransform(t_camera_marker)
+
+    print(f"Aruco position: (x: {x}, y: {y}, z: {z})")
+    print(f"Aruco orientation: (x_orientation: {x_orientation}, y_orientation: {y_orientation}, z_orientation: {z_orientation}, w_orientation: {w_orientation})")
 
 if __name__ == '__main__':
     main()
