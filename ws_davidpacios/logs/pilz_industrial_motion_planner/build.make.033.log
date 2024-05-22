@@ -1,0 +1,159 @@
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target moveit_ros_manipulation_gencfg
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  2%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/pilz_industrial_motion_planner.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/planning_context_loader_lin.cpp.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/planning_context_loader.cpp.o[0m
+[  6%] Built target rosgraph_msgs_generate_messages_eus
+[  8%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/trajectory_functions.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/planning_context_loader_circ.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/planning_context_loader_ptp.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/pilz_industrial_motion_planner.cpp.o[0m
+[ 14%] Built target rosgraph_msgs_generate_messages_lisp
+[ 14%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 14%] Built target rosgraph_msgs_generate_messages_py
+[ 14%] Built target std_msgs_generate_messages_cpp
+[ 14%] Built target std_msgs_generate_messages_eus
+[ 14%] Built target std_msgs_generate_messages_lisp
+[ 14%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/planning_context_loader.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/trajectory_functions.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/trajectory_generator.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/trajectory_generator_lin.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/planning_context_loader.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/trajectory_functions.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/planning_context_loader_lin.dir/src/velocity_profile_atrap.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/planning_context_loader.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/joint_limits_validator.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/planning_context_loader.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/joint_limits_aggregator.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/joint_limits_container.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/trajectory_generator.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/trajectory_generator_ptp.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/joint_limits_aggregator.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/limits_container.cpp.o[0m
+[ 41%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_lin.so[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/trajectory_generator.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/cartesian_limit.cpp.o[0m
+[ 45%] Built target planning_context_loader_lin
+[ 45%] Built target std_msgs_generate_messages_nodejs
+[ 45%] Built target std_msgs_generate_messages_py
+[ 45%] Built target shape_msgs_generate_messages_cpp
+[ 45%] Built target shape_msgs_generate_messages_eus
+[ 45%] Built target shape_msgs_generate_messages_lisp
+[ 45%] Built target shape_msgs_generate_messages_nodejs
+[ 45%] Built target shape_msgs_generate_messages_py
+[ 45%] Built target geometry_msgs_generate_messages_cpp
+[ 45%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/velocity_profile_atrap.cpp.o[0m
+[ 45%] Built target geometry_msgs_generate_messages_eus
+[ 45%] Built target geometry_msgs_generate_messages_lisp
+[ 45%] Built target geometry_msgs_generate_messages_nodejs
+[ 45%] Built target geometry_msgs_generate_messages_py
+[ 47%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/trajectory_generator_circ.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/planning_context_loader_ptp.dir/src/joint_limits_container.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner.dir/src/cartesian_limits_aggregator.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/planning_context_loader_circ.dir/src/path_circle_generator.cpp.o[0m
+[ 54%] Built target visualization_msgs_generate_messages_cpp
+[ 54%] Built target visualization_msgs_generate_messages_eus
+[ 54%] Built target visualization_msgs_generate_messages_lisp
+[ 54%] Built target visualization_msgs_generate_messages_nodejs
+[ 54%] Built target visualization_msgs_generate_messages_py
+[ 54%] Built target moveit_msgs_generate_messages_cpp
+[ 54%] Built target moveit_msgs_generate_messages_eus
+[ 54%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/joint_limits_container.cpp.o[0m
+[ 54%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner.so[0m
+[ 54%] Built target pilz_industrial_motion_planner
+[ 54%] Built target moveit_msgs_generate_messages_lisp
+[ 54%] Built target moveit_msgs_generate_messages_nodejs
+[ 56%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/cartesian_limits_aggregator.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/cartesian_limit.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/limits_container.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/trajectory_functions.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_lib.dir/src/plan_components_builder.cpp.o[0m
+[ 62%] Built target moveit_msgs_generate_messages_py
+[ 62%] Built target actionlib_msgs_generate_messages_cpp
+[ 62%] Built target actionlib_msgs_generate_messages_eus
+[ 62%] Built target actionlib_msgs_generate_messages_lisp
+[ 62%] Built target actionlib_msgs_generate_messages_nodejs
+[ 62%] Built target actionlib_msgs_generate_messages_py
+[ 62%] Built target sensor_msgs_generate_messages_cpp
+[ 62%] Built target sensor_msgs_generate_messages_eus
+[ 62%] Built target sensor_msgs_generate_messages_lisp
+[ 62%] Built target sensor_msgs_generate_messages_nodejs
+[ 62%] Built target sensor_msgs_generate_messages_py
+[ 62%] Built target trajectory_msgs_generate_messages_cpp
+[ 62%] Built target trajectory_msgs_generate_messages_eus
+[ 62%] Built target trajectory_msgs_generate_messages_lisp
+[ 62%] Built target trajectory_msgs_generate_messages_nodejs
+[ 62%] Built target trajectory_msgs_generate_messages_py
+[ 62%] Built target object_recognition_msgs_generate_messages_cpp
+[ 62%] Built target object_recognition_msgs_generate_messages_eus
+[ 62%] Built target object_recognition_msgs_generate_messages_lisp
+[ 62%] Built target object_recognition_msgs_generate_messages_nodejs
+[ 62%] Built target object_recognition_msgs_generate_messages_py
+[ 62%] Built target octomap_msgs_generate_messages_cpp
+[ 62%] Built target octomap_msgs_generate_messages_eus
+[ 62%] Built target octomap_msgs_generate_messages_lisp
+[ 62%] Built target octomap_msgs_generate_messages_nodejs
+[ 62%] Built target octomap_msgs_generate_messages_py
+[ 62%] Built target tf2_msgs_generate_messages_cpp
+[ 62%] Built target tf2_msgs_generate_messages_eus
+[ 62%] Built target tf2_msgs_generate_messages_lisp
+[ 62%] Built target tf2_msgs_generate_messages_nodejs
+[ 62%] Built target tf2_msgs_generate_messages_py
+[ 62%] Built target actionlib_generate_messages_cpp
+[ 62%] Built target actionlib_generate_messages_eus
+[ 62%] Built target actionlib_generate_messages_lisp
+[ 62%] Built target actionlib_generate_messages_nodejs
+[ 62%] Built target actionlib_generate_messages_py
+[ 62%] Built target moveit_ros_planning_gencfg
+[ 62%] Built target dynamic_reconfigure_generate_messages_cpp
+[ 62%] Built target dynamic_reconfigure_generate_messages_eus
+[ 62%] Built target dynamic_reconfigure_generate_messages_lisp
+[ 62%] Built target dynamic_reconfigure_generate_messages_nodejs
+[ 62%] Built target dynamic_reconfigure_generate_messages_py
+[ 62%] Built target dynamic_reconfigure_gencfg
+[ 62%] Built target std_srvs_generate_messages_cpp
+[ 62%] Built target std_srvs_generate_messages_eus
+[ 62%] Built target std_srvs_generate_messages_lisp
+[ 62%] Built target std_srvs_generate_messages_nodejs
+[ 62%] Built target std_srvs_generate_messages_py
+[ 62%] Built target tf_generate_messages_cpp
+[ 62%] Built target tf_generate_messages_eus
+[ 62%] Built target tf_generate_messages_lisp
+[ 62%] Built target tf_generate_messages_nodejs
+[ 62%] Built target tf_generate_messages_py
+[ 62%] [32mBuilding CXX object CMakeFiles/command_list_manager.dir/src/command_list_manager.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/command_list_manager.dir/src/plan_components_builder.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_ptp.so[0m
+[ 66%] Built target planning_context_loader_ptp
+[ 68%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/move_group_sequence_action.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/move_group_sequence_service.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/plan_components_builder.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libplanning_context_loader_circ.so[0m
+[ 70%] Built target planning_context_loader_circ
+[ 72%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/command_list_manager.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/trajectory_blender_transition_window.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_lib.so[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/joint_limits_aggregator.cpp.o[0m
+[ 79%] Built target pilz_industrial_motion_planner_lib
+[ 81%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/test/test_utils.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/joint_limits_container.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libcommand_list_manager.so[0m
+[ 83%] Built target command_list_manager
+[ 85%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/limits_container.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/cartesian_limit.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/sequence_capability.dir/src/cartesian_limits_aggregator.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/trajectory_generator.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/trajectory_generator_circ.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/trajectory_generator_lin.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/trajectory_generator_ptp.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/path_circle_generator.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/pilz_industrial_motion_planner_testhelpers.dir/src/velocity_profile_atrap.cpp.o[0m
+[ 97%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libsequence_capability.so[0m
+[ 97%] Built target sequence_capability
+[100%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/pilz_industrial_motion_planner/lib/libpilz_industrial_motion_planner_testhelpers.so[0m
+[100%] Built target pilz_industrial_motion_planner_testhelpers

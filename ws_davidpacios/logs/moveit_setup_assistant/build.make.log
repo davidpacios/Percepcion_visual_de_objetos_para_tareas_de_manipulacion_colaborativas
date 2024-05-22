@@ -1,7 +1,7 @@
 [  2%] [34m[1mAutomatic MOC for target moveit_setup_assistant_tools[0m
 [  2%] Built target moveit_setup_assistant_tools_autogen
 [ 24%] Built target moveit_setup_assistant_tools
-[ 29%] [34m[1mAutomatic MOC for target moveit_setup_assistant_widgets[0m
+[ 26%] [34m[1mAutomatic MOC for target moveit_setup_assistant_widgets[0m
 [ 29%] [34m[1mAutomatic MOC for target moveit_setup_assistant_updater[0m
 [ 29%] Built target moveit_setup_assistant_updater_autogen
 [ 29%] Built target moveit_setup_assistant_widgets_autogen

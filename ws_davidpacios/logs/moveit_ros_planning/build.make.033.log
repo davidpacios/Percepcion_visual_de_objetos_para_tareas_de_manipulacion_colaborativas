@@ -1,0 +1,158 @@
+[  6%] Built target moveit_ros_planning_gencfg
+[  6%] Built target shape_msgs_generate_messages_cpp
+[  6%] Built target shape_msgs_generate_messages_eus
+[  8%] [32mBuilding CXX object rdf_loader/CMakeFiles/moveit_rdf_loader.dir/src/rdf_loader.cpp.o[0m
+[ 11%] [32mBuilding CXX object planning_pipeline/CMakeFiles/moveit_planning_pipeline.dir/src/planning_pipeline.cpp.o[0m
+[ 12%] [32mBuilding CXX object constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/src/constraint_sampler_manager_loader.cpp.o[0m
+[ 12%] [32mBuilding CXX object collision_plugin_loader/CMakeFiles/moveit_collision_plugin_loader.dir/src/collision_plugin_loader.cpp.o[0m
+[ 12%] Built target shape_msgs_generate_messages_lisp
+[ 12%] Built target shape_msgs_generate_messages_nodejs
+[ 14%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_list_request_adapter_plugins.dir/src/list.cpp.o[0m
+[ 14%] Built target shape_msgs_generate_messages_py
+[ 14%] Built target geometry_msgs_generate_messages_cpp
+[ 14%] Built target geometry_msgs_generate_messages_eus
+[ 16%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/empty.cpp.o[0m
+[ 16%] Built target geometry_msgs_generate_messages_lisp
+[ 16%] Built target geometry_msgs_generate_messages_nodejs
+[ 16%] Built target geometry_msgs_generate_messages_py
+[ 17%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_bounds.cpp.o[0m
+[ 17%] Built target std_msgs_generate_messages_cpp
+[ 17%] Built target std_msgs_generate_messages_eus
+[ 17%] Built target std_msgs_generate_messages_lisp
+[ 17%] Built target std_msgs_generate_messages_nodejs
+[ 17%] Built target std_msgs_generate_messages_py
+[ 17%] Built target visualization_msgs_generate_messages_cpp
+[ 17%] Built target visualization_msgs_generate_messages_eus
+[ 17%] Built target visualization_msgs_generate_messages_lisp
+[ 17%] Built target visualization_msgs_generate_messages_nodejs
+[ 17%] Built target visualization_msgs_generate_messages_py
+[ 17%] Built target roscpp_generate_messages_cpp
+[ 17%] Built target roscpp_generate_messages_eus
+[ 17%] Built target roscpp_generate_messages_lisp
+[ 17%] Built target roscpp_generate_messages_nodejs
+[ 17%] Built target roscpp_generate_messages_py
+[ 17%] Built target rosgraph_msgs_generate_messages_cpp
+[ 17%] Built target rosgraph_msgs_generate_messages_eus
+[ 17%] Built target rosgraph_msgs_generate_messages_lisp
+[ 17%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 17%] Built target rosgraph_msgs_generate_messages_py
+[ 17%] Built target moveit_msgs_generate_messages_cpp
+[ 17%] Built target moveit_msgs_generate_messages_eus
+[ 17%] Built target moveit_msgs_generate_messages_lisp
+[ 17%] Built target moveit_msgs_generate_messages_nodejs
+[ 17%] Built target moveit_msgs_generate_messages_py
+[ 17%] Built target actionlib_msgs_generate_messages_cpp
+[ 17%] Built target actionlib_msgs_generate_messages_eus
+[ 17%] Built target actionlib_msgs_generate_messages_lisp
+[ 19%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_collision.cpp.o[0m
+[ 20%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_rdf_loader.so[0m
+[ 20%] Built target moveit_rdf_loader
+[ 20%] Built target actionlib_msgs_generate_messages_nodejs
+[ 22%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_collision_plugin_loader.so[0m
+[ 22%] Built target actionlib_msgs_generate_messages_py
+[ 22%] Built target _catkin_empty_exported_target
+[ 22%] Built target sensor_msgs_generate_messages_cpp
+[ 22%] Built target sensor_msgs_generate_messages_eus
+[ 22%] Built target sensor_msgs_generate_messages_lisp
+[ 22%] Built target sensor_msgs_generate_messages_nodejs
+[ 22%] Built target sensor_msgs_generate_messages_py
+[ 22%] Built target trajectory_msgs_generate_messages_cpp
+[ 22%] Built target trajectory_msgs_generate_messages_eus
+[ 22%] Built target trajectory_msgs_generate_messages_lisp
+[ 22%] Built target trajectory_msgs_generate_messages_nodejs
+[ 22%] Built target trajectory_msgs_generate_messages_py
+[ 22%] Built target object_recognition_msgs_generate_messages_cpp
+[ 22%] Built target moveit_collision_plugin_loader
+[ 24%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_start_state_path_constraints.cpp.o[0m
+[ 24%] Built target object_recognition_msgs_generate_messages_lisp
+[ 24%] Built target object_recognition_msgs_generate_messages_eus
+[ 24%] Built target object_recognition_msgs_generate_messages_py
+[ 25%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/fix_workspace_bounds.cpp.o[0m
+[ 25%] Built target object_recognition_msgs_generate_messages_nodejs
+[ 25%] Built target octomap_msgs_generate_messages_cpp
+[ 25%] Built target octomap_msgs_generate_messages_eus
+[ 25%] Built target octomap_msgs_generate_messages_lisp
+[ 25%] Built target octomap_msgs_generate_messages_nodejs
+[ 25%] Built target octomap_msgs_generate_messages_py
+[ 25%] Built target tf2_msgs_generate_messages_cpp
+[ 25%] Built target tf2_msgs_generate_messages_eus
+[ 25%] Built target tf2_msgs_generate_messages_lisp
+[ 25%] Built target tf2_msgs_generate_messages_nodejs
+[ 25%] Built target tf2_msgs_generate_messages_py
+[ 25%] Built target actionlib_generate_messages_cpp
+[ 25%] Built target actionlib_generate_messages_eus
+[ 25%] Built target actionlib_generate_messages_lisp
+[ 25%] Built target actionlib_generate_messages_nodejs
+[ 25%] Built target actionlib_generate_messages_py
+[ 27%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_time_parameterization.cpp.o[0m
+[ 29%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_ruckig_traj_smoothing.cpp.o[0m
+[ 30%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_iterative_spline_parameterization.cpp.o[0m
+[ 32%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_constraint_sampler_manager_loader.so[0m
+[ 33%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_list_request_adapter_plugins[0m
+[ 33%] Built target moveit_constraint_sampler_manager_loader
+[ 33%] Built target dynamic_reconfigure_generate_messages_cpp
+[ 33%] Built target dynamic_reconfigure_generate_messages_eus
+[ 33%] Built target dynamic_reconfigure_generate_messages_lisp
+[ 33%] Built target dynamic_reconfigure_generate_messages_nodejs
+[ 33%] Built target dynamic_reconfigure_generate_messages_py
+[ 33%] Built target dynamic_reconfigure_gencfg
+[ 35%] [32mBuilding CXX object kinematics_plugin_loader/CMakeFiles/moveit_kinematics_plugin_loader.dir/src/kinematics_plugin_loader.cpp.o[0m
+[ 35%] Built target moveit_list_request_adapter_plugins
+[ 37%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/add_time_optimal_parameterization.cpp.o[0m
+[ 38%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/resolve_constraint_frames.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_planning_pipeline.so[0m
+[ 40%] Built target moveit_planning_pipeline
+[ 41%] [32mBuilding CXX object planning_request_adapter_plugins/CMakeFiles/moveit_default_planning_request_adapter_plugins.dir/src/limit_max_cartesian_link_speed.cpp.o[0m
+[ 43%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_kinematics_plugin_loader.so[0m
+[ 45%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_default_planning_request_adapter_plugins.so[0m
+[ 45%] Built target moveit_kinematics_plugin_loader
+[ 46%] [32mBuilding CXX object robot_model_loader/CMakeFiles/moveit_robot_model_loader.dir/src/robot_model_loader.cpp.o[0m
+[ 46%] Built target moveit_default_planning_request_adapter_plugins
+[ 48%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_robot_model_loader.so[0m
+[ 48%] Built target moveit_robot_model_loader
+[ 50%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_evaluate_state_operations_speed.dir/src/evaluate_state_operations_speed.cpp.o[0m
+[ 51%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_print_planning_model_info.dir/src/print_planning_model_info.cpp.o[0m
+[ 53%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_kinematics_speed_and_validity_evaluator.dir/src/kinematics_speed_and_validity_evaluator.cpp.o[0m
+[ 54%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/planning_scene_monitor.cpp.o[0m
+[ 56%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/current_state_monitor.cpp.o[0m
+[ 58%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/src/trajectory_monitor.cpp.o[0m
+[ 59%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_model_info[0m
+[ 59%] Built target moveit_print_planning_model_info
+[ 61%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_evaluate_state_operations_speed[0m
+[ 61%] Built target moveit_evaluate_state_operations_speed
+[ 62%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_kinematics_speed_and_validity_evaluator[0m
+[ 62%] Built target moveit_kinematics_speed_and_validity_evaluator
+[ 64%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_planning_scene_monitor.so[0m
+[ 64%] Built target moveit_planning_scene_monitor
+[ 67%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_evaluate_collision_checking_speed.dir/src/evaluate_collision_checking_speed.cpp.o[0m
+[ 67%] [32mBuilding CXX object planning_scene_monitor/CMakeFiles/demo_scene.dir/demos/demo_scene.cpp.o[0m
+[ 69%] [32mBuilding CXX object trajectory_execution_manager/CMakeFiles/moveit_trajectory_execution_manager.dir/src/trajectory_execution_manager.cpp.o[0m
+[ 72%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_publish_scene_from_text.dir/src/publish_scene_from_text.cpp.o[0m
+[ 72%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_display_random_state.dir/src/display_random_state.cpp.o[0m
+[ 74%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_visualize_robot_collision_volume.dir/src/visualize_robot_collision_volume.cpp.o[0m
+[ 75%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_print_planning_scene_info.dir/src/print_planning_scene_info.cpp.o[0m
+[ 77%] [32mBuilding CXX object planning_components_tools/CMakeFiles/moveit_compare_collision_checking_speed_fcl_bullet.dir/src/compare_collision_speed_checking_fcl_bullet.cpp.o[0m
+[ 79%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_print_planning_scene_info[0m
+[ 79%] Built target moveit_print_planning_scene_info
+[ 80%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/demo_scene[0m
+[ 80%] Built target demo_scene
+[ 82%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_display_random_state[0m
+[ 83%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_evaluate_collision_checking_speed[0m
+[ 85%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_visualize_robot_collision_volume[0m
+[ 85%] Built target moveit_display_random_state
+[ 87%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_publish_scene_from_text[0m
+[ 87%] Built target moveit_evaluate_collision_checking_speed
+[ 87%] Built target moveit_visualize_robot_collision_volume
+[ 87%] Built target moveit_publish_scene_from_text
+[ 88%] [32m[1mLinking CXX executable /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/moveit_ros_planning/moveit_compare_collision_checking_speed_fcl_bullet[0m
+[ 88%] Built target moveit_compare_collision_checking_speed_fcl_bullet
+[ 90%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_trajectory_execution_manager.so[0m
+[ 90%] Built target moveit_trajectory_execution_manager
+[ 93%] [32mBuilding CXX object plan_execution/CMakeFiles/moveit_plan_execution.dir/src/plan_with_sensing.cpp.o[0m
+[ 93%] [32mBuilding CXX object moveit_cpp/CMakeFiles/moveit_cpp.dir/src/moveit_cpp.cpp.o[0m
+[ 95%] [32mBuilding CXX object plan_execution/CMakeFiles/moveit_plan_execution.dir/src/plan_execution.cpp.o[0m
+[ 96%] [32mBuilding CXX object moveit_cpp/CMakeFiles/moveit_cpp.dir/src/planning_component.cpp.o[0m
+[ 98%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_cpp.so[0m
+[ 98%] Built target moveit_cpp
+[100%] [32m[1mLinking CXX shared library /home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/devel/.private/moveit_ros_planning/lib/libmoveit_plan_execution.so[0m
+[100%] Built target moveit_plan_execution
