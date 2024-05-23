@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 
 import curses
+from Robot import Robot
 
 class Menu:
     def __init__(self, stdscr):
         self.stdscr = stdscr
+        self.robot = Robot()
         curses.curs_set(0)  # Hide the cursor
         curses.start_color()
         curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
         self.current_row = 0
         self.main_menu_options = ["Start", "Options", "Exit"]
         self.options_menu_options = ["Reset to Initial Position", "Calibrate Camera", "Back to Main Menu"]
-        self.select_objects_menu_options = ["Object 1", "Object 2", "Object 3", "Back to Main Menu"]
 
     def print_menu(self, menu, title):
         """Print the menu options and title on the screen."""
@@ -62,15 +63,18 @@ class Menu:
 
     def select_objects_menu(self):
         """Display the select objects menu and handle user input."""
+        self.select_objects_menu_options = [f"Object {i}" for i in self.robot.get_objects().keys()] + ["Back to Main Menu"]
         while True:
             choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
 
-            if choice == 3:  # Back to Main Menu
+            if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
                 break
             else:
-                self.stdscr.addstr(0, 0, f"Selected {self.select_objects_menu_options[choice]}")
+                object_name = self.select_objects_menu_options[choice]
+                self.stdscr.addstr(0, 0, f"Selected {object_name}")
                 self.stdscr.refresh()
                 self.stdscr.getch()
+                self.robot.pick(object_name)
 
     def options_menu(self):
         """Display the options menu and handle user input."""
@@ -80,10 +84,12 @@ class Menu:
             if choice == 0:  # Reset to Initial Position
                 self.stdscr.addstr(0, 0, "Resetting to initial position...")
                 self.stdscr.refresh()
+                self.robot.go_to_joint_state(self.robot.initial_position)
                 self.stdscr.getch()
             elif choice == 1:  # Calibrate Camera
                 self.stdscr.addstr(0, 0, "Calibrating camera...")
                 self.stdscr.refresh()
+                self.robot.request_calibration()
                 self.stdscr.getch()
             elif choice == 2:  # Back to Main Menu
                 break

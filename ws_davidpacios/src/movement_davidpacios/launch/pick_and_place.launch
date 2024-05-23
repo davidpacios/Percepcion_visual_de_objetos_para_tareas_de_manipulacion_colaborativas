@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="movement_davidpacios" type="Camera.py" name="camera" output="screen"/>
+    <node pkg="movement_davidpacios" type="Camera.py" name="camera" output="log"/>
     <node pkg="movement_davidpacios" type="Robot.py" name="robot" output="screen"/>
-    <node pkg="movement_davidpacios" type="GelSightMini.py" name="gelsight_mini_server" output="screen"/>
-    <node pkg="movement_davidpacios" type="ArucoDetector.py" name="aruco_detector" output="screen"/>
-    <node pkg="movement_davidpacios" type="PoseTransformer.py" name="pose_transformer" output="screen"/>
+    <node pkg="movement_davidpacios" type="GelSightMini.py" name="gelsight_mini_server" output="log"/>
+    <node pkg="movement_davidpacios" type="ArucoDetector.py" name="aruco_detector" output="log"/>
+    <node pkg="movement_davidpacios" type="PoseTransformer.py" name="pose_transformer" output="log"/>
 </launch>
-

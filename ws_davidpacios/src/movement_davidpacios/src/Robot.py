@@ -16,6 +16,7 @@ import actionlib
 import panda_demo.msg
 from std_msgs.msg import String, Bool
 from geometry_msgs.msg import PoseStamped
+import curses
 
 initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
 object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
@@ -135,8 +136,9 @@ class Robot(object):
         poses = numpy.linspace(0.08, 0.0, 100)
         for pose in poses:
             self.move_gripper(pose)
+            #print("Data:",self.pixel_intensity_difference)
             if self.pixel_intensity_difference.data > 11:#diferencia máxima de intensidad de píxeles que se podría esperar en la imagen
-                print("Touching... width =", pose)
+                #print("Touching... width =", pose)
                 break
         return
     
@@ -243,7 +245,7 @@ class Robot(object):
         self.pixel_intensity_difference = dist
 
     def callback_arucos_position(self, data):
-        self.objects = []
+        self.objects = {}
         # Recupera la información de los objects desde el mensaje de tipo String
         arucos_info = data.data.split(';')
         
@@ -252,130 +254,286 @@ class Robot(object):
             if aruco_info:  # Verifica si la cadena no está vacía
                 aruco_data = aruco_info.split(':')
                 if len(aruco_data) >= 4:  # Verifica si hay al menos 4 elementos (id, x, y, z)
-                    pose_msg = PoseStamped()
-                    pose_msg.header.frame_id = f"aruco_{aruco_data[0]}"
-                    pose_msg.header.stamp = rospy.Time.now()
-                    pose_msg.pose.position.x = float(aruco_data[1])
-                    pose_msg.pose.position.y = float(aruco_data[2])
-                    pose_msg.pose.position.z = float(aruco_data[3])    
-                    pose_msg.pose.orientation.x = float(aruco_data[4])                
-                    pose_msg.pose.orientation.y = float(aruco_data[5])                
-                    pose_msg.pose.orientation.z = float(aruco_data[6])                
-                    pose_msg.pose.orientation.w = float(aruco_data[7]) 
+                    # Convertir el ID del Aruco a un número decimal
+                    aruco_id_decimal = float(aruco_data[0])
+                    # Convertir el número decimal a un número entero
+                    aruco_id_entero = int(aruco_id_decimal)
 
-                    # Añade el objeto PoseStamped a la lista de objects
-                    self.objects.append(pose_msg)
+                    pose_msg = PoseStamped()
+                    pose_msg.header.frame_id = f"aruco_{aruco_id_entero}"
+                    pose_msg.header.stamp = rospy.Time.now()
+                    pose_msg.pose.position.x = float(aruco_data[1]) + 0.03
+                    pose_msg.pose.position.y = float(aruco_data[2])
+                    pose_msg.pose.position.z = 0.14 #float(aruco_data[3])    
+                    pose_msg.pose.orientation.x = -0.9231143539216148 #float(aruco_data[4])                
+                    pose_msg.pose.orientation.y = -0.3840649074696301 #float(aruco_data[5])                
+                    pose_msg.pose.orientation.z = -0.01819345318830564 #float(aruco_data[6])                
+                    pose_msg.pose.orientation.w = 0.00479944739623474 #float(aruco_data[7]) 
+
+                    # Almacena el objeto PoseStamped en el diccionario usando el ID del Aruco como clave
+                    self.objects[aruco_id_entero] = pose_msg
 
     def select_aruco(self):
         print("Seleccione un marcador ArUco:")
-        for i, aruco_data in enumerate(self.objects):
-            print(f"{i+1}. ID del marcador: {aruco_data.header.frame_id.replace('aruco_', '')}")
+        for aruco_id, aruco_data in self.objects.items():
+            print(f"ID del marcador: {aruco_id}")
             print(f"Posición (x, y, z): ({aruco_data.pose.position.x}, {aruco_data.pose.position.y}, {aruco_data.pose.position.z}, {aruco_data.pose.orientation.x}, {aruco_data.pose.orientation.y}, {aruco_data.pose.orientation.z},{aruco_data.pose.orientation.w})")
 
         while True:
             try:
-                selection = int(input("Select an Arucon (Pulse 0 to go back): "))
-                if selection == 0: return None
-                aruco_position = self.objects[selection - 1].pose
-                aruco_id = aruco_data.header.frame_id.replace('aruco_', '')
+                selection = int(input("Introduce el ID del ArUco que quieres coger (Pulsa 0 para volver): "))
+                if selection == 0:
+                    return None
+                aruco_data = self.objects.get(selection)
+                if aruco_data is None:
+                    print("ID de ArUco no válido. Por favor, introduce un ID válido.")
+                else:
+                    aruco_position = aruco_data.pose
+                    print(f"Has seleccionado el marcador ArUco con ID {selection}:")
+                    print(aruco_position)
+                    return aruco_position
+                
+            except ValueError:
+                print("Entrada no válida. Por favor, introduce un número entero.")
 
-                print(f"Ha seleccionado el marcador ArUco con ID {aruco_id}:")
-                aruco_position.position.x = aruco_position.position.x + 0.030
-                aruco_position.position.y = aruco_position.position.y - 0.02
-                aruco_position.position.z = 0.15
-                aruco_position.orientation.x = -0.9231143539216148
-                aruco_position.orientation.y = -0.3840649074696301
-                aruco_position.orientation.z = -0.01819345318830564
-                aruco_position.orientation.w = 0.00479944739623474
-                print(aruco_position)
-                return aruco_position
-            
-            except (ValueError, IndexError):
-                print("Opción no válida. Por favor, ingrese un número válido.")
 
-def go_initial_position_and_open_gripper(MoveGroup):
-    if initial_position is not None:
-            MoveGroup.go_to_joint_state(initial_position)
-    else:
-        print("Initial position not set.")
-    MoveGroup.open_gripper()
-
-def go_object_position(MoveGroup):
-    if object_position is None:
-        print("Object position not set.")
-        return
-    MoveGroup.go_to_joint_state(object_position)
-
-def go_final_position(MoveGroup):
-    if final_position is None:
-        print("Object position not set.")
-        return
-    MoveGroup.go_to_joint_state(final_position)
-
-def pick_and_place(MoveGroup):
-    if initial_position is None:
-        print("Initial position not set.")
-        return
-
-    object_pose = MoveGroup.select_aruco()
+    def get_objects(self):
+        return self.objects
     
-    if object_pose == None:
-        return
+    def request_calibration(self):
+        self.camera_calibration = False
+        rospy.Subscriber("calibration_done", Bool, self.callback_camera_calibration_done)
+        while not self.camera_calibration and not rospy.is_shutdown():
+            self.camera_calibration_pub.publish(True)
+            rospy.sleep(6)
 
-    a = MoveGroup.add_box()
-    print("Object has been added: ", a)
+# def go_initial_position_and_open_gripper(MoveGroup):
+#     if initial_position is not None:
+#             MoveGroup.go_to_joint_state(initial_position)
+#     else:
+#         print("Initial position not set.")
+#     MoveGroup.open_gripper()
 
-    MoveGroup.open_gripper()
-    MoveGroup.go_to_joint_state(initial_position)
+# def go_object_position(MoveGroup):
+#     if object_position is None:
+#         print("Object position not set.")
+#         return
+#     MoveGroup.go_to_joint_state(object_position)
 
-    print("Calibrating")
-    MoveGroup.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
-    MoveGroup.gelsight_mini_api.wait_for_result()
+# def go_final_position(MoveGroup):
+#     if final_position is None:
+#         print("Object position not set.")
+#         return
+#     MoveGroup.go_to_joint_state(final_position)
 
-    print("Picking")
-    MoveGroup.pick(object_pose)
-    print("Picked")
+# def pick_and_place(MoveGroup):
+#     if initial_position is None:
+#         print("Initial position not set.")
+#         return
 
-    MoveGroup.go_to_joint_state(initial_position)
+#     object_pose = MoveGroup.select_aruco()
+    
+#     if object_pose == None:
+#         return
 
-    print("Placing")
-    # Use the fixed place_pose
-    MoveGroup.place(pose_place)
-    print("Placed")
+#     a = MoveGroup.add_box()
+#     print("Object has been added: ", a)
 
-    MoveGroup.go_to_joint_state(initial_position)
-    MoveGroup.open_gripper()
+#     MoveGroup.open_gripper()
+#     MoveGroup.go_to_joint_state(initial_position)
 
-    a = MoveGroup.remove_box()
-    print("Object has been removed: ", a)
+#     print("Calibrating")
+#     MoveGroup.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
+#     MoveGroup.gelsight_mini_api.wait_for_result()
 
-def main():
-    global a
-    try:
-        MoveGroup = Robot()
+#     print("Picking")
+#     MoveGroup.pick(object_pose)
+#     print("Picked")
+
+#     MoveGroup.go_to_joint_state(initial_position)
+
+#     print("Placing")
+#     # Use the fixed place_pose
+#     MoveGroup.place(pose_place)
+#     print("Placed")
+
+#     MoveGroup.go_to_joint_state(initial_position)
+#     MoveGroup.open_gripper()
+
+#     a = MoveGroup.remove_box()
+#     print("Object has been removed: ", a)
+
+# def main():
+#     global a
+#     try:
+#         MoveGroup = Robot()
+#         while True:
+#             print("")
+#             print("----------------------------------------------------------")
+#             print("Welcome to the Pick and Place: DPV")
+#             print("----------------------------------------------------------")
+#             print("")
+#             print("1. Start")
+#             print("2. Options")
+#             print("3. Exit")
+            
+#             choice = input("Enter your choice (1-3): ")
+            
+#             if choice == '1':
+#                 pick_and_place(MoveGroup)
+#             elif choice == '2':
+#                 MoveGroup.request_calibration()
+#                 print("Options")
+                
+#             elif choice == '3':
+#                 go_initial_position_and_open_gripper(MoveGroup)
+#                 break
+#             else:
+#                 print("Invalid choice. Please enter a number between 0 and 5.")
+#     except KeyboardInterrupt:
+#         return
+
+# if __name__ == "__main__":
+#     main()
+
+    
+
+class Menu:
+    def __init__(self, stdscr):
+        self.stdscr = stdscr
+        curses.curs_set(0)  # Hide the cursor
+        curses.start_color()
+        curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
+        self.current_row = 0
+        self.main_menu_options = ["Start", "Options", "Exit"]
+        self.options_menu_options = ["Reset to Initial Position", "Calibrate Camera", "Back to Main Menu"]
+        self.robot = Robot()
+
+    def print_menu(self, menu, title):
+        """Print the menu options and title on the screen."""
+        self.stdscr.clear()
+        height, width = self.stdscr.getmaxyx()
+
+        # Print the title
+        title_x = width // 2 - len(title) // 2
+        self.stdscr.addstr(1, title_x, title, curses.A_BOLD)
+
+        # Print the menu options
+        for idx, row in enumerate(menu):
+            x = width // 2 - len(row) // 2
+            y = height // 2 - len(menu) // 2 + idx
+            if idx == self.current_row:
+                self.stdscr.attron(curses.color_pair(1))
+                self.stdscr.addstr(y, x, row)
+                self.stdscr.attroff(curses.color_pair(1))
+            else:
+                self.stdscr.addstr(y, x, row)
+
+        self.stdscr.refresh()
+
+    def navigate_menu(self, menu, title):
+        """Navigate the menu using arrow keys and Enter."""
         while True:
-            print("")
-            print("----------------------------------------------------------")
-            print("Welcome to the Pick and Place: DPV")
-            print("----------------------------------------------------------")
-            print("")
-            print("1. Start")
-            print("2. Options")
-            print("3. Exit")
-            
-            choice = input("Enter your choice (1-3): ")
-            
-            if choice == '1':
-                pick_and_place(MoveGroup)
-            elif choice == '2':
-                print("Options")
-            elif choice == '3':
-                go_initial_position_and_open_gripper(MoveGroup)
+            self.print_menu(menu, title)
+            key = self.stdscr.getch()
+
+            if key == curses.KEY_UP and self.current_row > 0:
+                self.current_row -= 1
+            elif key == curses.KEY_DOWN and self.current_row < len(menu) - 1:
+                self.current_row += 1
+            elif key == curses.KEY_ENTER or key in [10, 13]:
+                return self.current_row
+
+    def main_menu(self):
+        """Display the main menu and handle user input."""
+        while True:
+            choice = self.navigate_menu(self.main_menu_options, "Pick and Place DPV")
+
+            if choice == 0:  # Start
+                self.select_objects_menu()
+            elif choice == 1:  # Options
+                self.options_menu()
+            elif choice == 2:  # Exit
+                break
+
+    def select_objects_menu(self):
+        """Display the select objects menu and handle user input."""
+        self.select_objects_menu_options = [f"Object with Aruco ID-{i}" for i in self.robot.get_objects().keys()] + ["Back to Main Menu"]
+        while True:
+            choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
+
+            if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
                 break
             else:
-                print("Invalid choice. Please enter a number between 0 and 5.")
-    except KeyboardInterrupt:
-        return
+                object_id = list(self.robot.get_objects().keys())[choice]
+                
+                self.stdscr.clear()
+                self.stdscr.addstr(0, 0, f"Selected {object_id}")
+                self.stdscr.refresh()
+
+                a = self.robot.add_box()
+                self.stdscr.clear()
+                self.stdscr.addstr(0, 0, f"Object has been added: {a}")
+                self.stdscr.refresh()
+
+                self.robot.go_to_joint_state(initial_position)
+                self.robot.open_gripper()
+
+                self.stdscr.clear()
+                self.stdscr.addstr(0, 0, f"Calibrating GelSightMini")
+                self.stdscr.refresh()
+
+                self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
+                self.robot.gelsight_mini_api.wait_for_result()
+
+                self.stdscr.clear()
+                self.stdscr.addstr(0, 0, f"Picking")
+                self.stdscr.refresh()
+
+                self.robot.pick(self.robot.get_objects()[object_id].pose)
+
+                self.stdscr.clear()
+                self.robot.go_to_joint_state(initial_position)
+                
+                self.stdscr.addstr(0, 0, f"Placing")
+                self.stdscr.refresh()
+
+                self.robot.place(pose_place)
+
+                self.stdscr.clear()
+                self.robot.go_to_joint_state(initial_position)
+                self.robot.open_gripper()
+
+                a = self.robot.remove_box()
+                self.stdscr.clear()
+                self.stdscr.addstr(0, 0, f"Object has been removed: {a}")
+                self.stdscr.refresh()
+                self.stdscr.getch()
+
+
+
+    def options_menu(self):
+        """Display the options menu and handle user input."""
+        while True:
+            choice = self.navigate_menu(self.options_menu_options, "Options")
+
+            if choice == 0:  # Reset to Initial Position
+                self.stdscr.addstr(0, 0, "Resetting to initial position...")
+                self.stdscr.refresh()
+                self.robot.go_to_joint_state(initial_position)
+                self.robot.open_gripper()
+                self.stdscr.getch()
+            elif choice == 1:  # Calibrate Camera
+                self.stdscr.addstr(0, 0, "Calibrating camera...")
+                self.stdscr.refresh()
+                self.robot.request_calibration()
+                self.stdscr.getch()
+            elif choice == 2:  # Back to Main Menu
+                break
+
+def main(stdscr):
+    menu = Menu(stdscr)
+    menu.main_menu()
 
 if __name__ == "__main__":
-    main()
+    curses.wrapper(main)
