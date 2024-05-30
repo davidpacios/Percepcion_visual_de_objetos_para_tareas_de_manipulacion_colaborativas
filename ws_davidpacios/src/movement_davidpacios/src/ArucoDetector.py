@@ -29,7 +29,7 @@ class ArucoDetector:
         
         self.id_aruco_to_frame = 8
         self.marker_length_to_frame = 0.095  # Marker side length (in meters)
-        self.marker_length_to_pick_and_place = 0.030
+        self.marker_length_to_pick_and_place = 0.025
         
         self.aruco_info = ""
         self.rate = rospy.Rate(10)  # 10 Hz

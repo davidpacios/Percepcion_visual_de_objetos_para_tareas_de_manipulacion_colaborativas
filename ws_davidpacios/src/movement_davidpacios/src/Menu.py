@@ -2,17 +2,18 @@
 
 import curses
 from Robot import Robot
+import panda_demo.msg
 
 class Menu:
     def __init__(self, stdscr):
         self.stdscr = stdscr
-        self.robot = Robot()
         curses.curs_set(0)  # Hide the cursor
         curses.start_color()
         curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
         self.current_row = 0
         self.main_menu_options = ["Start", "Options", "Exit"]
         self.options_menu_options = ["Reset to Initial Position", "Calibrate Camera", "Back to Main Menu"]
+        self.robot = Robot(self)
 
     def print_menu(self, menu, title):
         """Print the menu options and title on the screen."""
@@ -49,6 +50,20 @@ class Menu:
             elif key == curses.KEY_ENTER or key in [10, 13]:
                 return self.current_row
 
+    def print_centered_message(self, message):
+        """Print a message in the center of the screen, handling multiple lines."""
+        self.stdscr.clear()
+        height, width = self.stdscr.getmaxyx()
+        
+        lines = message.split('\n')
+        for i, line in enumerate(lines):
+            x = width // 2 - len(line) // 2
+            y = height // 2 - len(lines) // 2 + i
+            self.stdscr.addstr(y, x, line)
+        
+        self.stdscr.refresh()
+
+
     def main_menu(self):
         """Display the main menu and handle user input."""
         while True:
@@ -63,18 +78,43 @@ class Menu:
 
     def select_objects_menu(self):
         """Display the select objects menu and handle user input."""
-        self.select_objects_menu_options = [f"Object {i}" for i in self.robot.get_objects().keys()] + ["Back to Main Menu"]
-        while True:
-            choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
+        objects = self.robot.get_objects()
+        self.select_objects_menu_options = [f"Object with Aruco ID-{i}" for i in objects.keys()] + ["Back to Main Menu"]
+        choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
 
-            if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
-                break
-            else:
-                object_name = self.select_objects_menu_options[choice]
-                self.stdscr.addstr(0, 0, f"Selected {object_name}")
-                self.stdscr.refresh()
-                self.stdscr.getch()
-                self.robot.pick(object_name)
+        if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
+            return    
+        
+        object_id = list(objects.keys())[choice]
+        
+        self.print_centered_message(f"Selected {object_id}")
+
+        a = self.robot.add_box()
+        self.print_centered_message(f"Object has been added: {a}")
+
+        self.robot.go_to_joint_state(self.initial_position)
+        self.robot.open_gripper()
+
+        self.print_centered_message("Calibrating GelSightMini")
+
+        self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
+        self.robot.gelsight_mini_api.wait_for_result()
+
+        self.print_centered_message("Picking")
+
+        self.robot.pick(self.robot.get_objects()[object_id].pose)
+
+        self.robot.go_to_joint_state(self.initial_position)
+        
+        self.print_centered_message("Placing")
+
+        self.robot.place(self.pose_place)
+
+        self.robot.go_to_joint_state(self.initial_position)
+        self.robot.open_gripper()
+
+        a = self.robot.remove_box()
+        self.print_centered_message(f"Object has been removed: {a}")
 
     def options_menu(self):
         """Display the options menu and handle user input."""
@@ -82,15 +122,12 @@ class Menu:
             choice = self.navigate_menu(self.options_menu_options, "Options")
 
             if choice == 0:  # Reset to Initial Position
-                self.stdscr.addstr(0, 0, "Resetting to initial position...")
-                self.stdscr.refresh()
-                self.robot.go_to_joint_state(self.robot.initial_position)
-                self.stdscr.getch()
+                self.print_centered_message("Resetting to initial position...")
+                self.robot.go_to_joint_state(self.initial_position)
+                self.robot.open_gripper()
             elif choice == 1:  # Calibrate Camera
-                self.stdscr.addstr(0, 0, "Calibrating camera...")
-                self.stdscr.refresh()
+                self.print_centered_message("Calibrating camera...")
                 self.robot.request_calibration()
-                self.stdscr.getch()
             elif choice == 2:  # Back to Main Menu
                 break
 
