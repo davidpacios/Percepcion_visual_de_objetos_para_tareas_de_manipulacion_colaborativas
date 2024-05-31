@@ -3,7 +3,6 @@
 from __future__ import print_function
 import numpy
 from six.moves import input
-import os
 import sys
 import rospy
 import moveit_commander
@@ -16,27 +15,7 @@ import actionlib
 import panda_demo.msg
 from std_msgs.msg import String, Bool
 from geometry_msgs.msg import PoseStamped
-import curses
 
-initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
-object_position = [-2.104341227623454, -0.4319778308001077, 2.5377667935354666, -2.5344143068273293, 0.8894710473178161, 2.8222173599137195, -1.1655434282617638]
-final_position = [0.31117872249452694, 0.661868957685263, 0.23851138023744548, -1.9054843345423356, -0.29362653295861346, 2.599592895878686, -0.050700302571436415]
-pose_place = geometry_msgs.msg.Pose()
-pose_place.position.x = 0.46409545551322356
-pose_place.position.y = 0.3672940207021908
-pose_place.position.z = 0.14
-#pose_place.orientation.x = 0
-#pose_place.orientation.y = 0
-#pose_place.orientation.z = 0
-#pose_place.orientation.w = 1
-pose_place.orientation.x = -0.9231143539216148 #float(aruco_data[4])                
-pose_place.orientation.y = -0.3840649074696301 #float(aruco_data[5])                
-pose_place.orientation.z = -0.01819345318830564 #float(aruco_data[6])                
-pose_place.orientation.w = 0.00479944739623474 #float(aruco_data[7]) 
-
-a = False
-
-gripper_max_opening = 0.04  # adjust as needed
 
 class Robot(object):
     def __init__(self,menu):
@@ -44,7 +23,6 @@ class Robot(object):
         self.menu = menu
         moveit_commander.roscpp_initialize(sys.argv)
         rospy.init_node("robot")
-
         self.robot = moveit_commander.RobotCommander()
         self.scene = moveit_commander.PlanningSceneInterface()
         self.move_group = moveit_commander.MoveGroupCommander("panda_arm")
@@ -58,7 +36,20 @@ class Robot(object):
         self.objects = None
         self.pixel_intensity_difference = None
         self.camera_calibration = False
-        self.max_pixel_intensity_difference = 7.3
+        self.max_pixel_intensity_difference = 29 #7.3
+        self.gripper_max_opening = 0.04  # adjust as needed
+        self.initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
+        self.place_poses = {}
+        # Create and add the default pose to the dictionary
+        default_pose = geometry_msgs.msg.Pose()
+        default_pose.position.x = 0.46409545551322356
+        default_pose.position.y = 0.3672940207021908
+        default_pose.position.z = 0.14
+        default_pose.orientation.x = -0.9231143539216148
+        default_pose.orientation.y = -0.3840649074696301
+        default_pose.orientation.z = -0.01819345318830564
+        default_pose.orientation.w = 0.00479944739623474
+        self.place_poses["Default"] = default_pose
 
         self.franka_gripper_api = actionlib.SimpleActionClient('franka_gripper/move', franka_gripper.msg.MoveAction)
         self.franka_gripper_api.wait_for_server()
@@ -100,6 +91,9 @@ class Robot(object):
         self.move_group.go(joint_goal, wait=True)
         self.move_group.stop()
         return 
+
+    def go_to_inital_position(self):
+        self.go_to_joint_state(self.initial_position)
 
     def openGripper(self, posture, opening):
         posture.joint_names = ["panda_finger_joint1","panda_finger_joint2"]
@@ -181,8 +175,8 @@ class Robot(object):
 
         grasp.post_grasp_retreat.direction.header.frame_id = "panda_link0"
 
-        self.openGripper(grasp.pre_grasp_posture, gripper_max_opening)
-        self.closeGripper(grasp.grasp_posture, gripper_max_opening)
+        self.openGripper(grasp.pre_grasp_posture, self.gripper_max_opening)
+        self.closeGripper(grasp.grasp_posture, self.gripper_max_opening)
 
         self.move_group.pick(self.box_name, grasp)
         self.move_group.stop()
@@ -204,7 +198,7 @@ class Robot(object):
         place_location.post_place_retreat.min_distance = 0.1
         place_location.post_place_retreat.desired_distance = 0.25
 
-        self.openGripper(place_location.post_place_posture, gripper_max_opening)
+        self.openGripper(place_location.post_place_posture, self.gripper_max_opening)
 
         self.move_group.place(self.box_name, place_location)
         self.move_group.stop()  # Asegúrate de detener el grupo de movimientos
@@ -287,31 +281,11 @@ class Robot(object):
                     # Almacena el objeto PoseStamped en el diccionario usando el ID del Aruco como clave
                     self.objects[aruco_id_entero] = pose_msg
 
-    def select_aruco(self):
-        print("Seleccione un marcador ArUco:")
-        for aruco_id, aruco_data in self.objects.items():
-            print(f"ID del marcador: {aruco_id}")
-            print(f"Posición (x, y, z): ({aruco_data.pose.position.x}, {aruco_data.pose.position.y}, {aruco_data.pose.position.z}, {aruco_data.pose.orientation.x}, {aruco_data.pose.orientation.y}, {aruco_data.pose.orientation.z},{aruco_data.pose.orientation.w})")
-
-        while True:
-            try:
-                selection = int(input("Introduce el ID del ArUco que quieres coger (Pulsa 0 para volver): "))
-                if selection == 0:
-                    return None
-                aruco_data = self.objects.get(selection)
-                if aruco_data is None:
-                    print("ID de ArUco no válido. Por favor, introduce un ID válido.")
-                else:
-                    aruco_position = aruco_data.pose
-                    print(f"Has seleccionado el marcador ArUco con ID {selection}:")
-                    print(aruco_position)
-                    return aruco_position
-                
-            except ValueError:
-                print("Entrada no válida. Por favor, introduce un número entero.")
-
     def get_objects(self):
         return self.objects
+    
+    def get_place_poses(self):
+        return self.place_poses
     
     def request_calibration(self):
         self.camera_calibration = False
@@ -320,138 +294,8 @@ class Robot(object):
             self.camera_calibration_pub.publish(True)
             rospy.sleep(6)
 
-    
-class Menu:
-    def __init__(self, stdscr):
-        self.stdscr = stdscr
-        curses.curs_set(0)  # Hide the cursor
-        curses.start_color()
-        curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
-        self.current_row = 0
-        self.main_menu_options = ["Start", "Options", "Exit"]
-        self.options_menu_options = ["Reset to Initial Position", "Calibrate Camera", "Back to Main Menu"]
-        self.robot = Robot(self)
+    def add_place_pose(self, key ,object_id):
+        self.place_poses[key] = self.objects[object_id].pose
 
-    def print_menu(self, menu, title):
-        """Print the menu options and title on the screen."""
-        self.stdscr.clear()
-        height, width = self.stdscr.getmaxyx()
-
-        # Print the title
-        title_x = width // 2 - len(title) // 2
-        self.stdscr.addstr(1, title_x, title, curses.A_BOLD)
-
-        # Print the menu options
-        for idx, row in enumerate(menu):
-            x = width // 2 - len(row) // 2
-            y = height // 2 - len(menu) // 2 + idx
-            if idx == self.current_row:
-                self.stdscr.attron(curses.color_pair(1))
-                self.stdscr.addstr(y, x, row)
-                self.stdscr.attroff(curses.color_pair(1))
-            else:
-                self.stdscr.addstr(y, x, row)
-
-        self.stdscr.refresh()
-
-    def navigate_menu(self, menu, title):
-        """Navigate the menu using arrow keys and Enter."""
-        while True:
-            self.print_menu(menu, title)
-            key = self.stdscr.getch()
-
-            if key == curses.KEY_UP and self.current_row > 0:
-                self.current_row -= 1
-            elif key == curses.KEY_DOWN and self.current_row < len(menu) - 1:
-                self.current_row += 1
-            elif key == curses.KEY_ENTER or key in [10, 13]:
-                return self.current_row
-
-    def print_centered_message(self, message):
-        """Print a message in the center of the screen, handling multiple lines."""
-        self.stdscr.clear()
-        height, width = self.stdscr.getmaxyx()
         
-        lines = message.split('\n')
-        for i, line in enumerate(lines):
-            x = width // 2 - len(line) // 2
-            y = height // 2 - len(lines) // 2 + i
-            self.stdscr.addstr(y, x, line)
-        
-        self.stdscr.refresh()
 
-
-    def main_menu(self):
-        """Display the main menu and handle user input."""
-        while True:
-            choice = self.navigate_menu(self.main_menu_options, "Pick and Place DPV")
-
-            if choice == 0:  # Start
-                self.select_objects_menu()
-            elif choice == 1:  # Options
-                self.options_menu()
-            elif choice == 2:  # Exit
-                break
-
-    def select_objects_menu(self):
-        """Display the select objects menu and handle user input."""
-        objects = self.robot.get_objects()
-        self.select_objects_menu_options = [f"Object with Aruco ID-{i}" for i in objects.keys()] + ["Back to Main Menu"]
-        choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
-
-        if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
-            return    
-        
-        object_id = list(objects.keys())[choice]
-        
-        self.print_centered_message(f"Selected {object_id}")
-
-        a = self.robot.add_box(objects.get(object_id))
-
-        self.print_centered_message(f"Object has been added: {a}")
-
-        self.robot.go_to_joint_state(initial_position)
-        self.robot.open_gripper()
-
-        self.print_centered_message("Calibrating GelSightMini")
-
-        self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
-        self.robot.gelsight_mini_api.wait_for_result()
-
-        self.print_centered_message("Picking")
-
-        self.robot.pick(objects.get(object_id).pose)
-
-        self.robot.go_to_joint_state(initial_position)
-
-        self.print_centered_message("Placing")
-
-        self.robot.place(pose_place)
-
-        self.robot.go_to_joint_state(initial_position)
-        self.robot.open_gripper()
-
-        a = self.robot.remove_box()
-        self.print_centered_message(f"Object has been removed: {a}")
-
-    def options_menu(self):
-        """Display the options menu and handle user input."""
-        while True:
-            choice = self.navigate_menu(self.options_menu_options, "Options")
-
-            if choice == 0:  # Reset to Initial Position
-                self.print_centered_message("Resetting to initial position...")
-                self.robot.go_to_joint_state(initial_position)
-                self.robot.open_gripper()
-            elif choice == 1:  # Calibrate Camera
-                self.print_centered_message("Calibrating camera...")
-                self.robot.request_calibration()
-            elif choice == 2:  # Back to Main Menu
-                break
-
-def main(stdscr):
-    menu = Menu(stdscr)
-    menu.main_menu()
-
-if __name__ == "__main__":
-    curses.wrapper(main)
