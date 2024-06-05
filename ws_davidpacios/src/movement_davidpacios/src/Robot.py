@@ -36,7 +36,8 @@ class Robot(object):
         self.objects = None
         self.pixel_intensity_difference = None
         self.camera_calibration = False
-        self.max_pixel_intensity_difference = 29 #7.3
+        self.max_pixel_intensity_difference_tolerance = 3
+        self.max_pixel_intensity_difference = 33 #7.3
         self.gripper_max_opening = 0.04  # adjust as needed
         self.initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
         self.place_poses = {}
@@ -132,36 +133,45 @@ class Robot(object):
         self.hand_group.stop()
     
     def pick(self, grasp_pose):
+        stop_picking = False
         self.move_to_pick(grasp_pose)
-        poses = numpy.linspace(0.08, 0.0, 40)
+        poses = numpy.linspace(0.08, 0.0, 30)
         
         # Set the window to non-blocking mode
         self.menu.stdscr.nodelay(True)
         
         for pose in poses:
-            self.move_gripper(pose)
-            self.menu.print_centered_message(f"Picking until pixel intensity difference is {self.max_pixel_intensity_difference}. Actual pixel intensity difference: {self.pixel_intensity_difference.data}\nPress 's' or 'S' to stop picking and place")
-            
-            # Check if the 'S' key is pressed without blocking
-            key = self.menu.stdscr.getch()
-            if key == ord('s') or key == ord('S'):
+            stop_picking = self.move_gripper(pose)
+
+            self.menu.print_centered_message(f"Picking until pixel intensity difference is {self.max_pixel_intensity_difference:.2f}. Actual: {self.pixel_intensity_difference.data:.2f}\nPress 's' to stop picking")
+
+            if stop_picking:
+                self.menu.print_centered_message(f"Manual stop requested.\nMax allowed: {self.max_pixel_intensity_difference:.2f}, Stopped with: {self.pixel_intensity_difference.data:.2f}")
                 break
 
             if self.pixel_intensity_difference.data > self.max_pixel_intensity_difference:  # Maximum expected pixel intensity difference
+                self.menu.print_centered_message(f"Pixel intensity difference exceeded. Stopping.\nMax allowed: {self.max_pixel_intensity_difference:.2f}, Actual: {self.pixel_intensity_difference.data:.2f}")
                 break
         
         # Reset the window to blocking mode
         self.menu.stdscr.nodelay(False)
         return
 
-    def move_gripper(self,pose):
+    def move_gripper(self, pose):
         goal = franka_gripper.msg.MoveGoal()
         goal.width = pose
         goal.speed = 0.3    
-
         self.franka_gripper_api.send_goal(goal)
-        self.franka_gripper_api.wait_for_result()
 
+        # Loop to check for key press while moving gripper
+        while not self.franka_gripper_api.wait_for_result(rospy.Duration(0.1)):
+            key = self.menu.stdscr.getch()
+            if key == ord('s') or key == ord('S'):
+                self.franka_gripper_api.cancel_goal()
+                return True
+            
+        return False
+            
     def move_to_pick(self, grasp_pose):
         grasp = moveit_msgs.msg.Grasp()
 

@@ -2,7 +2,7 @@
 import panda_demo.msg
 import curses
 from Robot import Robot
-a = False
+
 class Menu(object):
     def __init__(self, stdscr):
         self.stdscr = stdscr
@@ -28,18 +28,20 @@ class Menu(object):
         # Print the title, handling multiple lines
         for i, title_line in enumerate(title_lines):
             title_x = width // 2 - len(title_line) // 2
-            self.stdscr.addstr(title_start_y + i, title_x, title_line, curses.A_BOLD)
+            if 0 <= title_start_y + i < height and 0 <= title_x < width:
+                self.stdscr.addstr(title_start_y + i, title_x, title_line, curses.A_BOLD)
 
         # Print the menu options
         for idx, row in enumerate(menu):
             x = width // 2 - len(row) // 2
             y = height // 2 - len(menu) // 2 + idx
-            if idx == self.current_row:
-                self.stdscr.attron(curses.color_pair(1))
-                self.stdscr.addstr(y, x, row)
-                self.stdscr.attroff(curses.color_pair(1))
-            else:
-                self.stdscr.addstr(y, x, row)
+            if 0 <= y < height and 0 <= x < width:
+                if idx == self.current_row:
+                    self.stdscr.attron(curses.color_pair(1))
+                    self.stdscr.addstr(y, x, row)
+                    self.stdscr.attroff(curses.color_pair(1))
+                else:
+                    self.stdscr.addstr(y, x, row)
 
         self.stdscr.refresh()
 
@@ -47,6 +49,9 @@ class Menu(object):
         """Navigate the menu using arrow keys and Enter."""
         self.current_row = 0
         while True:
+            if curses.is_term_resized(*self.stdscr.getmaxyx()):
+                self.stdscr.clear()
+                curses.resize_term(*self.stdscr.getmaxyx())
             self.print_menu(menu, title)
             key = self.stdscr.getch()
 
@@ -66,7 +71,8 @@ class Menu(object):
         for i, line in enumerate(lines):
             x = width // 2 - len(line) // 2
             y = height // 2 - len(lines) // 2 + i
-            self.stdscr.addstr(y, x, line)
+            if 0 <= y < height and 0 <= x < width:
+                self.stdscr.addstr(y, x, line)
         
         self.stdscr.refresh()
 
@@ -80,15 +86,19 @@ class Menu(object):
         for i, line in enumerate(lines):
             x = width // 2 - len(line) // 2
             y = height // 2 - len(lines) // 2 + i
-            self.stdscr.addstr(y, x, line)
+            if 0 <= y < height and 0 <= x < width:
+                self.stdscr.addstr(y, x, line)
         
         # Enable echo and get user input
         curses.echo()
         input_y = height // 2 + len(lines) // 2 + 1
         input_x = width // 2
-        self.stdscr.move(input_y, input_x)
-        self.stdscr.refresh()
-        user_input = self.stdscr.getstr(input_y, input_x).decode('utf-8')
+        if 0 <= input_y < height and 0 <= input_x < width:
+            self.stdscr.move(input_y, input_x)
+            self.stdscr.refresh()
+            user_input = self.stdscr.getstr(input_y, input_x).decode('utf-8')
+        else:
+            user_input = ''
         curses.noecho()
         
         return user_input
@@ -109,55 +119,89 @@ class Menu(object):
             choice = self.navigate_menu(self.main_menu_options, "Pick and Place DPV")
 
             if choice == 0:  # Start
-                self.select_objects_menu()
+                self.execute_pick_and_place()
             elif choice == 1:  # Options
                 self.options_menu()
             elif choice == 2:  # Exit
                 break
+    
+    def select_place_pose(self):
+        """Display the select place pose menu and handle user input."""
+        place_poses = self.robot.get_place_poses()
+        self.select_place_pose_menu_options = [f"Pose with name-{name}" for name in place_poses.keys()] + ["Back to Object Menu"]
+        choice = self.navigate_menu(self.select_place_pose_menu_options, "Select A Place Pose")
+
+        if choice == len(self.select_place_pose_menu_options) - 1:  # Back to Object Menu
+            return None
+
+        pose_name = list(place_poses.keys())[choice]
+
+        self.print_centered_message(f"Selected Place Pose: {pose_name}")
+
+        return place_poses.get(pose_name)
 
     def select_objects_menu(self):
         """Display the select objects menu and handle user input."""
-        objects = self.robot.get_objects()
-        self.select_objects_menu_options = [f"Object with Aruco ID-{i}" for i in objects.keys()] + ["Back to Main Menu"]
-        choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
+        while True:
+            objects = self.robot.get_objects()
+            self.select_objects_menu_options = [f"Object with Aruco ID-{i}" for i in objects.keys()] + ["Back to Main Menu"]
+            choice = self.navigate_menu(self.select_objects_menu_options, "Select An Object")
 
-        if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
-            return    
-        
-        object_id = list(objects.keys())[choice]
-        
-        self.print_centered_message(f"Selected {object_id}")
+            if choice == len(self.select_objects_menu_options) - 1:  # Back to Main Menu
+                return None
 
-        a = self.robot.add_box(objects.get(object_id))
+            object_id = list(objects.keys())[choice]
 
-        self.print_centered_message(f"Object has been added: {a}")
+            self.print_centered_message(f"Selected {object_id}")
 
-        self.robot.go_to_inital_position()
-        self.robot.open_gripper()
+            selected_object = objects.get(object_id)
+            
+            place_pose = self.select_place_pose()
+            if place_pose is not None:
+                return selected_object, place_pose
 
-        self.print_centered_message("Calibrating GelSightMini")
+            self.print_centered_message("Returning to object selection menu.")
 
-        self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
-        self.robot.gelsight_mini_api.wait_for_result()
+    def execute_pick_and_place(self):
+        """Main function to execute the pick and place operation."""
+        while True:
+            result = self.select_objects_menu()
+            if result is None:
+                return
 
-        result = self.robot.gelsight_mini_api.get_result()
-        self.print_centered_message(f"GelSightMini Result: {result}")
-        self.stdscr.getch()
+            selected_object, place_pose = result
 
-        self.print_centered_message("Picking")
+            a = self.robot.add_box(selected_object)
+            self.print_centered_message(f"Object has been added: {a}")
 
-        self.robot.pick(objects.get(object_id).pose)
+            self.robot.go_to_inital_position()
+            self.robot.open_gripper()
 
-        self.robot.go_to_inital_position()
+            self.print_centered_message("Calibrating GelSightMini")
 
-        self.print_centered_message("Placing")
-        self.robot.place(self.robot.get_place_poses().get("Default"))
+            self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
+            self.robot.gelsight_mini_api.wait_for_result()
 
-        self.robot.go_to_inital_position()
-        self.robot.open_gripper()
+            result = self.robot.gelsight_mini_api.get_result()
+            self.print_centered_message(f"GelSightMini Result: {result}")
+            self.stdscr.getch()
 
-        a = self.robot.remove_box()
-        self.print_centered_message(f"Object has been removed: {a}")
+            self.print_centered_message("Picking")
+
+            self.robot.pick(selected_object.pose)
+
+            self.robot.go_to_inital_position()
+
+            self.print_centered_message("Placing")
+            self.robot.place(place_pose)
+
+            self.robot.go_to_inital_position()
+            self.robot.open_gripper()
+
+            a = self.robot.remove_box()
+            self.print_centered_message(f"Object has been removed: {a}")
+            break
+
 
     def menu_place_poses(self):
             """Allow the user to select an existing place pose or navigate to add a new one."""
