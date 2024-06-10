@@ -2,6 +2,7 @@
 import panda_demo.msg
 import curses
 from Robot import Robot
+import rospy
 
 class Menu(object):
     def __init__(self, stdscr):
@@ -177,14 +178,7 @@ class Menu(object):
             self.robot.go_to_inital_position()
             self.robot.open_gripper()
 
-            self.print_centered_message("Calibrating GelSightMini")
-
-            self.robot.gelsight_mini_api.send_goal(panda_demo.msg.GsGoal())
-            self.robot.gelsight_mini_api.wait_for_result()
-
-            result = self.robot.gelsight_mini_api.get_result()
-            self.print_centered_message(f"GelSightMini Result: {result}")
-            self.stdscr.getch()
+            # self.robot.prepare_gelsight_mini()            
 
             self.print_centered_message("Picking")
 
@@ -200,6 +194,7 @@ class Menu(object):
 
             a = self.robot.remove_box()
             self.print_centered_message(f"Object has been removed: {a}")
+            rospy.sleep(2)
             break
 
 
