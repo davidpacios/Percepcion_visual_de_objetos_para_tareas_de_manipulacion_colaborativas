@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rospy
 import tf2_ros
-from std_msgs.msg import String
+from std_msgs.msg import String, Bool
 from tf2_geometry_msgs import PoseStamped
 
 
@@ -14,9 +14,12 @@ class PoseTransformer:
         self.pub = rospy.Publisher('/aruco_poses_trf', String, queue_size=10)
         
         # Subscribe to the topic containing the ArUco positions
-        rospy.Subscriber('/aruco_poses', String, self.aruco_callback)
+        rospy.Subscriber('/aruco_poses', String, self.aruco_transform_callback)
+        self.camera_calibration = False
+        rospy.Subscriber("calibration_done", Bool, self.camera_calibration_done_callback)
 
-    def aruco_callback(self, msg):
+    def aruco_transform_callback(self, msg):
+        if not self.camera_calibration: return
         aruco_poses = msg.data.split(';')[:-1]
         transformed_poses = ""
 
@@ -37,7 +40,7 @@ class PoseTransformer:
 
             try:
                 # Wait until the transformation is available
-                self.tf_buf.can_transform("camera_link", "world", rospy.Time(), rospy.Duration(1.0))
+                self.tf_buf.can_transform("camera_link", "world", rospy.Time(), rospy.Duration(5.0))
                 # Perform the transformation of the position
                 target_pt = self.tf_buf.transform(aruco_pose, "world")
                 transformed_poses += f"{id_aruco}:{target_pt.pose.position.x}:{target_pt.pose.position.y}:{target_pt.pose.position.z}:{target_pt.pose.orientation.x}:{target_pt.pose.orientation.y}:{target_pt.pose.orientation.z}:{target_pt.pose.orientation.w};"
@@ -49,7 +52,8 @@ class PoseTransformer:
         # Publish all transformed positions together
         self.pub.publish(transformed_poses)
 
-    
+    def camera_calibration_done_callback(self,data):
+        self.camera_calibration = data
 
 if __name__ == '__main__':
     pose_transformer = PoseTransformer()

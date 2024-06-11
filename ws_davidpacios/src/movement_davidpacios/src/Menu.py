@@ -178,8 +178,6 @@ class Menu(object):
             self.robot.go_to_inital_position()
             self.robot.open_gripper()
 
-            # self.robot.prepare_gelsight_mini()            
-
             self.print_centered_message("Picking")
 
             self.robot.pick(selected_object.pose)

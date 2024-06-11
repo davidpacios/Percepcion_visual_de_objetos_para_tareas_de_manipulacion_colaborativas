@@ -31,7 +31,7 @@ class Camera:
         self.calibration_pub = rospy.Publisher("calibration_done", Bool, queue_size=10)
 
         # Subscribe to the aruco pose frame topic
-        rospy.Subscriber("aruco_pose_frame", String, self.transform_callback)
+        rospy.Subscriber("aruco_pose_frame", String, self.collect_measurements_callback)
 
         # Subscribe to the request calibration topic
         rospy.Subscriber("request_calibration", Bool, self.request_calibration_callback)
@@ -58,11 +58,11 @@ class Camera:
 
             self.calculate_calibration()
             # Publicar que la calibración ha sido realizada
-            self.calibration_pub.publish(True)
             self.calibrated = True
+            self.calibration_pub.publish(True)
 
 
-    def transform_callback(self, msg):
+    def collect_measurements_callback(self, msg):
         if self.calibrated: return
 
         # Obtener las posiciones y orientaciones de la aruco
@@ -104,7 +104,6 @@ class Camera:
 
 
     def publish_loop(self):
-        rate = rospy.Rate(10)  # Publicar a 10 Hz
         while not rospy.is_shutdown():
             if self.calibrated:
                 t_nueva = geometry_msgs.msg.TransformStamped()
@@ -153,7 +152,6 @@ class Camera:
 
                 self.broadcaster.sendTransform(t_camera_marker)
 
-            rate.sleep()
 
 if __name__ == '__main__':
     camera = Camera(id_aruco_calibration=8)

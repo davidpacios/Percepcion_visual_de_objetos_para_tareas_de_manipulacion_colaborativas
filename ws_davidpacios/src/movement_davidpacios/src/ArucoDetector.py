@@ -42,8 +42,7 @@ class ArucoDetector:
         # Subscribe to the camera image topic
         rospy.Subscriber("/camera/color/image_raw", Image, self.image_callback)
 
-        self.camera_calibration = False
-        rospy.Subscriber("calibration_done", Bool, self.callback_camera_calibration_done)
+       
         
         
     def load_camera_parameters(self):
@@ -99,16 +98,14 @@ class ArucoDetector:
             else:
                 self.aruco_info += f"{id_aruco}:{tvec[0][0]}:{tvec[1][0]}:{tvec[2][0]}:{q[0]}:{q[1]}:{q[2]}:{q[3]};"
 
-        if self.camera_calibration:
-            self.aruco_pose_pub.publish(self.aruco_info)
-            self.aruco_info = ""
+        self.aruco_pose_pub.publish(self.aruco_info)
+        self.aruco_info = ""
             
         cv2.imshow("Image", frame)
         cv2.waitKey(1)
         self.rate.sleep()
 
-    def callback_camera_calibration_done(self,data):
-        self.camera_calibration = data
+   
 
 if __name__ == '__main__':
     aruco_detector = ArucoDetector()

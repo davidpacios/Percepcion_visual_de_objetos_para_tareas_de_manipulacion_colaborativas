@@ -34,10 +34,10 @@ class Robot(object):
         # Misc variables
         self.box_name = "box"
         self.objects = None
-        self.pixel_intensity_difference = None
         self.camera_calibration = False
+        self.pixel_intensity_difference = None
         self.max_pixel_intensity_difference_tolerance = 1.9
-        self.max_pixel_intensity_difference = 33.0 #7.3
+        self.max_pixel_intensity_difference = None
         self.gripper_max_opening = 0.04  # adjust as needed
         self.initial_position = [0.00045490688645574993, -0.7849138098515794, 8.362466942548564e-05, -2.3567824603199075, -0.00021172463217377824, 1.5710602207713658, 0.7850459519227346]
         self.place_poses = {}
@@ -62,11 +62,11 @@ class Robot(object):
         self.camera_calibration_pub = rospy.Publisher("request_calibration", Bool, queue_size=10)
 
 
-        rospy.Subscriber("gelsight_pixel_intensity_difference", Float32, self.callback_gelsightmini)
+        rospy.Subscriber("gelsight_pixel_intensity_difference", Float32, self.gelsightmini_callback)
         while self.pixel_intensity_difference == None and not rospy.is_shutdown():
             rospy.sleep(0.1)
 
-        rospy.Subscriber("calibration_done", Bool, self.callback_camera_calibration_done)
+        rospy.Subscriber("calibration_done", Bool, self.arucos_position_callback)
         while not self.camera_calibration and not rospy.is_shutdown():
             self.camera_calibration_pub.publish(True)
             rospy.sleep(6)
@@ -254,13 +254,13 @@ class Robot(object):
             box_is_attached=False, box_is_known=False, timeout=timeout
         )
     
-    def callback_camera_calibration_done(self,data):
+    def camera_calibration_done_callback(self,data):
         self.camera_calibration = data
 
-    def callback_gelsightmini(self,dist) :
+    def gelsightmini_callback(self,dist) :
         self.pixel_intensity_difference = dist
 
-    def callback_arucos_position(self, data):
+    def arucos_position_callback(self, data):
         self.objects = {}
         # Recupera la información de los objects desde el mensaje de tipo String
         arucos_info = data.data.split(';')
@@ -278,7 +278,7 @@ class Robot(object):
                     pose_msg = PoseStamped()
                     pose_msg.header.frame_id = f"aruco_{aruco_id_entero}"
                     pose_msg.header.stamp = rospy.Time.now()
-                    pose_msg.pose.position.x = float(aruco_data[1]) #+ 0.013
+                    pose_msg.pose.position.x = float(aruco_data[1])
                     pose_msg.pose.position.y = float(aruco_data[2]) + 0.015
                     pose_msg.pose.position.z = 0.14 #float(aruco_data[3])    
                     pose_msg.pose.orientation.x = -0.9231143539216148 #float(aruco_data[4])                
@@ -297,7 +297,7 @@ class Robot(object):
     
     def request_calibration(self):
         self.camera_calibration = False
-        rospy.Subscriber("calibration_done", Bool, self.callback_camera_calibration_done)
+        rospy.Subscriber("calibration_done", Bool, self.camera_calibration_done_callback)
         while not self.camera_calibration and not rospy.is_shutdown():
             self.camera_calibration_pub.publish(True)
             rospy.sleep(6)
@@ -324,7 +324,6 @@ class Robot(object):
         # Imprimimos el mensaje formateado
         self.menu.print_centered_message(message)
         rospy.sleep(2)
-
 
 
 
