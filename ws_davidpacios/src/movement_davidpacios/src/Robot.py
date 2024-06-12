@@ -66,13 +66,13 @@ class Robot(object):
         while self.pixel_intensity_difference == None and not rospy.is_shutdown():
             rospy.sleep(0.1)
 
-        rospy.Subscriber("calibration_done", Bool, self.arucos_position_callback)
+        rospy.Subscriber("calibration_done", Bool, self.camera_calibration_done_callback)
         while not self.camera_calibration and not rospy.is_shutdown():
             self.camera_calibration_pub.publish(True)
             rospy.sleep(6)
 
         
-        rospy.Subscriber("aruco_poses_trf", String, self.callback_arucos_position)
+        rospy.Subscriber("aruco_poses_trf", String, self.arucos_position_callback)
         while not self.objects and not rospy.is_shutdown():
             rospy.sleep(0.1)
 
@@ -143,9 +143,10 @@ class Robot(object):
         
         for pose in poses:
             stop_picking = self.move_gripper(pose)
-            self.menu.print_centered_message(f"Picking until pixel intensity difference is {self.max_pixel_intensity_difference:.2f}. Actual: {self.pixel_intensity_difference.data:.2f}\nPress 's' to stop picking")
             if stop_picking:
                 break
+            self.menu.print_centered_message(f"Picking until pixel intensity difference is {self.max_pixel_intensity_difference:.2f}. Actual: {self.pixel_intensity_difference.data:.2f}\nPress 's' to stop picking")
+            
         # Reset the window to blocking mode
         self.menu.stdscr.nodelay(False)
         return
@@ -278,8 +279,8 @@ class Robot(object):
                     pose_msg = PoseStamped()
                     pose_msg.header.frame_id = f"aruco_{aruco_id_entero}"
                     pose_msg.header.stamp = rospy.Time.now()
-                    pose_msg.pose.position.x = float(aruco_data[1])
-                    pose_msg.pose.position.y = float(aruco_data[2]) + 0.015
+                    pose_msg.pose.position.x = float(aruco_data[1]) + 0.015
+                    pose_msg.pose.position.y = float(aruco_data[2]) + 0.045
                     pose_msg.pose.position.z = 0.14 #float(aruco_data[3])    
                     pose_msg.pose.orientation.x = -0.9231143539216148 #float(aruco_data[4])                
                     pose_msg.pose.orientation.y = -0.3840649074696301 #float(aruco_data[5])                
