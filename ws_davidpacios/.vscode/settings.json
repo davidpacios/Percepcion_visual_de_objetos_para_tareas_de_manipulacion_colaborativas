@@ -12,5 +12,6 @@
         "/home/frankaros/ws_moveit/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages",
         "/home/frankaros/other_software/root/build/lib"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/frankaros/TFG_Percepcion_visual_de_objetos_y_humanos_para_tareas_de_manipulacion_colaborativas/ws_davidpacios/src/moveit/moveit_core/collision_distance_field"
 }

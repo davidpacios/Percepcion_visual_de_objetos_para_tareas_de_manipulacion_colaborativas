@@ -279,7 +279,7 @@ class Robot(object):
                     pose_msg = PoseStamped()
                     pose_msg.header.frame_id = f"aruco_{aruco_id_entero}"
                     pose_msg.header.stamp = rospy.Time.now()
-                    pose_msg.pose.position.x = float(aruco_data[1]) + 0.015
+                    pose_msg.pose.position.x = float(aruco_data[1]) + 0.013
                     pose_msg.pose.position.y = float(aruco_data[2]) + 0.045
                     pose_msg.pose.position.z = 0.14 #float(aruco_data[3])    
                     pose_msg.pose.orientation.x = -0.9231143539216148 #float(aruco_data[4])                
