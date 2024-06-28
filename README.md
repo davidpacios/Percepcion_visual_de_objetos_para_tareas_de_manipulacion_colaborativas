@@ -22,7 +22,7 @@ resultados, se plantean posibles ampliaciones y mejoras que complementarı́an a
 #### Sistema Operativo
 El ordenador necesita Ubuntu 20.04 LTS con parche RealTime que tiene menos latencia en la comunicación de paquetes y es necesaria para conectarse al robot Franka Panda.
 #### ROS
-Se necesita Ubuntu 20.04 para poder instalar la distro ROS Noetic a través de los siguientes comandos:
+Se necesita Ubuntu 20.04 para poder instalar la distro  <a href="https://wiki.ros.org/noetic/Installation/Ubuntu">  ROS Noetic</a>  a través de los siguientes comandos:
 ```bash
 # Configurar las fuentes del sistema
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -53,7 +53,7 @@ sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool 
 roscore
 ```
 #### MoveIt
-Una vez instalado ROS Noetic, se pueden descargar los paquetes de MoveIt1 <a href="https://moveit.github.io/moveit_tutorials/doc/getting_started/getting_started.html">MoveIt Getting Started: Robots que facilitan el control de los robots, se pueden ver los robots compatibles en <a href="https://moveit.ros.org/robots/">MoveIt: Robots</a>
+Una vez instalado ROS Noetic, se pueden descargar los paquetes de MoveIt1 <a href="https://moveit.github.io/moveit_tutorials/doc/getting_started/getting_started.html"> MoveIt Getting Started</a>. MoveIt  facilita el control de  robots, se pueden ver los robots compatibles en <a href="https://moveit.ros.org/robots/">MoveIt: Robots</a>
 ```bash
 # Instalar MoveIt
 sudo apt install ros-noetic-moveit
