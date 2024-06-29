@@ -19,8 +19,57 @@ resultados, se plantean posibles ampliaciones y mejoras que complementarı́an a
 
 
 ### Preparación del Entorno
-#### Sistema Operativo
-El ordenador necesita Ubuntu 20.04 LTS con parche RealTime que tiene menos latencia en la comunicación de paquetes y es necesaria para conectarse al robot Franka Panda.
+#### Sistema Operativo y FCI
+El ordenador necesita Ubuntu 20.04 LTS con parche RealTime que tiene menos latencia en la comunicación de paquetes y es necesaria para conectarse al robot Franka Panda a través de la libreria `libfranka`  <a href="https://frankaemika.github.io/docs/installation_linux.html"> Franka Control Interface (FCI)</a>
+
+```bash
+# Instalar libfranka
+sudo apt install ros-noetic-libfranka ros-noetic-franka-ros
+
+#Instalar Kernel RT en Ubuntu 20.04 LTS
+sudo apt-get install build-essential bc curl ca-certificates gnupg2 libssl-dev lsb-release libelf-dev bison flex dwarves zstd libncurses-dev
+
+#Escoger Kernel RT: For Ubuntu 20.04 tested with the kernel version 5.9.1
+curl -SLO https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.9.1.tar.xz
+curl -SLO https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.9.1.tar.sign
+curl -SLO https://www.kernel.org/pub/linux/kernel/projects/rt/5.9/patch-5.9.1-rt20.patch.xz
+curl -SLO https://www.kernel.org/pub/linux/kernel/projects/rt/5.9/patch-5.9.1-rt20.patch.sign
+# Descomprimirlo y Verficiar la integridad del parche RT (opcional)
+xz -d *.xz
+
+#Compilar el Kernel RT
+tar xf linux-*.tar
+cd linux-*/
+patch -p1 < ../patch-*.patch
+
+#Copiar el Kernel que se esta usando para la configuracion por defecto del nuevo Kernel RT
+cp -v /boot/config-$(uname -r) .config
+#Configurar la compilación
+make olddefconfig
+make menuconfig
+#Compilar
+make -j$(nproc) deb-pkg
+#Instalar
+sudo dpkg -i ../linux-headers-*.deb ../linux-image-*.deb
+
+#Reiniciar el sistema. 
+#Grub ahora debería permitir elegir el nuevo kernel.
+#Comprobar el Kernel
+uname -a 
+
+#Añadir un grupo llamado realtime y añadir al usuario donde se usará el robot
+sudo addgroup realtime
+sudo usermod -a -G realtime $(whoami)
+
+#Añadir límites al grupo creado
+nano /etc/security/limits.conf
+@realtime soft rtprio 99
+@realtime soft priority 99
+@realtime soft memlock 102400
+@realtime hard rtprio 99
+@realtime hard priority 99
+@realtime hard memlock 10240
+
 #### ROS
 Se necesita Ubuntu 20.04 para poder instalar la distro  <a href="https://wiki.ros.org/noetic/Installation/Ubuntu">  ROS Noetic</a>  a través de los siguientes comandos:
 ```bash
@@ -117,7 +166,6 @@ sudo udevadm control --reload && sudo  udevadm trigger
 source ./devel/setup.bash 
 roslaunch astra_camera astra.launch
 ```
-
 #### Paquetes de python
 Además se necesitan algunos paquetes de python específicos. Como no estoy seguro si ya se descargan en alguna dependencia, incluyo paquetes por exceso. Algunos de estos paquetes se instalan por apt con ROS y otros mediante el gestor de python pip. La librería Aruco ya esta integrada en opencv y en el sistema se utiliza el diccionario `DICT_4X4_50`.
 
@@ -130,6 +178,8 @@ sudo apt install ros-noetic-rospy ros-noetic-actionlib ros-noetic-std-msgs ros-n
 
 pip install opencv-python numpy rospy actionlib std_msgs panda_demo curses tf2_ros tf2_geometry_msgs geometry_msgs tf moveit_commander moveit_msgs trajectory_msgs franka_gripper six
 ```
+#### Gelsigh Mini
+Generar los mensajes necesarios usando la libreria `actionlib` a través del archivo `src/panda_demo/action/Gs.action`.  <a href="https://wiki.ros.org/actionlib">Actionlib Ros</a>
 
 #### Calibracion de la Cámara
 En el nodo aurco_detector se utilizan los parámetros intrínsecos de la cámara. Para ello se realiza una calibración y se alamacena en `ws_davidpacios/src/movement_davidpacios/camera/rgb_camera.yaml` respetando el nombre. Este fichero se puede generar automáticamente con la siguiente guía <a href="http://www.yahboom.net/public/upload/upload-html/1641547558/Astra%20camera%20calibration.html">Calibración Camara Ros</a>
